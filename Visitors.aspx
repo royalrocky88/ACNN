@@ -18,26 +18,10 @@
 </script>
 
 <style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 250px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 5px;
-  text-align: center;
-}
+/* Visitor cards: responsive grid (overrides legacy float layout) */
+div.gallery { float: none; width: auto; margin: 8px; border: 1px solid #dbe6ec; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 4px 14px rgba(10,37,64,.08); }
+div.gallery:hover { border-color: #1fc8d8; box-shadow: 0 10px 30px rgba(10,37,64,.12); }
+div.gallery img { width: 100%; height: 190px; object-fit: cover; display: block; }
 </style>
 
     
@@ -101,10 +85,7 @@ div.desc {
 </div>
     </ItemTemplate>
                         </asp:DataList>
-       
-       
-           
-    
+</div><!-- end col-right-->
 </section>
 </div><!-- end row-->
 </div> <!-- end container-->

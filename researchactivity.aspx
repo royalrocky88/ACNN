@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="container">
 
-<div class="row" style="margin-left:0" >
+<div class="row">
 	<h1 class="span12">Research Activities</h1>
 	<div class="span12">
 		<ul class="breadcrumb">
@@ -28,24 +28,24 @@
 	</aside>--%>
 
 <!-- =========================Start Col right section ============================= --> 
-<section class="span8" style="width:100%" >
+<section class="span12">
 	<div class="col-left">
        <div class="main-img">
-       <p style="text-align:center; font-size:x-large;color:Green">Research Activities -4 </p>
+       <p class="acnn-pdf-title">Research Activities -4 </p>
             <iframe scrolling="auto" width="100%" height="500px" src="downloads/research_act_acnn_2022_2.pdf" frameborder="0"></iframe>
              
     <br />
         <br />
-       <p style="text-align:center; font-size:x-large;color:Green">Research Activities -3 </p>
+       <p class="acnn-pdf-title">Research Activities -3 </p>
             <iframe scrolling="auto" width="100%" height="500px" src="downloads/research_act_acnn_2022_1.pdf" frameborder="0"></iframe>
              
     <br />
         <br />
-       <p style="text-align:center; font-size:x-large;color:Green">Research Activities -1 </p>
+       <p class="acnn-pdf-title">Research Activities -1 </p>
             <iframe scrolling="auto" width="100%" height="500px" src="downloads/ResearchActs/Research activity -1.pdf" frameborder="0"></iframe>
              
     <br />
-        <br /><p style="text-align:center; font-size:x-large;color:Maroon">Research Activities -2</p>
+        <br /><p class="acnn-pdf-title maroon">Research Activities -2</p>
     <iframe scrolling="auto" width="100%" height="1040px" src="downloads/ResearchActs/Research activities-2.pdf" frameborder="0"></iframe>
         </div>
         </div>

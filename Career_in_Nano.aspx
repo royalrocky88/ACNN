@@ -104,7 +104,7 @@ Please Click
             <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
         </asp:GridView>
        
-           <p style="color:Red; font-size:x-large"><a href="downloads/Nanotechlogy-Prospectus-3May24.pdf" target="_blank">More details ... please click here</a></p>
+           <p class="acnn-note"><a href="downloads/Nanotechlogy-Prospectus-3May24.pdf" target="_blank">More details ... please click here</a></p>
     
 </section>
         

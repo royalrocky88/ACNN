@@ -28,37 +28,37 @@
 	</aside>
 
 <!-- =========================Start Col right section ============================= --> 
-<section class="span8  ">
+<section class="span12">
 	<div class="col-right">
        <div class="main-img">
-       <h1>Annual Report- 2025-26</h1>
+       <h3 class="acnn-pdf-title">Annual Report- 2025-26</h3>
       <iframe scrolling="auto" width="100%" height="640px" src="downloads/Annual Report-SNN-25-26.pdf" frameborder="0"></iframe>
       <br /><br />
-       <h1>Annual Report- 2024-25</h1>
+       <h3 class="acnn-pdf-title">Annual Report- 2024-25</h3>
       <iframe scrolling="auto" width="100%" height="640px" src="downloads/Annual report-Nanoscience-24-25.pdf" frameborder="0"></iframe>
       <br /><br />
-       <h1>Annual Report- 2023-24</h1>
+       <h3 class="acnn-pdf-title">Annual Report- 2023-24</h3>
       <iframe scrolling="auto" width="100%" height="640px" src="downloads/Annual report-23-24-Nanotechnology.pdf" frameborder="0"></iframe>
       <br /><br />
-       <h1>Annual Report- 2022-23</h1>
+       <h3 class="acnn-pdf-title">Annual Report- 2022-23</h3>
       <iframe scrolling="auto" width="100%" height="640px" src="downloads/Nanoscience-22-23-compressed.pdf" frameborder="0"></iframe>
       <br /><br />
-       <h1>Annual Report- 2021-22</h1>
+       <h3 class="acnn-pdf-title">Annual Report- 2021-22</h3>
       <iframe scrolling="auto" width="100%" height="640px" src="downloads/Nanoscience-21-22-compressed.pdf" frameborder="0"></iframe>
       <br /><br />
-        <h1>Annual Report- 2020-21</h1>
+        <h3 class="acnn-pdf-title">Annual Report- 2020-21</h3>
       <iframe scrolling="auto" width="100%" height="640px" src="downloads/AnnualReport-20-21.pdf" frameborder="0"></iframe>
       <br /><br />
-       <h1>Annual Report- 2019-20</h1>
+       <h3 class="acnn-pdf-title">Annual Report- 2019-20</h3>
       <iframe scrolling="auto" width="100%" height="640px" src="downloads/AnnualReport-19-20.pdf" frameborder="0"></iframe>
       <br /><br />
-       <h1>Annual Report- 2018-19</h1>
+       <h3 class="acnn-pdf-title">Annual Report- 2018-19</h3>
       <iframe scrolling="auto" width="100%" height="640px" src="downloads/AnnualReport-18-19.pdf" frameborder="0"></iframe>
       <br /><br />
-      <h1>Annual Report- 2017-18</h1>
+      <h3 class="acnn-pdf-title">Annual Report- 2017-18</h3>
       <iframe scrolling="auto" width="100%" height="640px" src="downloads/Annual report- 17-18.pdf" frameborder="0"></iframe>
       <br /><br />
-      <h1>Annual Report- 2016-17</h1>
+      <h3 class="acnn-pdf-title">Annual Report- 2016-17</h3>
          <iframe scrolling="auto" width="100%" height="640px" src="downloads/Annual Report 2016-17 ACNN - 13-11-2017.pdf" frameborder="0"></iframe> 
          
           <%-- <img src="img/ACNN_ResearchActivities.jpg" alt="" >--%>

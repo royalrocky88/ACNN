@@ -4,7 +4,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="container">
-      
+<div class="row">
+	<h1 class="span12">Our Team</h1>
+	<div class="span12">
+		<ul class="breadcrumb">
+			<li><a href="Default.aspx">Home</a><span class="divider">/</span></li>
+			<li class="active">Our Team</li>
+		</ul>
+	</div>
+</div>
        <div>
           <div class="mu-our-teacher-area">
             <!-- begain title -->
