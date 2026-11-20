@@ -1,0 +1,383 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainPage.master.cs" Inherits="MainPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>AKU : Nano Technology</title>  
+
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            theme: 'dark_rounded',
+            overlay_gallery: false
+        });
+    });
+</script>
+
+
+      <!-- Favicons-->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/megamenu.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" >
+<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.4">
+
+<!-- REVOLUTION BANNER CSS SETTINGS -->
+<link rel="stylesheet" href="css/fullwidth.css" media="screen" >
+<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" >
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Jquery -->
+<script src="js/jquery.js"></script>
+<!-- Support media queries for IE8 -->
+<script src="js/respond.min.js"></script>
+
+<!-- HTML5 and CSS3-in older browsers-->
+<script src="js/modernizr.custom.17475.js"></script>
+
+<!--[if IE 7]>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- End Header-->
+    <header>
+    <div class="container">
+   	  <div class="row">
+    	<div class="span41" id="logo"><a href="Default.aspx"><img src="img/logosnn.png" alt="Logo" height="45px" width="350px"></a></div>
+        <div class="span8">
+        
+        	<div id="phone" class="hidden-phone"><strong>+91 810 292 6986 </strong>Call us</div>
+            
+            <div id="menu-top">
+            	<ul>
+                	<%--<li><a href="" title="Home">Home</a> | </li><li><a href="researchactivity.html" title="Home">Research Activities</a> | </li><li><a href="socialactivity.html" title="Scientific Activities">&nbsp;Scientific Activities</a></li> | </li>--%><li><a href="http://mail.acnn.akubihar.ac.in" title="Web Mail">&nbsp;WEB MAIL</a></li>&nbsp;| <li>Query Us @</li>
+                </ul>
+            </div>
+
+        </div><!-- End span8-->
+      </div><!-- End row-->
+    </div><!-- End container-->
+    </header>
+    <!-- End Header-->
+     <nav>
+    <div class="megamenu_container">
+<a id="megamenu-button-mobile" href="#">Menu</a><!-- Menu button responsive-->
+    
+	<!-- Begin Mega Menu Container -->
+	<ul class="megamenu">
+		<!-- Begin Mega Menu -->
+		<li><a href="Default.aspx" class="nodrop-down">Home</a></li>
+		<%--<li><a href="#" class="drop-down">Academic  Programme</a>
+		<!-- Begin Item -->
+		<div class="drop-down-container">
+			<div class="row">
+            
+				<div class="span3">
+					<h4>Programme List</h4>
+					<ul class="list-menu">
+						<li><a href="#" title="All courses">M.Sc. in Nano Science & Technology</a></li><!--all-courses.html-->
+						<li><a href="#" title="Course detail">M.Tech. in Nano Science & Technology</a></li><!--course-detail.html-->
+						<li><a href="#" title="Meet the team">Ph.D. in Nano Science & Technology</a></li><!--staff.html-->
+					</ul><p><a href="all-courses.aspx" title="Courses" class="button_medium add-bottom-20">All Programme</a></p>				</div>
+                
+				<div class="span9">
+					<div class="row">
+						<div class="span3">
+							<h5><a href="#"><i class="icon-book"></i>M.Sc. in Nano Science & Technology</a></h5>
+							<p align="justify">AKU plans to work in multifaceted manner along with our regular pursuits of quality teaching (at Postgraduate level) and research.</p>
+							<!--<p><a href="course-detail.html" class="button_red_small">Read more</a></p>-->
+						</div>
+						<div class="span3">
+							<h5><a href="#"><i class="icon-book"></i>M.Tech. in Nano Science & Technology</a> </h5>
+							<p align="justify">AKU plans to work in multifaceted manner along with our regular pursuits of quality teaching (at Postgraduate level) and research.</p>
+							<!--<p><a href="course-detail.html" class="button_red_small">Read more</a></p>-->
+						</div>
+						<div class="span3">
+							<h5><a href="#"><i class="icon-book"></i>Ph.D. in Nano Science & Technology</a> </h5>
+							<p align="justify">AKU plans to work in multifaceted manner along with our regular pursuits of quality teaching (at Postgraduate level) and research.</p>
+							<!--<p><a href="course-detail.html" class="button_red_small">Read more</a></p>-->
+						</div>
+					</div><!-- End row -->
+                    
+					
+                    
+				</div><!-- End span9 -->
+			</div><!-- End row -->
+		</div><!-- End Item Container -->
+		</li><!-- End Item -->--%>
+
+
+        <li><a href="NAC_Meeings.aspx" class="drop-down">National Advisory Com.</a>
+		
+		</li><!-- End Item -->
+        
+		<%--<li><a href="#" class="drop-down">Admission Procedure</a>
+		<!-- Begin Item -->
+		<div class="drop-down-container">
+        
+			<div class="row">
+				<div class="span7">
+					<iframe height="300" src="img/Admissions.jpg"></iframe>
+				</div>
+				<div class="span5">
+					<h4>Admission Procedure</h4>
+					<p align="justify">Candidates have to choose any one of the following papers for admission to Ph.D. programme depending upon their choice. <br>
+•	Physical sciences<br>
+•	Chemical sciences<br>
+•	Biological sciences<br>
+•	Engineering streams<br><br>
+The question paper will be divided into two parts of 50 marks each. Part-A will consist of fifty multiple choice questions on general science awareness type and Part-B will fifty multiple choice questions on the respective subjects. The syllabus can be seen on the university website.
+</p>
+					<p><a href="admission-procedure.aspx" title="All courses" class="button_red_small">Read more</a></p><!--all-courses.html-->
+				</div>
+			</div><!-- End row -->
+            
+			
+            
+			
+		</div><!-- End Item Container -->
+		</li>--%><!-- End Item -->
+        
+		<%--<li><a href="#" class="drop-down">Vision</a>
+		<!-- Begin Item -->
+		<div class="drop-down-container">
+        
+			<div class="row">
+            
+				<div class="span3">
+                	<h4>Quick links</h4>
+					<ul class="list-menu">
+					    <li><a href="about-us.aspx" title="About">About </a></li>
+						<li><a href="#" title="Course detail">Course detail</a></li><!--course-detail.html-->
+						<li><a href="#" title="Meet the team">Meet the team</a></li><!--staff.html-->
+						<li><a href="admission-procedure.aspx"  title="Apply for a course" target="_blank">Application Form for M.Tech.</a></li>
+						<li><a href="admission-procedure.aspx" title="Meet the team" target="_blank">Application Form for Ph.D.</a></li>					</ul>
+						<p><a href="vision.aspx" title="Courses" class="button_medium add-bottom-20">Read more</a></p>
+                   
+				</div>
+                
+                    <div class="span9">
+                        <ul class="tabs">
+                            <li><a class="active" href="#section-1">Supervision</a></li>
+                            <li><a href="#section-2">History</a></li>
+                        </ul>
+                        
+                        <ul class="tabs-content">
+                        
+                            <li class="active" id="section-1">
+                            
+                            
+                            <p align="justify">The different affairs of the centre is in progress under the supervision of <br /><strong>Dr. Rakesh Kumar Singh, Assistant Professor</strong> 
+                                
+<br/>
+ Head (incharge-Academic, Establishment, and Administration)</p>
+                            
+                            </li>
+                            
+                            <li id="section-2">
+                            
+                            
+                            <div class="row">
+                            
+                                <div class="span4">
+                                    <h5>History</h5>
+                                    <p align="justify">The organizational chart illustrates the proposed plan of action along with the support systems and their outcomes. This centre will carry sophisticated instruments and support facilities in order to keep pace with the exponential up surge in modern technologies. This centre will have its own Training & Placement cell and IPR cell which will look after the matter like: Patent, Technology transfer, Commercialization, etc. </p>
+                                </div>
+                                
+                                <div class="span4">
+                                    <h5>Vision</h5>
+                                    <p align="justify">The challenges posed by nanoscience and nanotechnology cannot be answered solely by principles and techniques derived solely from a single science or a technology discipline. Instead, it requires the contributions of diverse inter-related fields, but is not limited to, physics, chemistry, biology and engineering.</p>
+                                </div>
+                                
+                            </div><!-- End row -->
+                            </li>
+                            
+                        </ul><!-- End tabs-->
+                    </div><!-- End span9 -->
+
+			</div><!-- End row -->
+		</div>
+        <!-- End Item Container -->
+		</li>--%><!-- End Item -->
+       
+		<%--<li><a href="#" class="drop-down">Faculty Profile</a>
+		<!-- Begin Item -->
+		<div class="drop-down-container" id="icon-menu">
+			 <div class="row">
+                            
+                                <div class="span3">
+                                    <h5></h5>
+                                    <p></p>
+                                </div>
+                                
+                                <div class="span3">
+                                     <h5><a href="anal.aspx"><img src="img/fac2.png" alt="faculty" width="40" alt="">&nbsp;&nbsp;Dr. Anal K. Jha<em>M.Sc., M.Phil. (Cantab), Ph.D., FCCS (Cambridge, U.K.)<br />Assistant Professor<br>AryabhattaKnowledge University, Patna</em></a></h5>
+                                     
+                                    
+                                </div>
+                                
+                                <div class="span3">
+                                     <h5><a href="DrRakeshKrSingh.aspx"><img src="img/fac3.png" alt="faculty" width="40" alt="">&nbsp;&nbsp;Dr. Rakesh K. Singh<em> Ph.D.<br />Asst. Prof. cum Head/ Incharge-Academic/Prof. incharge-Establishment</em></a></h5>
+                                    
+                                </div>
+								<div class="span3">
+                     
+				    <h5><a href="DrVijayRavi.aspx"><img src="img/fac6.png" alt="faculty" width="40" alt="">&nbsp;&nbsp;Dr. Vijay Kumar Ravi<em> Ph.D. in Biotechnology, IIT, Guwahati<br />Guest Assistant Professor<br />(On Contract)  </em></a></h5>
+					
+                                </div>
+                                
+                            </div><!-- End row -->
+		</div><!-- End Item Container -->
+		</li><!-- End Item -->--%>
+         <li><a href="Career_in_Nano.aspx" class="nodrop-down">CAREERS in Nano</a></li>
+        <li><a href="DrRakeshKrSingh.aspx" class="nodrop-down">Head @ Centre</a></li>
+         <li><a href="Visitors.aspx" class="nodrop-down">Visitors @ Centre</a></li>
+         <li><a href="AnnualReport.aspx" class="nodrop-down">Annual Reports</a></li>
+        <li><a href="#" class="drop-down">Activities</a>
+		<!-- Begin Item -->
+		<div class="drop-down-container">
+        
+			<div class="row">
+				
+				<div class="span5">
+					<%--<h4>Quick links</h4>--%>
+					<p><a href="researchactivity.aspx" title="All courses" class="button_red_small">Research Activities</a></p>
+                    <p><a href="ScientificActivity.aspx" title="All courses" class="button_red_small">Scientific activities</a></p>
+                      <p><a href="downloads/Scientific Infrastructure.pdf" title="All courses" class="button_red_small" target="_blank">Research & Developement Infrastructure</a></p><!--all-courses.html-->
+				</div>
+			</div><!-- End row -->
+            
+			
+            
+			
+		</div><!-- End Item Container -->
+		</li><!-- End Item -->
+
+       <%-- <li><a href="ScientificActivity.aspx" class="nodrop-down">Scientific Activities</span><span style="color:Yellow;font-weight:bold;font-size:medium;"><img src="img/new_update.gif" height="55px" width="50px"/> </a></li>--%>
+		<li><a href="#" class="drop-down">Gallery</a>
+
+        <div class="drop-down-container">        
+			<div class="row">				
+				<div class="span5">				
+
+					<p><a href="EventGallery.aspx" title="Events" class="button_red_small">Event Gallery </a></p>
+                    <p><a href="MediaResponse.aspx" title="Gallery" class="button_red_small">Media Gallery</a></p>
+                    
+				</div>
+			</div><!-- End row -->  
+		</div><!-- End Item Container -->
+
+        </li>
+
+	</ul><!-- End Mega Menu -->
+</div>
+     </nav>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    <footer>
+  <div class="container">
+  	<div class="row">
+    	<div class="span4" id="brand-footer">
+   	    	<%--<p><img src="img/logo-footer.jpg" alt=""></p>--%>
+            <p>Copyright © 2024 Aryabhatta Knowledge University, Patna</p>
+           <div>
+            <asp:AccessDataSource ID="AccessDataSource_WebsiteUpdate" runat="server" 
+                                    DataFile="~/App_Data/ACNN_DB.mdb" 
+                                    
+                   SelectCommand="SELECT * FROM [Table_WebsiteUpdateDates] WHERE ([Active] = ?)">
+                                    <SelectParameters>
+                                        <asp:Parameter DefaultValue="true" Name="Active" Type="Boolean" />
+                                    </SelectParameters>
+                                </asp:AccessDataSource>
+                           <asp:DataList ID="DataList_WebsiteUpdate" runat="server" 
+                                DataSourceID="AccessDataSource_WebsiteUpdate">
+                                <ItemTemplate>
+                                
+								<b>Website Updated: <%# Eval("Date")%> </b>
+						                						
+						                            
+                                </ItemTemplate>
+                            </asp:DataList>
+            </div>
+			 <%--<div class="fb"><a href="#">Follow on  Facebook</a></div>--%>  
+        </div>
+        <div class="span4" id="contacts-footer">
+        	<h4>Contacts</h4>
+            <ul>
+                <li><i class="icon-home"></i> Aryabhatta Knowledge University</li>
+            	<li><i class="icon-home"></i> 1st Floor, Academic Block, Mithapur, Patna-800 001</li>
+            	<li><i class="icon-phone"></i> Telephone: 0612 236 2270</li>
+                <li><i class="icon-phone-sign"></i> Fax: 0612 236 2270</li>
+                <li><i class="icon-envelope"></i> Email: <a href="mailto:akuacnn@gmail.com">akuacnn@gmail.com;</a> <a href="mailto:info@acnn.akubihar.ac.in">info@acnn.akubihar.ac.in;</a></li>
+            </ul>
+            
+        	</div>
+        <div class="span4" id="quick-links">
+        	<h4>Quick links</h4>
+            <ul>
+            	<li><a href="admission-procedure.aspx" >Admissions</a></li>
+                <%--<li><a href="#" >Administration</a></li>--%>
+            	<li><a href="all-courses.aspx" >Courses</a></li>
+                <li><a href="researchactivity.aspx" >Research Activities</a></li>
+                <li><a href="ResearchEquipment.aspx" >Research Equipments</a></li>
+                <li><a href="MediaResponse.aspx" >Media Response</a></li>
+            </ul>
+           <%-- <hr>
+            <ul>
+            	<li><a href="#" >Degrees &amp; Majors</a></li>
+            	<li><a href="#" >Master's online</a></li>
+                <li><a href="#" >Professional Courses</a></li>
+                <li><a href="#" >Bacherlor's</a></li>
+                <li><a href="#" >Courses</a></li>
+                <li><a href="#" >Departments and Programs</a></li>
+            </ul>--%>
+        </div>
+        
+    </div>
+  </div>
+  </footer><!-- End footer-->
+  <div id="toTop">Back to Top</div>
+    <!-- MEGAMENU --> 
+<script src="js/jquery.easing.js"></script>
+<script src="js/megamenu.js"></script>
+
+<!-- OTHER JS -->    
+<script src="js/bootstrap.js"></script>
+<script src="js/functions.js"></script>
+<script src="assets/validate.js"></script> 
+
+<!-- FANCYBOX -->
+<script  src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.4" type="text/javascript"></script> 
+<script src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5" type="text/javascript"></script> 
+<script src="js/fancy_func.js" type="text/javascript"></script> 
+
+ <!-- REVOLUTION SLIDER -->
+ <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+ <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+ <script src="js/revolutio-slider-func.js"></script>
+    </form>
+</body>
+</html>
