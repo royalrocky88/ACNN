@@ -116,24 +116,6 @@
     </script>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table class="span44">
-        <tr>
-            <td>
-                &nbsp;
-            </td>
-            <td>
-                &nbsp;
-            </td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;
-            </td>
-            <td>
-                &nbsp;
-            </td>
-        </tr>
-    </table>
     <!--Star slider-->
     <section class="slider">
        <div class="fullwidthbanner-container">
@@ -287,399 +269,337 @@
 				</div>
 </section>
     <!--End slider-->
+
+    <!-- Info strip -->
     <div class="container">
-        <div class="row" id="main-boxes">
-            <div class="span4">
-                <div class="box-style-2 green">
-                    <a href="Course-Details.aspx" title="All Courses">
-                        <img src="img/icon-home-course.png" alt="" width="24">
-                        <h3>
-                            Courses</h3>
-                        <p align="justify" class="style1">
-                            <%--<br>M.Sc. in Nano Science & Technology--%>
-                            <br>
-                            M.Tech. in Nano Science & Technology
-                            <br>
-                            M.Sc. in Nanosciences
-                            <br>
-                            Ph.D. in Nano Science & Technology
-                            <br>
-                            &nbsp;</p>
-                    </a>
+        <div class="acnn-strip">
+            <div class="acnn-strip-inner">
+                <div class="acnn-strip-item">
+                    <span class="ico"><i class="icon-time"></i></span>
+                    <div><h4>Office Hours</h4><p>Mon - Sat, 10:00 AM - 5:00 PM</p></div>
                 </div>
-            </div>
-            <div class="span4">
-                <div class="box-style-2 orange">
-                    <a href="ResearchEquipment.aspx" title="Research Equipment">
-                        <img src="img/icon-home-apply.png" alt="" width="24">
-                        <h3 style="font-size: 22px">
-                            Research Equipment</h3>
-                        <span class="style1">
-                            <br>
-                            Nanoscience<br>
-                            Nanotechnology</span>
-                        <p align="justify">
-                            <br>
-                            &nbsp;</p>
-                    </a>
+                <div class="acnn-strip-item">
+                    <span class="ico"><i class="icon-map-marker"></i></span>
+                    <div><h4>Our Address</h4><p>Academic Block, Mithapur, Patna - 800 001</p></div>
                 </div>
-            </div>
-            <%-- <div class="span4">
-        	<div class="box-style-2 red">
-            	<a href="MediaResponse.aspx" title="Plan a visit">
-                	<img src="img/icon-home-visit.png" alt="" width="24">
-                    <h3>ACNN in Media</h3>
-                <span class="style1"><br>Media Response</span>
-            	<p align="justify"><br>&nbsp;</p>
-   	           </a></div>
-        </div>--%>
-            <div class="span4">
-                <div class="box-style-2 red">
-                    <a href="http://adms.akubihar.ac.in" target="_blank">
-                        <img src="img/icon-home-visit.png" alt="" width="24px" /><h3>
-                            Admission @ ACNN</h3>
-                        <span class="style1">Apply now for M.Tech. (NS&NT) - Academic Session 2026 </span>
-                        <span class="style1"></span><a href="admission-procedure-PhD.aspx" target="_blank"
-                            title="Admission Section"><span class="style1">Ph.D. Admission Procedure<br />
-                                &nbsp; </span></a></a>
+                <div class="acnn-strip-item">
+                    <span class="ico"><i class="icon-phone"></i></span>
+                    <div><h4>Call Us</h4><p>0612 236 2270 &nbsp;|&nbsp; +91 810 292 6986</p></div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end container-->
-    <div class="container">
-        <div class="row">
-            <aside class="span4 ">
-	
-    		<div class="box-style-1 ribbon borders">
-            <h3>Teaching & Research Staff</h3>
-            
-            
-            <hr class="double">
-            <div class="feat">
-              <i><img src="img/DrRakeshSirN.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Dr. Rakesh Kr. Singh</h4>
-              <p>Ph.D.(Nanoscience)<br>
-               Head of the Centre<br/><a href="http://drrakeshsingh.com" >www.drrakeshsingh.com</a></p>
+
+    <!-- Programmes / equipment / admission -->
+    <section class="acnn-section">
+        <div class="container">
+            <div class="acnn-heading">
+                <span class="eyebrow">Study &amp; Research</span>
+                <h2>Learn, Discover and Innovate at Nanoscale</h2>
+                <p>Programmes, world-class instruments and open admissions for the 2026 academic session.</p>
             </div>
-            
-			
-           <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/fac6.png" alt="faculty"></i>
-       		  <h4>Dr. Vijay Kumar Ravi </h4>
-              <p>Ph.D. (Biotechnology)<br>
-              Teaching Faculty</p>
-            </div> 
-
-             <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/fac7.png"  width="52px" height="64px" alt="faculty" alt="faculty"></i>
-       		  <h4>Dr. Abhay Kr Aman </h4>
-              <p>Ph.D.(Nanoscience and Nanotechnology)<br>
-              Teaching Faculty</p>
-            </div> 
-
-            <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/fac8.jpg"  width="52px" height="64px" alt="faculty" alt="faculty"></i>
-       		  <h4>Dr. Bibhuti Bikramaditya</h4>
-              <p>Ph.D.(Nanoscience and Nanotechnology)<br>
-              Teaching Faculty</p>
-            </div> 
-
-            <hr class="double">
-
-            <div class="feat">
-              <i><img src="img/TechStaff/Dr_Manisha_Kumari.jpeg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Dr. Manisha Kumari</h4>
-              <p>Ph.D.(Nanoscience and Nanotechnology)<br>
-              Guest Faculty</p>
+            <div class="acnn-cards">
+                <div class="acnn-card">
+                    <span class="ico"><i class="icon-book"></i></span>
+                    <h3>Courses</h3>
+                    <ul>
+                        <li>M.Tech. in Nano Science &amp; Technology</li>
+                        <li>M.Sc. in Nanosciences</li>
+                        <li>Ph.D. in Nano Science &amp; Technology</li>
+                    </ul>
+                    <a class="more" href="Course-Details.aspx" title="All Courses">View all courses &rarr;</a>
+                </div>
+                <div class="acnn-card navy">
+                    <span class="ico"><i class="icon-beaker"></i></span>
+                    <h3>Research Equipment</h3>
+                    <ul>
+                        <li>Nanoscience</li>
+                        <li>Nanotechnology</li>
+                    </ul>
+                    <a class="more" href="ResearchEquipment.aspx" title="Research Equipment">Explore instruments &rarr;</a>
+                </div>
+                <div class="acnn-card amber">
+                    <span class="ico"><i class="icon-edit"></i></span>
+                    <h3>Admission @ ACNN</h3>
+                    <ul>
+                        <li>Apply now for M.Tech. (NS&amp;NT) - Academic Session 2026</li>
+                        <li><a href="admission-procedure-PhD.aspx" target="_blank" title="Admission Section">Ph.D. Admission Procedure</a></li>
+                    </ul>
+                    <a class="acnn-btn acnn-btn-amber" href="http://adms.akubihar.ac.in" target="_blank">Apply Online</a>
+                </div>
             </div>
 
-
-             <a href="Staff_CNN.aspx"><h3>Our Team</h3></a>
-             <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/TechStaff/NishantKr.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Mr. Nishant Kumar </h4>
-              <p>M.Tech (Nanoscience & Nanotechnology)<br>
-              Technical Assistant</p>
-            </div> 
-            
-           
-             <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/TechStaff/Monalisa.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Miss Monalisa </h4>
-              <p>M.Tech (Nanoscience & Nanotechnology)<br>
-              Technical Assistant</p>
-            </div> 
-
-            <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/TechStaff/AnuradhaMuskan.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Miss Anuradha Muskan</h4>
-              <p>M.Tech (Nanoscience & Nanotechnology)<br>
-              Technical Assistant</p>
-            </div> 
-
-            <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/TechStaff/PrinceKumar.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Mr. Prince Kumar </h4>
-              <p>M.Tech (Nanoscience & Nanotechnology)<br>
-              Technical Assistant</p>
-            </div> 
-
-            <a href="Staff_CNN.aspx"><h3>Support Staff</h3></a>
-             <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/TechStaff/dollyghosh.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Mrs. Dolly Ghosh </h4>
-              <p>Library Assistant 
-            </div> 
-            
-           
-             <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/TechStaff/kryashupal.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Mr. Kumar Yashupal </h4>
-              <p>Clerk cum Computer Typist</p>
-            </div> 
-
-            <hr class="double">
-            
-            <%--<div class="feat">
-              <i><img src="img/TechStaff/ramjeekr.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Mr. Ramjee Kumar</h4>
-              <p>Assistant</p>
-            </div>--%>         
-            
-            <div class="feat">
-              <i><img src="img/TechStaff/kumarvijay.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Mr. Kumar Vijay </h4>
-              <p></p>
-            </div> 
-             
-
-             <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/TechStaff/Shashiranjankumar.jpeg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Mr. Shashi Ranjan Kumar</h4>  
-              <p>Assistant</p>
-            </div> 
-
-            <hr class="double">
-            
-            <div class="feat">
-              <i><img src="img/TechStaff/dilipkr.jpg" width="52px" height="64px" alt="faculty"></i>
-       		  <h4>Mr. Dilip Kumar Choudhary </h4>
-              <p>Attendant</p>
-            </div> 
+            <div class="acnn-banner">
+                <div>
+                    <h2>Admissions Open - Academic Session 2026</h2>
+                    <p>Be part of Bihar's first cutting-edge nanoscience research centre, equipped with more than 20 high-end research instruments.</p>
+                </div>
+                <div class="acts">
+                    <a class="acnn-btn acnn-btn-amber" href="http://adms.akubihar.ac.in" target="_blank">Admission Now</a>
+                    <a class="acnn-btn acnn-btn-ghost" style="color:#fff;border-color:#fff" href="Course-Details.aspx">View Courses</a>
+                </div>
             </div>
-           
-    </aside>
-            <aside class="span8 ">
-	
-    
-    <div class="col-right">
-    <div class="post">
-           <h3 id="section1">Mission and Vision</h3>
-            <p style=" padding-left: 20px;text-align:justify;">
-            A future in which the ability to understand and control matter at the nanoscale leads to on-going revolutions in 21st century of technology and industry for its multifunctional applications in society. A world-leading research centre creating cutting-edge solutions to societal challenges. Our mission and our aims to contribute to the all about understanding and improving the human knowledge and skill with the tools of Nanoscience and Nanotechnology- A Science of small system.</p>
-           
-           <h3 id="section2">Goals</h3>
-        <p><ul style="list-style-type: disc; padding-left: 20px; text-align:justify;">
-        <li>To conduct Research &Development activities to acquire frontiers knowledge in nanoscience and nanotechnology at international level and built awareness to society. </li>
-        <li>To drive national strategies and policies for nanoscience and nanotechnology in ways that yield concrete and sustainable results.</li>
-        <li>To transfer the knowledge and know-how in nanoscience and nanotechnology to the industrial sector while disseminating accurate information to the public,</li>
-        <li>To undertake capacity building of human resource development in nanoscience and nanotechnology development,</li>
-        <li>To develop infrastructure that would facilitate nanoscience and nanotechnology development.</li>
-        </ul>
-        </p>
+        </div>
+    </section>
 
-        <h3 id="section3">Objectives</h3>
-        <p><ul style="list-style-type: disc; padding-left: 20px; text-align:justify;">
-        <li>Organizing State, National, and international level seminars and conferences related to nanoscience and Nanotechnology.</li>
-        <li>Encouraging innovative and challenging technology/product/research based scientific projects.</li>
-        <li>Publish scientific papers of in peer reviewed/Indexed journals.</li>
-        <li>Generating patents/Protype in Nano Science and Technology</li>
-        <li>Setting up of incubators for translational research (from laboratory to industry)</li>
-        <li>Sensitizing public and media about the advantages, new finding and safeguards in Nano Science and Technology</li>
-        </ul>
-        </p>
+    <!-- People -->
+    <section class="acnn-section">
+        <div class="container">
+            <div class="acnn-heading">
+                <span class="eyebrow">Our Team</span>
+                <h2>Teaching &amp; Research Staff</h2>
+                <p>Faculty and scholars driving research and teaching at the Centre.</p>
+            </div>
+            <div class="acnn-people">
+                <div class="acnn-person">
+                    <img src="img/DrRakeshSirN.jpg" alt="faculty" />
+                    <h4>Dr. Rakesh Kr. Singh</h4>
+                    <div class="role">Head of the Centre</div>
+                    <p>Ph.D.(Nanoscience)<br /><a href="http://drrakeshsingh.com">www.drrakeshsingh.com</a></p>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/fac6.png" alt="faculty" />
+                    <h4>Dr. Vijay Kumar Ravi</h4>
+                    <div class="role">Teaching Faculty</div>
+                    <p>Ph.D. (Biotechnology)</p>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/fac7.png" alt="faculty" />
+                    <h4>Dr. Abhay Kr Aman</h4>
+                    <div class="role">Teaching Faculty</div>
+                    <p>Ph.D.(Nanoscience and Nanotechnology)</p>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/fac8.jpg" alt="faculty" />
+                    <h4>Dr. Bibhuti Bikramaditya</h4>
+                    <div class="role">Teaching Faculty</div>
+                    <p>Ph.D.(Nanoscience and Nanotechnology)</p>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/TechStaff/Dr_Manisha_Kumari.jpeg" alt="faculty" />
+                    <h4>Dr. Manisha Kumari</h4>
+                    <div class="role">Guest Faculty</div>
+                    <p>Ph.D.(Nanoscience and Nanotechnology)</p>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/TechStaff/NishantKr.jpg" alt="staff" />
+                    <h4>Mr. Nishant Kumar</h4>
+                    <div class="role">Technical Assistant</div>
+                    <p>M.Tech (Nanoscience &amp; Nanotechnology)</p>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/TechStaff/Monalisa.jpg" alt="staff" />
+                    <h4>Miss Monalisa</h4>
+                    <div class="role">Technical Assistant</div>
+                    <p>M.Tech (Nanoscience &amp; Nanotechnology)</p>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/TechStaff/AnuradhaMuskan.jpg" alt="staff" />
+                    <h4>Miss Anuradha Muskan</h4>
+                    <div class="role">Technical Assistant</div>
+                    <p>M.Tech (Nanoscience &amp; Nanotechnology)</p>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/TechStaff/PrinceKumar.jpg" alt="staff" />
+                    <h4>Mr. Prince Kumar</h4>
+                    <div class="role">Technical Assistant</div>
+                    <p>M.Tech (Nanoscience &amp; Nanotechnology)</p>
+                </div>
+            </div>
 
+            <div class="acnn-heading" style="margin-top:46px">
+                <h2 style="font-size:24px">Support Staff</h2>
+            </div>
+            <div class="acnn-people compact">
+                <div class="acnn-person">
+                    <img src="img/TechStaff/dollyghosh.jpg" alt="staff" />
+                    <h4>Mrs. Dolly Ghosh</h4>
+                    <div class="role">Library Assistant</div>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/TechStaff/kryashupal.jpg" alt="staff" />
+                    <h4>Mr. Kumar Yashupal</h4>
+                    <div class="role">Clerk cum Computer Typist</div>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/TechStaff/kumarvijay.jpg" alt="staff" />
+                    <h4>Mr. Kumar Vijay</h4>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/TechStaff/Shashiranjankumar.jpeg" alt="staff" />
+                    <h4>Mr. Shashi Ranjan Kumar</h4>
+                    <div class="role">Assistant</div>
+                </div>
+                <div class="acnn-person">
+                    <img src="img/TechStaff/dilipkr.jpg" alt="staff" />
+                    <h4>Mr. Dilip Kumar Choudhary</h4>
+                    <div class="role">Attendant</div>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:22px"><a class="acnn-btn acnn-btn-teal" href="Staff_CNN.aspx">Meet the full team</a></p>
+        </div>
+    </section>
 
-        <h3 id="section4">Current scenario</h3>
-        <p><ul style="list-style-type: disc; padding-left: 20px; text-align:justify;">
-        <li>To prepare new functional nanomaterial using green approach, waste resources and other Physical & Chemical methods, studying their new science, new properties at nanoscale for its possible applications in industries, energy & environment, and performance of human knowledge.</li>
-        <li>To ensure all the major research areas of Nanoscience with major focus on agriculture, Magnetic materials, and purification of water, green energy source, Bio- nanomaterial for its applications in better health, energy & environment sustainability.</li>
-        <li>To focus on ancient Indian traditional Nano medicine and their different properties measurement as evidence-based medicine for it global acceptance.</li>    
-        <li>To dissemination of frontiers knowledge and inventions related to Nanoscience and nanotechnology in society/ academic institutions.</li>
-        <li>To correlate and collaborate with different scientific research occurring in India and across the world.</li>
-        <li>Support the development of Nanotechnology from discovery to production by start-ups, prototype and patent etc.</li>
-        </ul>
-        </p>
+    <!-- Mission, goals, objectives, scenario -->
+    <section class="acnn-section alt">
+        <div class="container">
+            <div class="acnn-heading">
+                <span class="eyebrow">Why Choose ACNN</span>
+                <h2>Mission, Goals and Objectives</h2>
+            </div>
+            <div class="acnn-about">
+                <div class="block wide">
+                    <h3 id="section1">Mission and Vision</h3>
+                    <p>A future in which the ability to understand and control matter at the nanoscale leads to on-going revolutions in 21st century of technology and industry for its multifunctional applications in society. A world-leading research centre creating cutting-edge solutions to societal challenges. Our mission and our aims to contribute to the all about understanding and improving the human knowledge and skill with the tools of Nanoscience and Nanotechnology- A Science of small system.</p>
+                </div>
+                <div class="block">
+                    <h3 id="section2">Goals</h3>
+                    <ul>
+                        <li>To conduct Research &amp;Development activities to acquire frontiers knowledge in nanoscience and nanotechnology at international level and built awareness to society. </li>
+                        <li>To drive national strategies and policies for nanoscience and nanotechnology in ways that yield concrete and sustainable results.</li>
+                        <li>To transfer the knowledge and know-how in nanoscience and nanotechnology to the industrial sector while disseminating accurate information to the public,</li>
+                        <li>To undertake capacity building of human resource development in nanoscience and nanotechnology development,</li>
+                        <li>To develop infrastructure that would facilitate nanoscience and nanotechnology development.</li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <h3 id="section3">Objectives</h3>
+                    <ul>
+                        <li>Organizing State, National, and international level seminars and conferences related to nanoscience and Nanotechnology.</li>
+                        <li>Encouraging innovative and challenging technology/product/research based scientific projects.</li>
+                        <li>Publish scientific papers of in peer reviewed/Indexed journals.</li>
+                        <li>Generating patents/Protype in Nano Science and Technology</li>
+                        <li>Setting up of incubators for translational research (from laboratory to industry)</li>
+                        <li>Sensitizing public and media about the advantages, new finding and safeguards in Nano Science and Technology</li>
+                    </ul>
+                </div>
+                <div class="block wide">
+                    <h3 id="section4">Current scenario</h3>
+                    <ul>
+                        <li>To prepare new functional nanomaterial using green approach, waste resources and other Physical &amp; Chemical methods, studying their new science, new properties at nanoscale for its possible applications in industries, energy &amp; environment, and performance of human knowledge.</li>
+                        <li>To ensure all the major research areas of Nanoscience with major focus on agriculture, Magnetic materials, and purification of water, green energy source, Bio- nanomaterial for its applications in better health, energy &amp; environment sustainability.</li>
+                        <li>To focus on ancient Indian traditional Nano medicine and their different properties measurement as evidence-based medicine for it global acceptance.</li>
+                        <li>To dissemination of frontiers knowledge and inventions related to Nanoscience and nanotechnology in society/ academic institutions.</li>
+                        <li>To correlate and collaborate with different scientific research occurring in India and across the world.</li>
+                        <li>Support the development of Nanotechnology from discovery to production by start-ups, prototype and patent etc.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-       </div>
+    <!-- Events and galleries -->
+    <section class="acnn-section">
+        <div class="container">
+            <div class="acnn-heading">
+                <span class="eyebrow">Events</span>
+                <h2>Seminars, Conclaves and Activities</h2>
+            </div>
 
-       
-
-    </div>
-    
-    <div class="col-right">
-        <div class="widget borders widget-table">
-        <div class="widget-header">
-						<h5 style="text-align:center; color:Red">Activities and Report of International Seminars</h5>
-					</div> <!-- .widget-header -->
-                    <div class="widget-content">						
-						<div id="gallery" class="gallery" style="display:inline-block;">
-<ul>
-<li><a href="downloads/Startup Bihar Conference.pdf" rel="prettyPhoto[gallery1]" target="_blank" title='Startup Bihar Conference'><img src="Event_Pics/Startup Bihar Conference.jpg" class="thumbnail" width="350px" height="150px" alt="" /></a></li>
-<li><a href="downloads/WorldScientist_RankingUniversity2023.pdf" rel="prettyPhoto[gallery1]" target="_blank" title='World Scientist & University Ranking 2023'><img src="Event_Pics/WorldScientist_RankingUniversity2023.jpg" class="thumbnail" width="350px" height="150px" alt="" /></a></li>
-<li><a href="downloads/International_Seminar_TransMaterialScience.pdf" rel="prettyPhoto[gallery1]" target="_blank" title='International Seminar on Translational Materials Science Research and Emerging Technologies for Self-Reliant Society'><img src="Event_Pics/ISMT-211224.jpg" class="thumbnail" width="350px" height="150px" alt="" /></a></li>
-
-</ul>
-</div>
-					</div>
+            <div class="widget borders widget-table" style="margin-bottom:26px">
+                <div class="widget-header">
+                    <h5>Activities and Report of International Seminars</h5>
+                </div>
+                <div class="widget-content">
+                    <div id="gallery" class="gallery acnn-gallery-grid">
+                        <ul>
+                            <li><a href="downloads/Startup Bihar Conference.pdf" rel="prettyPhoto[gallery1]" target="_blank" title='Startup Bihar Conference'><img src="Event_Pics/Startup Bihar Conference.jpg" class="thumbnail" alt="Startup Bihar Conference" /></a></li>
+                            <li><a href="downloads/WorldScientist_RankingUniversity2023.pdf" rel="prettyPhoto[gallery1]" target="_blank" title='World Scientist & University Ranking 2023'><img src="Event_Pics/WorldScientist_RankingUniversity2023.jpg" class="thumbnail" alt="World Scientist and University Ranking 2023" /></a></li>
+                            <li><a href="downloads/International_Seminar_TransMaterialScience.pdf" rel="prettyPhoto[gallery1]" target="_blank" title='International Seminar on Translational Materials Science Research and Emerging Technologies for Self-Reliant Society'><img src="Event_Pics/ISMT-211224.jpg" class="thumbnail" alt="International Seminar on Translational Materials Science" /></a></li>
+                        </ul>
                     </div>
-    </div>
-    <div class="col-right">
-        <div class="widget borders widget-table">
-        <div class="widget-header">
-						<h5>Academia-Industry Conclave Hydroelectric Cell - Nanotechnology Revelutionizing Engergy Generation</h5>
-					</div> <!-- .widget-header -->
-<div class="widget-content">						
-						<div id="gallery" class="gallery" style="display:inline-block;">
-    
-    
-            <asp:ObjectDataSource ID="ObjectDataSource_Events" runat="server" 
-                            OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" 
-                            TypeName="DataSet_ACNN_DBTableAdapters.Table_Event_ResponseTableAdapter" 
+                </div>
+            </div>
+
+            <div class="widget borders widget-table">
+                <div class="widget-header">
+                    <h5>Academia-Industry Conclave Hydroelectric Cell - Nanotechnology Revelutionizing Engergy Generation</h5>
+                </div>
+                <div class="widget-content">
+                    <div id="gallery" class="gallery acnn-gallery-grid">
+
+                        <asp:ObjectDataSource ID="ObjectDataSource_Events" runat="server"
+                            OldValuesParameterFormatString="original_{0}" SelectMethod="GetData"
+                            TypeName="DataSet_ACNN_DBTableAdapters.Table_Event_ResponseTableAdapter"
                                 InsertMethod="Insert">
-                <InsertParameters>
-                    <asp:Parameter Name="SlNo" Type="Double" />
-                    <asp:Parameter Name="Pic_L_path" Type="String" />
-                    <asp:Parameter Name="Pic_S_Path" Type="String" />
-                    <asp:Parameter Name="Media_title" Type="String" />
-                    <asp:Parameter Name="Active" Type="Boolean" />
-                </InsertParameters>
+                            <InsertParameters>
+                                <asp:Parameter Name="SlNo" Type="Double" />
+                                <asp:Parameter Name="Pic_L_path" Type="String" />
+                                <asp:Parameter Name="Pic_S_Path" Type="String" />
+                                <asp:Parameter Name="Media_title" Type="String" />
+                                <asp:Parameter Name="Active" Type="Boolean" />
+                            </InsertParameters>
                         </asp:ObjectDataSource>
-                           
-                            
-                            <asp:Repeater ID="Repeater2" runat="server" 
+
+                        <asp:Repeater ID="Repeater2" runat="server"
                             DataSourceID="ObjectDataSource_Events">
                             <ItemTemplate>
-                            
-                            <ul>
-                           
-                            <li><a href="<%# "Event_Pics/" +Eval("Pic_L_path") %>" rel="prettyPhoto[gallery1]" title='<%# Eval("Media_title")%>'><img src="<%# "Event_Pics/" +Eval("Pic_S_path") %>" class="thumbnail" width="350px" height="150px" alt="" /></a></li>
-                            </ul>
- 
-            
-                            </ItemTemplate>
-                            </asp:Repeater>
-         
-        
 
-</div>
-					    
-						
-					</div>
+                            <ul>
+
+                            <li><a href="<%# "Event_Pics/" +Eval("Pic_L_path") %>" rel="prettyPhoto[gallery1]" title='<%# Eval("Media_title")%>'><img src="<%# "Event_Pics/" +Eval("Pic_S_path") %>" class="thumbnail" alt="" /></a></li>
+                            </ul>
+
+                            </ItemTemplate>
+                        </asp:Repeater>
+
                     </div>
-    </div>
-    </aside>
-        </div>
-    </div>
-    <div class="container">
-        <div class="col-right">
-            <h3>
-                Nanoscience Faculty Awarded & in Events</h3>
-            <hr class="double">
-            <div class="feat">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ELUBCLkVlIc?si=EQig2bDj3T2NX5JR"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="feat">
-                <i>
-                    <img src="img/DrRakeshSirN.jpg" width="52px" height="64px" alt="faculty"></i>
-                <h4>
-                    Dr. Rakesh Kr. Singh</h4>
-                <p>
-                    Chancellor award for best Young teacher with research contributions in modern field
-                    of science Nano science. <a href="Larger/030_L.jpg" target="_blank">Read more...</a><br />
-                    <br />
-                    <br />
-                    <b>Chancellor (Governor) Award for Best Young Teacher with contributions in modern field
-                        of Nanoscience</b>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lTmga6Ikt7o"
-                        title="Nanotechnology  faculty  awarded  Chancellor  award  for best Young teacher  with contributions in modern field of  nanoscience"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    Nanotechnology faculty awarded Chancellor award for best Young teacher with contributions
-                    in modern field of nanoscience</p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <section class="span44">
-	<div class="col-right">
-    
-    	<h2>Introduction</h2>
-        <p align="justify">Aryabhatta School of Nanoscience & Technology(SNN) is non-traditional, super specialized, frontier areas of subject of 21st century&  first cutting edge Research Centre of university of Bihar, equipped with 20 high-end research instruments such as  Scanning Electron Microscope, Multiferroic system, Vibrating Sample magnetometer, High energy ball mill etc. This is only one such frontiers related academic center in universities of Bihar. The Nanoscience and nanotechnology center of Aryabhatta Knowledge University was Established by the founder Vice Chancellor Prof. S N Guha with whole hearted support and encouragement from Honorable Chief minister Sri Nitish Kumar Ji. The first academic session of M.Tech and Ph.D. started from academic from year 2013. The academic and research activities of this Center visited/appreciated by Hon’ble Governor cum Chancellor Universities of Bihar, Hon’ble Chief minister Sri Nitish Kumar Ji, Education ministers ,various Govt. officers and eminent academicians of national/International repute.
-        <div>
-        <table align="center">
-        <tr>
-        <td class="style4">
-            <img alt="" class="style2" src="images/Home/1.jpg" /></td><td class="style4">
-                <img alt="" class="style3" src="images/Home/2.jpg" /></td>
-        </tr>
-         <tr>
-        <td style="text-align: center">
-            <img alt="" class="style5" src="images/Home/3.jpg" /></td>
-             <td style="text-align: center">
-                 <img alt="" class="style6" src="images/Home/4.jpg" /></td>
-        </tr>
-        </table>
-        
-        </div>
-        
-            Different affairs of academic, research &development programme are being carried out under the leadership of Dr. Rakesh Kumar Singh, head of the Nanoscience center(i/c) , who have been also awarded “  
-            <strong><b>Best Young Teacher with Contributions in modern field of Nanoscience</b></strong>” by Hon’ble Chancellor of university of Bihar cum Governor for his outstanding performance .  In the last 10 year more than 1000 eminent academicians/Scholars from different parts of world/country/state visited Nanoscience center of Aryabhatta Knowledge University. About more than 200 research papers published/ final progress in SCI/Scopus/WoS/Peer reviewed Journals by Nanotechnology center in multidisciplinary area of Science, Engineering & technology including Engineering Science, Agriculture, Electronics, Medicine, Food, and Ayurveda and Basic Sciences. 2 patents and 2 prototype have been filed/developed in the field of low cost LED, Agriculture and purification of water.
-        <b>
-        <br />Scientists/Academicians of About More than 100 countries of the world including China, USA, UK, Germany, others cited/appreciated/read the frontiers research activities of the nanoscience center. The International level research activities and world class scientific infrastructure can be seen- http://acnn.akubihar.ac.in. 
-        </p>
-           <div class="strip-lessons">
-        <div class="row">
-        	
-           <%--<div class="span51">
-            <h4>Aims & Objectives</h4>
-            <p align="justify">The challenges posed by nanoscience and nanotechnology cannot be   answered solely by techniques and methods derived from a single science   or technology discipline. Instead, it requires a combination of diverse,   but inter-related techniques spanning many disciplines that forms the   core of an emerging discipline of Nanoscience and Nanotechnology.</p>
-                
-            </div>--%>
-        </div>
-        </div><!-- End Strip course -->
-		
-		
-		
-        
-    	
-        
-    </div>
     </section>
+
+    <!-- Awards and video -->
+    <section class="acnn-section alt">
+        <div class="container">
+            <div class="acnn-heading">
+                <span class="eyebrow">Recognition</span>
+                <h2>Nanoscience Faculty Awarded &amp; in Events</h2>
+            </div>
+            <div class="row">
+                <div class="span6">
+                    <div class="acnn-panel">
+                        <div class="acnn-video">
+                            <iframe src="https://www.youtube.com/embed/ELUBCLkVlIc?si=EQig2bDj3T2NX5JR"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="span6">
+                    <div class="acnn-panel">
+                        <div class="acnn-video">
+                            <iframe src="https://www.youtube.com/embed/lTmga6Ikt7o"
+                                title="Nanotechnology  faculty  awarded  Chancellor  award for best Young teacher  with contributions in modern field of  nanoscience"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h4>Dr. Rakesh Kr. Singh</h4>
+                        <p>Chancellor award for best Young teacher with research contributions in modern field of science Nano science. <a href="Larger/030_L.jpg" target="_blank">Read more...</a></p>
+                        <p><b>Chancellor (Governor) Award for Best Young Teacher with contributions in modern field of Nanoscience</b></p>
+                        <p>Nanotechnology faculty awarded Chancellor award for best Young teacher with contributions in modern field of nanoscience</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- end container-->
-    <br />
+    </section>
+
+    <!-- Introduction -->
+    <section class="acnn-section">
+        <div class="container">
+            <div class="acnn-panel">
+                <h2>Introduction</h2>
+                <p align="justify">Aryabhatta School of Nanoscience & Technology(SNN) is non-traditional, super specialized, frontier areas of subject of 21st century&  first cutting edge Research Centre of university of Bihar, equipped with 20 high-end research instruments such as  Scanning Electron Microscope, Multiferroic system, Vibrating Sample magnetometer, High energy ball mill etc. This is only one such frontiers related academic center in universities of Bihar. The Nanoscience and nanotechnology center of Aryabhatta Knowledge University was Established by the founder Vice Chancellor Prof. S N Guha with whole hearted support and encouragement from Honorable Chief minister Sri Nitish Kumar Ji. The first academic session of M.Tech and Ph.D. started from academic from year 2013. The academic and research activities of this Center visited/appreciated by Hon’ble Governor cum Chancellor Universities of Bihar, Hon’ble Chief minister Sri Nitish Kumar Ji, Education ministers ,various Govt. officers and eminent academicians of national/International repute.</p>
+                <div class="acnn-intro-photos">
+                    <img alt="" src="images/Home/1.jpg" />
+                    <img alt="" src="images/Home/2.jpg" />
+                    <img alt="" src="images/Home/3.jpg" />
+                    <img alt="" src="images/Home/4.jpg" />
+                </div>
+                <p align="justify">Different affairs of academic, research &development programme are being carried out under the leadership of Dr. Rakesh Kumar Singh, head of the Nanoscience center(i/c) , who have been also awarded “
+                <strong><b>Best Young Teacher with Contributions in modern field of Nanoscience</b></strong>” by Hon’ble Chancellor of university of Bihar cum Governor for his outstanding performance .  In the last 10 year more than 1000 eminent academicians/Scholars from different parts of world/country/state visited Nanoscience center of Aryabhatta Knowledge University. About more than 200 research papers published/ final progress in SCI/Scopus/WoS/Peer reviewed Journals by Nanotechnology center in multidisciplinary area of Science, Engineering & technology including Engineering Science, Agriculture, Electronics, Medicine, Food, and Ayurveda and Basic Sciences. 2 patents and 2 prototype have been filed/developed in the field of low cost LED, Agriculture and purification of water.
+                <b><br />Scientists/Academicians of About More than 100 countries of the world including China, USA, UK, Germany, others cited/appreciated/read the frontiers research activities of the nanoscience center. The International level research activities and world class scientific infrastructure can be seen- http://acnn.akubihar.ac.in. </b></p>
+            </div>
+        </div>
+    </section>
 </asp:Content>

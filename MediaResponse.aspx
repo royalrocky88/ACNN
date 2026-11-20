@@ -47,7 +47,7 @@
 					</div> <!-- .widget-header -->
 					
 					<div class="widget-content">						
-						<div id="gallery" class="gallery" style="display:inline-block;">
+						<div id="gallery" class="gallery acnn-clip-grid">
     
     
             <asp:ObjectDataSource ID="ObjectDataSource_Media" runat="server" 
@@ -64,7 +64,7 @@
                             
                             <ul>
                            
-                            <li><a href="<%# "Larger/" +Eval("Pic_L_path") %>" rel="prettyPhoto[gallery1]" title='<%# Eval("Media_title")%>'><img src="<%# "Smaller/" +Eval("Pic_S_path") %>" class="thumbnail" width="175px" height="130px" alt="" /></a></li>
+                            <li><a href="<%# "Larger/" +Eval("Pic_L_path") %>" rel="prettyPhoto[gallery1]" title='<%# Eval("Media_title")%>'><img src="<%# "Smaller/" +Eval("Pic_S_path") %>" class="thumbnail" alt='<%# Eval("Media_title")%>' /></a></li>
                             </ul>
  
             

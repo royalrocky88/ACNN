@@ -26,54 +26,9 @@
 
     <style type="text/css">
 
-        .event-gallery {
-            width: 100%;
-        }
-
-        .event-group {
-            border: 1px solid #ddd;
-            background: #fff;
-            margin-bottom: 25px;
-            padding: 15px;
-        }
-
-        .event-heading {
-            background: #800000;
-            color: #fff;
-            padding: 10px 15px;
-            margin-bottom: 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .event-images {
-            overflow: hidden;
-        }
-
-        .event-images ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
+        /* Event gallery layout now lives in css/acnn-theme.css */
         .event-images li {
-            display: inline-block;
-            margin-right: 12px;
-            margin-bottom: 12px;
-            vertical-align: top;
-        }
-
-        .event-images img {
-            width: 175px;
-            height: 130px;
-            object-fit: cover;
-            border: 1px solid #ddd;
-            padding: 3px;
-            background: #fff;
-        }
-
-        .event-images img:hover {
-            opacity: 0.85;
+            margin: 0;
         }
 
     </style>
@@ -165,8 +120,6 @@
 
                                     <img src='<%# "Smaller/" + Eval("Pic_S_Path") %>'
                                          class="thumbnail"
-                                         width="175"
-                                         height="130"
                                          alt='<%# Eval("Media_title") %>' />
 
                                 </a>
