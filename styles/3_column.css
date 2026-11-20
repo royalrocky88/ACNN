@@ -1,0 +1,124 @@
+/*
+Template Name: Academic Education
+File: 3 Column CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+#container #content{
+	display:block;
+	float:left;
+	width:680px;
+	margin-left:30px;
+	color:#000000;
+	}
+	
+	
+	#container #content3{
+	display:block;
+	float:left;
+	width:650px;
+	margin-left:30px;
+	color:#000000;
+	}
+	
+	#container #content_tender{
+	display:block;
+	float:left;
+	width:920px;
+	/*margin-left:10px;*/
+	color:#000000;
+	}
+	
+	#container #content4{
+	display:block;
+	float:left;
+	width:650px;
+	margin-left:30px;
+	color:#000000;
+	}
+	
+	#container #content3 p{
+	text-align:justify;
+	text-indent: 5em;
+	}
+	
+	#container #content p{
+	text-align:justify;
+	text-indent: 5em;
+	}
+	
+	
+
+/* ----------------------------------------------Generalise-------------------------------------*/
+
+#container #left_column .holder, #container #right_column .holder{
+	display:block;
+	width:100%;
+	margin-bottom:20px;
+	color:#000000;
+	font-weight:bold;
+	}
+
+#container #left_column .imgholder, #container #right_column .imgholder{
+	display:block;
+	margin-bottom:10px;
+	}
+
+#container #left_column .nostart li, #container #right_column .nostart li{
+	margin-bottom:3px;
+	color:Black;
+	}
+
+#container #left_column .last, #container #right_column .last{
+	margin-bottom:0;
+	}
+
+/* ----------------------------------------------Left Column-------------------------------------*/
+
+#container #left_column1{
+	display:block;
+	float:left;
+	width:200px;
+	height:500px;
+	}
+	
+	#container #left_column2{
+	display:block;
+	float:left;
+	width:200px;
+	height:200px;
+	}	
+	
+	#container #left_column3{
+	display:block;
+	float:left;
+	width:225px;
+	height:500px;
+	}
+	
+	#container #left_column4{
+	display:block;
+	float:left;
+	width:200px;
+	height:350px;
+	}
+	
+	
+
+#container #left_column .imgholder{
+	width:190px;
+	}
+
+/* ----------------------------------------------Right Column-------------------------------------*/
+
+#container #right_column{
+	display:block;
+	float:right;
+	width:250px;
+	}
+
+#container #right_column .imgholder{
+	width:240px;
+	}
