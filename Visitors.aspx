@@ -17,13 +17,6 @@
     });
 </script>
 
-<style>
-/* Visitor cards: responsive grid (overrides legacy float layout) */
-div.gallery { float: none; width: auto; margin: 8px; border: 1px solid #dbe6ec; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 4px 14px rgba(10,37,64,.08); }
-div.gallery:hover { border-color: #1fc8d8; box-shadow: 0 10px 30px rgba(10,37,64,.12); }
-div.gallery img { width: 100%; height: 190px; object-fit: cover; display: block; }
-</style>
-
     
     <!-- End Gallery Specific Elements -->
 
@@ -72,14 +65,14 @@ div.gallery img { width: 100%; height: 190px; object-fit: cover; display: block;
             <asp:Parameter Name="Original_SlNo" Type="Int32" />
         </UpdateParameters>
                         </asp:ObjectDataSource>
-<asp:DataList ID="DataList_Visitors" runat="server" DataKeyField="SlNo" 
+<asp:DataList ID="DataList_Visitors" runat="server" CssClass="acnn-visitors" DataKeyField="SlNo" 
                             DataSourceID="ObjectDataSource_Visitors" RepeatColumns="4" 
             RepeatDirection="Horizontal">
     <ItemTemplate>
         <div class="gallery">
 
   <a target="_blank" href='<%# "Larger-Visitor/"+Eval("Path_Larger") %>' title='<%# Eval("Description") %>'>
-    <img src='<%# "Smaller-Visitor/"+Eval("Path_Smaller") %>' alt='<%# Eval("Description") %>' width="600" height="400">
+    <img src='<%# "Smaller-Visitor/"+Eval("Path_Smaller") %>' alt='<%# Eval("Description") %>' loading="lazy">
   </a>
   &nbsp;<div class="desc"><%# Eval("Description") %></div>
 </div>

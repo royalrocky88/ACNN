@@ -560,7 +560,7 @@
                 <div class="span6">
                     <div class="acnn-panel">
                         <div class="acnn-video">
-                            <iframe src="https://www.youtube.com/embed/ELUBCLkVlIc?si=EQig2bDj3T2NX5JR"
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/ELUBCLkVlIc?si=EQig2bDj3T2NX5JR"
                                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
@@ -569,7 +569,7 @@
                 <div class="span6">
                     <div class="acnn-panel">
                         <div class="acnn-video">
-                            <iframe src="https://www.youtube.com/embed/lTmga6Ikt7o"
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/lTmga6Ikt7o"
                                 title="Nanotechnology  faculty  awarded  Chancellor  award for best Young teacher  with contributions in modern field of  nanoscience"
                                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>

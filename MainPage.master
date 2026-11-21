@@ -6,15 +6,6 @@
 <head runat="server">
     <title>AKU : Nano Technology</title>
 
-<script type="text/javascript" language="javascript">
-    $(document).ready(function () {
-        $("a[rel^='prettyPhoto']").prettyPhoto({
-            theme: 'dark_rounded',
-            overlay_gallery: false
-        });
-    });
-</script>
-
 <!-- Favicons-->
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
 <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
@@ -245,6 +236,9 @@
  <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
  <script src="js/revolutio-slider-func.js"></script>
+
+<!-- ACNN UI: image lightbox (close / back / Esc), menu closing, missing-image fallback -->
+<script src="js/acnn-ui.js"></script>
     </form>
 </body>
 </html>

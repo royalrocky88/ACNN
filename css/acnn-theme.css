@@ -98,14 +98,13 @@ nav { background: var(--acnn-teal); box-shadow: 0 6px 18px rgba(8, 80, 95, .25);
 .megamenu_container { background: transparent; }
 .megamenu > li > a {
     color: #eafcff; font-family: var(--acnn-font); font-weight: 600; font-size: 14px;
-    letter-spacing: .02em; text-transform: none; background: transparent;
+    letter-spacing: .02em; text-transform: none; background-color: transparent;
 }
 .megamenu > li:hover > a,
 .megamenu > li > a:hover,
 .megamenu > li > a.active {
-    background: var(--acnn-teal-dark); color: var(--acnn-cyan);
+    background-color: var(--acnn-teal-dark); color: var(--acnn-cyan);
 }
-.megamenu > li > a.drop-down:after { border-top-color: var(--acnn-cyan); }
 .megamenu > li .drop-down-container,
 .megamenu > li .megamenu_fullwidth {
     background: #fff; border: 0; border-top: 3px solid var(--acnn-aqua);
@@ -484,3 +483,184 @@ footer, footer p, footer h4, footer #brand-footer, footer #contacts-footer, foot
 /* align the page title bar with the cards below it (first-child span has no left margin in Bootstrap 2) */
 @media (min-width: 1200px) { .container > .row > h1.span12 { margin-left: 30px; } }
 @media (min-width: 768px) and (max-width: 1199px) { .container > .row > h1.span12 { margin-left: 20px; } }
+
+/* =========================================================
+   v2  -  navigation, lightbox, visitor cards, slider, responsive
+   ========================================================= */
+
+/* ---------- navigation: no sprite arrows (they tiled on hover), compact dropdowns ---------- */
+nav .megamenu_container { max-width: 1170px; margin: 0 auto; }
+.megamenu > li { position: relative; padding: 0; }
+.megamenu > li:hover, .megamenu > li.active { background-color: transparent; box-shadow: none; }   /* legacy li hover painted a blue inset-shadow block */
+@media (min-width: 981px) { .megamenu > li { display: block; float: left; } }
+.megamenu > li > a.drop-down,
+.megamenu > li > a.nodrop-down {
+    display: block; position: relative; line-height: 44px; padding: 0 18px; text-shadow: none;
+    background-image: none !important; background-color: transparent;
+}
+.megamenu > li > a.drop-down { padding-right: 32px; }
+.megamenu > li > a.drop-down::after {
+    content: ""; position: absolute; right: 14px; top: 50%; width: 6px; height: 6px;
+    border: solid currentColor; border-width: 0 2px 2px 0; transform: translateY(-75%) rotate(45deg);
+}
+.megamenu > li:hover > a.drop-down,
+.megamenu > li:hover > a.nodrop-down,
+.megamenu > li > a.drop-down:hover,
+.megamenu > li > a.nodrop-down:hover {
+    background-color: var(--acnn-teal-dark); background-image: none !important; color: var(--acnn-cyan);
+}
+.megamenu > li .drop-down-container {
+    top: 100%; left: 0; float: none; width: auto; min-width: 240px; max-width: min(92vw, 340px);
+    margin: 0; padding: 8px; background: #fff; color: var(--acnn-ink);
+    border-top: 3px solid var(--acnn-aqua); border-radius: 0 0 var(--acnn-radius) var(--acnn-radius);
+    box-shadow: var(--acnn-shadow);
+}
+.megamenu > li:nth-last-child(-n+2) .drop-down-container { left: auto; right: 0; }
+.megamenu .drop-down-container .row { margin: 0; }
+.megamenu .drop-down-container [class*="span"] { float: none; display: block; width: auto; margin: 0; }
+.megamenu > li .drop-down-container ul.list-menu li { background: none; padding: 0; margin: 0; border: 0; }
+.megamenu .list-menu li a { white-space: nowrap; }
+
+@media (min-width: 981px) {
+    .megamenu { display: block !important; }
+    #megamenu-button-mobile { display: none !important; }
+}
+@media (max-width: 980px) {
+    nav .megamenu_container { width: 100%; max-width: none; }
+    #megamenu-button-mobile {
+        display: block; position: relative; padding: 14px 18px; background-image: none; text-align: left;
+        color: #fff; text-shadow: none; letter-spacing: .04em;
+    }
+    #megamenu-button-mobile::after { content: "\f0c9"; font-family: FontAwesome; position: absolute; right: 18px; top: 13px; font-size: 18px; }
+    .megamenu { background: var(--acnn-teal); }
+    .megamenu > li { float: none; width: 100%; border-bottom: 1px solid rgba(255, 255, 255, .12); }
+    .megamenu > li > a.drop-down, .megamenu > li > a.nodrop-down { line-height: 22px; padding: 12px 18px; }
+    .megamenu > li > a.drop-down { padding-right: 44px; }
+    .megamenu > li > a.drop-down::after { right: 20px; top: 50%; }
+    .megamenu > li .drop-down-container,
+    .megamenu > li:nth-last-child(-n+2) .drop-down-container {
+        position: static; left: auto; right: auto; width: 100%; max-width: none; min-width: 0;
+        padding: 4px 8px 10px; background: var(--acnn-teal-dark); border: 0; border-radius: 0; box-shadow: none;
+    }
+    .megamenu .list-menu li a { color: #eafcff; white-space: normal; }
+    .megamenu .list-menu li a:hover { background: rgba(255, 255, 255, .08); color: var(--acnn-cyan); }
+}
+
+/* ---------- lightbox (js/acnn-ui.js) ---------- */
+html.acnn-lb-open, html.acnn-lb-open body { overflow: hidden; }
+.acnn-lb {
+    position: fixed; inset: 0; z-index: 100000; display: none; flex-direction: column;
+    background: rgba(6, 20, 34, .96); color: #fff;
+}
+.acnn-lb.is-open { display: flex; }
+.acnn-lb-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px; flex: 0 0 auto; }
+.acnn-lb-bar .grp { display: flex; align-items: center; gap: 10px; }
+.acnn-lb button, .acnn-lb a.acnn-lb-orig {
+    background: rgba(255, 255, 255, .12); color: #fff; border: 0; border-radius: 999px; font-size: 14px; font-weight: 700;
+    line-height: 1; padding: 11px 18px; cursor: pointer; text-decoration: none; text-shadow: none; box-shadow: none; background-image: none;
+}
+.acnn-lb button:hover, .acnn-lb a.acnn-lb-orig:hover { background: var(--acnn-amber); color: #2a1a00; }
+.acnn-lb button:focus-visible, .acnn-lb a:focus-visible { outline: 3px solid var(--acnn-cyan); outline-offset: 2px; }
+.acnn-lb-count { font-size: 14px; color: #cfe3ee; min-width: 56px; text-align: center; }
+.acnn-lb-main { position: relative; flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 0 56px; }
+.acnn-lb-stage { margin: 0; max-width: 100%; max-height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.acnn-lb-stage img {
+    max-width: 100%; max-height: calc(100vh - 170px); min-height: min(50vh, 400px); width: auto; height: auto; border-radius: 8px; background: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .5); opacity: 0; transition: opacity .2s ease;
+}
+.acnn-lb-stage.is-ready img { opacity: 1; }
+.acnn-lb-stage.is-error img { display: none; }
+.acnn-lb-msg { display: none; padding: 40px 24px; text-align: center; color: #cfe3ee; font-size: 16px; }
+.acnn-lb-stage.is-error .acnn-lb-msg { display: block; }
+.acnn-lb-stage.is-loading::before {
+    content: ""; position: absolute; width: 38px; height: 38px; border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, .25); border-top-color: var(--acnn-aqua); animation: acnn-spin .8s linear infinite;
+}
+@keyframes acnn-spin { to { transform: rotate(360deg); } }
+.acnn-lb-stage figcaption {
+    margin-top: 12px; max-width: 900px; text-align: center; font-size: 14.5px; line-height: 1.5; color: #e6f2f7;
+    max-height: 4.5em; overflow-y: auto; padding: 0 8px;
+}
+.acnn-lb .acnn-lb-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; padding: 0; font-size: 20px; border-radius: 50%; }
+.acnn-lb .acnn-lb-nav.prev { left: 6px; }
+.acnn-lb .acnn-lb-nav.next { right: 6px; }
+.acnn-lb.single .acnn-lb-nav, .acnn-lb.single .acnn-lb-count { display: none; }
+@media (max-width: 600px) {
+    .acnn-lb-main { padding: 0 8px; }
+    .acnn-lb .acnn-lb-nav { top: auto; bottom: 14px; transform: none; background: rgba(0, 0, 0, .55); }
+    .acnn-lb-stage img { max-height: calc(100vh - 210px); }
+    .acnn-lb a.acnn-lb-orig { display: none; }
+}
+
+/* images that are missing on the server fall back to a placeholder (js/acnn-ui.js) */
+img.is-missing { object-fit: cover !important; background: #e8f3f6; }
+
+/* ---------- Visitors page: DataList table becomes an even card grid ---------- */
+.acnn-visitors { width: 100%; }
+.acnn-visitors, .acnn-visitors > tbody { display: block; }
+.acnn-visitors > tbody { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; }
+.acnn-visitors tr { display: contents; }
+.acnn-visitors td { display: block; width: auto !important; padding: 0; }
+.acnn-visitors td:empty { display: none; }
+.acnn-visitors .gallery {
+    float: none; width: auto; height: 100%; margin: 0; display: flex; flex-direction: column;
+    background: #fff; border: 1px solid var(--acnn-line); border-radius: var(--acnn-radius); overflow: hidden;
+    box-shadow: var(--acnn-shadow-sm); transition: transform .2s ease, box-shadow .2s ease;
+}
+.acnn-visitors .gallery:hover { transform: translateY(-4px); box-shadow: var(--acnn-shadow); border-color: var(--acnn-aqua); }
+.acnn-visitors .gallery > a { display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #e8f3f6; flex: 0 0 auto; }
+.acnn-visitors .gallery img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+.acnn-visitors .gallery:hover img { transform: scale(1.04); }
+.acnn-visitors .gallery .desc {
+    padding: 12px 14px 0; margin-bottom: 14px; text-align: left; font-weight: 600; font-size: 14px; line-height: 1.5; color: var(--acnn-ink);
+    display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* ---------- home slider: reserve its final height so nothing jumps when the slider script starts ---------- */
+.fullwidthbanner:not(.revslider-initialised) { height: 52.08vw; overflow: hidden; }
+@media (min-width: 1373px) { .fullwidthbanner:not(.revslider-initialised) { height: 715px; } }
+
+/* ---------- responsive polish ---------- */
+.col-right, .widget-content { overflow-x: auto; }
+@media (max-width: 767px) {
+    .acnn-people { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .acnn-person { padding: 18px 10px 16px; }
+    .acnn-person img { width: 80px; height: 80px; }
+    .acnn-intro-photos { grid-template-columns: repeat(2, 1fr); }
+    .acnn-panel { padding: 20px 18px; }
+    .acnn-section { padding-top: 44px; }
+    .acnn-banner { text-align: center; justify-content: center; }
+    .acnn-banner .acts { justify-content: center; }
+    .acnn-visitors > tbody { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .mu-our-teacher-area { padding: 18px 12px; }
+}
+@media (max-width: 480px) {
+    .acnn-gallery-grid, #gallery.acnn-gallery-grid, .event-images { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+    .event-images { padding: 12px; }
+    .acnn-brand img { height: 40px; }
+    .acnn-visitors > tbody { grid-template-columns: 1fr; }
+    .acnn-heading h2 { font-size: 22px; }
+    .container > .row > h1.span12 { font-size: 20px; }
+}
+@media (max-width: 359px) { .acnn-people { grid-template-columns: 1fr; } }
+
+/* ---------- phones: full-bleed bars (Bootstrap 2 adds 20px body padding below 768px) ---------- */
+@media (max-width: 767px) {
+    body { padding-left: 0; padding-right: 0; }
+    header, nav, footer, #features { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; box-sizing: border-box; }   /* legacy +/-20px values assumed the body padding */
+    nav { width: 100%; }
+    .container { padding-left: 16px; padding-right: 16px; box-sizing: border-box; }
+    .row { margin-left: 0; }
+    .acnn-topbar ul { justify-content: center; }
+    .acnn-topbar .container { padding-top: 6px; padding-bottom: 6px; }
+}
+@media (max-width: 980px) {
+    a#megamenu-button-mobile {
+        background-image: none !important; background-color: var(--acnn-teal-dark); color: #fff; font-weight: 700;
+        padding: 14px 18px; text-shadow: none;
+    }
+    a#megamenu-button-mobile.active { background-image: none !important; }
+}
+@media (max-width: 767px) {
+    .acnn-about p, .acnn-about li { text-align: left; hyphens: auto; }   /* justified text left big gaps on narrow screens */
+}
