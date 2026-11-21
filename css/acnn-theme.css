@@ -703,3 +703,4 @@ img.is-missing { object-fit: cover !important; background: #e8f3f6; }
 .acnn-pdf.is-error .acnn-pdf-meta { display: none; }
 .acnn-pdf.is-error .acnn-pdf-body, .acnn-pdf.is-error .acnn-pdf-body.tall { height: auto; min-height: 0; }
 .acnn-pdf .acnn-pdf-name { margin: 0; text-transform: none; }
+.acnn-pdf-error small { color: #6b7f8b; font-size: 12px; word-break: break-word; max-width: 90%; }

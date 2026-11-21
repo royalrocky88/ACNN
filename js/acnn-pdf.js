@@ -19,23 +19,35 @@
         return 'js/';
     })();
 
-    var loading = null;
+    var loading = null, libErr = '';
+    var CDN = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
+    function addScript(url, ok, bad) {
+        var sc = document.createElement('script');
+        sc.src = url; sc.onload = ok; sc.onerror = bad;
+        document.head.appendChild(sc);
+    }
+    function done(good) {
+        var q = loading; loading = null;
+        for (var i = 0; i < q.length; i++) { q[i][good ? 0 : 1](); }
+    }
     function loadLib(cb, fail) {
         if (window.pdfjsLib) { cb(); return; }
         if (loading) { loading.push([cb, fail]); return; }
         loading = [[cb, fail]];
-        var sc = document.createElement('script');
-        sc.src = base + 'pdfjs/pdf.min.js';
-        sc.onload = function () {
+        addScript(base + 'pdfjs/pdf.min.js', function () {
             window.pdfjsLib.GlobalWorkerOptions.workerSrc = base + 'pdfjs/pdf.worker.min.js';
-            var q = loading; loading = null;
-            for (var i = 0; i < q.length; i++) { q[i][0](); }
-        };
-        sc.onerror = function () {
-            var q = loading; loading = null;
-            for (var i = 0; i < q.length; i++) { q[i][1](); }
-        };
-        document.head.appendChild(sc);
+            done(true);
+        }, function () {
+            libErr = 'local viewer files (js/pdfjs) not found on server - using CDN';
+            addScript(CDN + 'pdf.min.js', function () {
+                // cross-origin worker: wrap in a same-origin blob
+                try {
+                    var blob = new Blob(['importScripts("' + CDN + 'pdf.worker.min.js");'], { type: 'text/javascript' });
+                    window.pdfjsLib.GlobalWorkerOptions.workerSrc = URL.createObjectURL(blob);
+                } catch (e) { window.pdfjsLib.GlobalWorkerOptions.workerSrc = CDN + 'pdf.worker.min.js'; }
+                done(true);
+            }, function () { libErr = 'PDF engine could not be loaded'; done(false); });
+        });
     }
 
     function el(tag, cls, text) {
@@ -58,12 +70,13 @@
         var pdf = null, zoom = 1, pages = [], lastW = 0, token = 0, io = null;
         box.className += ' is-js';
 
-        function fail(msg) {
+        function fail(msg, detail) {
             token++;
             body.innerHTML = '';
             var m = el('div', 'acnn-pdf-error');
             m.appendChild(el('strong', '', msg || 'This document could not be displayed here.'));
-            m.appendChild(el('span', '', 'Use the Download button above to save the file and open it on your device.'));
+            m.appendChild(el('span', '', 'Use the Download PDF button above to save the file and open it on your device.'));
+            if (detail) { m.appendChild(el('small', '', 'Details: ' + detail)); }
             body.appendChild(m);
             box.className = box.className.replace(/\s*is-loading/, '') + ' is-error';
             if (pageLbl) { pageLbl.textContent = ''; }
@@ -180,9 +193,10 @@
                     layout();
                 }, function (err) {
                     var missing = err && (err.name === 'MissingPDFException' || err.status === 404);
-                    fail(missing ? 'This document is not available on the server yet.' : 'This document could not be displayed here.');
+                    var why = (err && (err.name || '')) + (err && err.status ? ' HTTP ' + err.status : '') + (err && err.message ? ' - ' + err.message : '');
+                    fail(missing ? 'This document is not available on the server yet.' : 'This document could not be displayed here.', libErr || why);
                 });
-            }, function () { fail(); });
+            }, function () { fail('The PDF viewer could not be loaded.', libErr); });
         }
 
         // load when near the viewport so long pages don't fetch every PDF at once
