@@ -14,7 +14,20 @@
 	</div>
 	<section class="span12">
 		<div class="col-right">
-			<iframe scrolling="auto" width="100%" height="1040px" src="downloads/Equipment list.pdf" frameborder="0"></iframe>
+			<div class="acnn-pdf" data-src="downloads/Equipment%20list.pdf" data-title="Research Equipment List">
+	<div class="acnn-pdf-bar">
+		<h3 class="acnn-pdf-name"><i class="icon-file-text"></i>Research Equipment List</h3>
+		<div class="acnn-pdf-tools">
+			<span class="acnn-pdf-meta"><span class="acnn-pdf-page"></span><button type="button" data-act="zoom-out" aria-label="Zoom out">&minus;</button><span class="acnn-pdf-zoom">100%</span><button type="button" data-act="zoom-in" aria-label="Zoom in">+</button></span>
+			<a class="acnn-pdf-btn open" href="downloads/Equipment%20list.pdf" target="_blank" rel="noopener"><i class="icon-external-link"></i> Open</a>
+			<a class="acnn-pdf-btn dl" href="downloads/Equipment%20list.pdf" download><i class="icon-download-alt"></i> Download PDF</a>
+		</div>
+	</div>
+	<div class="acnn-pdf-body tall">
+		<div class="acnn-pdf-status">Loading document&hellip;</div>
+		<div class="acnn-pdf-nojs">Preview needs JavaScript. Please use the Download PDF button above.</div>
+	</div>
+</div>
 		</div>
 	</section>
 </div>

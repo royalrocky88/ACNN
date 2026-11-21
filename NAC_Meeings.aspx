@@ -19,9 +19,20 @@
 <section class="span12">
 	<div class="col-right">
        
-       <h1>Notifications</h1>
-      <iframe scrolling="auto" width="100%" height="1000px" src="downloads/National_Advisiory_Committee_ACNN.pdf" frameborder="0"></iframe>
-      <br />
+       <div class="acnn-pdf" data-src="downloads/National_Advisiory_Committee_ACNN.pdf" data-title="National Advisory Committee of ACNN">
+	<div class="acnn-pdf-bar">
+		<h3 class="acnn-pdf-name"><i class="icon-file-text"></i>National Advisory Committee of ACNN</h3>
+		<div class="acnn-pdf-tools">
+			<span class="acnn-pdf-meta"><span class="acnn-pdf-page"></span><button type="button" data-act="zoom-out" aria-label="Zoom out">&minus;</button><span class="acnn-pdf-zoom">100%</span><button type="button" data-act="zoom-in" aria-label="Zoom in">+</button></span>
+			<a class="acnn-pdf-btn open" href="downloads/National_Advisiory_Committee_ACNN.pdf" target="_blank" rel="noopener"><i class="icon-external-link"></i> Open</a>
+			<a class="acnn-pdf-btn dl" href="downloads/National_Advisiory_Committee_ACNN.pdf" download><i class="icon-download-alt"></i> Download PDF</a>
+		</div>
+	</div>
+	<div class="acnn-pdf-body tall">
+		<div class="acnn-pdf-status">Loading document&hellip;</div>
+		<div class="acnn-pdf-nojs">Preview needs JavaScript. Please use the Download PDF button above.</div>
+	</div>
+</div>
       </div>
       </section>
         </div>
