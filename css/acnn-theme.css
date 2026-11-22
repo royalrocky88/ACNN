@@ -704,3 +704,133 @@ img.is-missing { object-fit: cover !important; background: #e8f3f6; }
 .acnn-pdf.is-error .acnn-pdf-body, .acnn-pdf.is-error .acnn-pdf-body.tall { height: auto; min-height: 0; }
 .acnn-pdf .acnn-pdf-name { margin: 0; text-transform: none; }
 .acnn-pdf-error small { color: #6b7f8b; font-size: 12px; word-break: break-word; max-width: 90%; }
+
+/* ==========================================================================
+   v3  -  "Edvi" look: royal blue, Poppins body, Playfair Display headings,
+   floating pill navigation, centred banner titles, rounded soft cards, blue footer.
+   Everything above keeps working; these rules re-colour and re-shape it.
+   ========================================================================== */
+:root {
+    --acnn-navy: #121232;
+    --acnn-navy-2: #1b1b4d;
+    --acnn-teal: #1d42d9;
+    --acnn-teal-dark: #1631a8;
+    --acnn-aqua: #6c86ff;
+    --acnn-cyan: #c0ccff;
+    --acnn-amber: #ffb400;
+    --acnn-amber-dark: #e09b00;
+    --acnn-ink: #616161;
+    --acnn-muted: #6f7384;
+    --acnn-line: #e5eaff;
+    --acnn-soft: #f5f7ff;
+    --acnn-radius: 14px;
+    --acnn-shadow: 0 14px 40px rgba(29, 66, 217, .14);
+    --acnn-shadow-sm: 0 6px 22px rgba(29, 66, 217, .10);
+    --acnn-font: "Poppins", "Segoe UI", Arial, sans-serif;
+    --acnn-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+html, body { background: #fff; }
+body { font-family: var(--acnn-font); font-size: 15px; color: var(--acnn-ink); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--acnn-serif); color: #181818; letter-spacing: 0; }
+a { color: var(--acnn-teal); }
+a:hover { color: var(--acnn-teal-dark); }
+
+/* top bar + header */
+.acnn-topbar { background: var(--acnn-teal); }
+.acnn-topbar a, .acnn-topbar li { color: #e5eaff; }
+.acnn-topbar i { color: #fff; }
+header.acnn-header { border-bottom: 0; }
+.acnn-brand .acnn-tag { border-left-color: var(--acnn-teal); }
+.acnn-brand .acnn-tag strong { font-family: var(--acnn-serif); color: #181818; }
+.acnn-call b { color: var(--acnn-teal); }
+
+/* buttons: blue and outline pills */
+.acnn-btn, a.acnn-btn { font-family: var(--acnn-font); font-weight: 500; padding: 12px 28px; }
+.acnn-btn-amber, a.acnn-btn-amber { background: var(--acnn-teal); color: #fff; }
+.acnn-btn-amber:hover { background: var(--acnn-teal-dark); color: #fff; }
+a.button_large, .button_large { background: #fff !important; color: var(--acnn-teal) !important; font-weight: 500; }
+a.button_large:hover, .button_large:hover { background: var(--acnn-cyan) !important; color: var(--acnn-teal-dark) !important; }
+
+/* navigation: floating white pill */
+nav { background: #fff; box-shadow: none; padding: 0; }
+@media (min-width: 981px) {
+    nav { background: var(--acnn-soft); padding: 14px 0; }
+    nav .megamenu_container { background: #fff; border-radius: 999px; box-shadow: var(--acnn-shadow); padding: 4px 14px; max-width: 1170px; }
+    .megamenu > li > a.drop-down, .megamenu > li > a.nodrop-down { color: #181818; border-radius: 999px; margin: 3px 2px; line-height: 40px; padding: 0 18px; font-weight: 500; }
+    .megamenu > li > a.drop-down { padding-right: 30px; }
+    .megamenu > li:hover > a.drop-down, .megamenu > li:hover > a.nodrop-down,
+    .megamenu > li > a.drop-down:hover, .megamenu > li > a.nodrop-down:hover { background-color: var(--acnn-line); color: var(--acnn-teal); }
+    .megamenu > li > a.drop-down::after { border-color: currentColor; }
+    .megamenu > li .drop-down-container { border-top: 0; border-radius: 16px; margin-top: 6px; box-shadow: var(--acnn-shadow); }
+}
+.megamenu .list-menu li a { font-weight: 500; color: #181818; }
+.megamenu .list-menu li a:hover { background: var(--acnn-line); color: var(--acnn-teal); }
+.megamenu .list-menu li a i { color: var(--acnn-teal); }
+@media (max-width: 980px) {
+    .megamenu { background: var(--acnn-teal); }
+    #megamenu-button-mobile, a#megamenu-button-mobile { background: var(--acnn-teal) !important; }
+}
+
+/* slider + hero */
+.slider { background: var(--acnn-navy); }
+.fullwidthbanner-container { border-bottom: 0; }
+
+/* section headings centred serif */
+.acnn-section-title, .acnn-section h2 { font-family: var(--acnn-serif); text-align: center; }
+
+/* inner page banner: centred title with breadcrumb overlaid beneath */
+.container > .row > h1.span12 {
+    background:
+        radial-gradient(circle at 12% 120%, rgba(255,255,255,.18) 0 90px, transparent 91px),
+        radial-gradient(circle at 92% -20%, rgba(255,255,255,.16) 0 120px, transparent 121px),
+        linear-gradient(115deg, var(--acnn-navy) 0%, var(--acnn-teal) 100%);
+    font-family: var(--acnn-serif); font-size: 36px; font-weight: 700; text-align: center;
+    border-left: 0; border-radius: 22px; padding: 44px 24px 74px; margin: 26px 0 0; box-shadow: var(--acnn-shadow);
+}
+.span12 > ul.breadcrumb, ul.breadcrumb {
+    display: table; margin: -46px auto 30px; position: relative; z-index: 2;
+    background: #fff; border: 0; box-shadow: var(--acnn-shadow); border-radius: 999px; padding: 9px 26px;
+}
+.breadcrumb a { color: var(--acnn-teal); font-weight: 500; }
+.breadcrumb .divider { color: var(--acnn-aqua); }
+.breadcrumb .active { color: #181818; font-weight: 600; }
+
+/* cards */
+.col-left, .col-right { border: 0; border-radius: 18px; box-shadow: var(--acnn-shadow-sm); }
+.col-right h1, .col-right h2, .col-right h3 { color: #181818; font-family: var(--acnn-serif); }
+.col-right h1 { border-bottom-color: var(--acnn-teal); }
+.widget-header, .widget.borders .widget-header { background: var(--acnn-teal); color: #fff; }
+.acnn-strip-item .ico, .acnn-person .ico { background: var(--acnn-teal); color: #fff; }
+.acnn-pdf-bar, .acnn-gallery-grid .event-heading, .event-heading { background: linear-gradient(110deg, var(--acnn-navy), var(--acnn-teal)); }
+.acnn-pdf-btn.dl { background: var(--acnn-amber); }
+
+/* footer: solid royal blue with a dark base bar */
+footer { background: var(--acnn-teal); border-top: 0; color: #e5eaff; margin-top: 70px; padding-top: 60px; border-radius: 0; }
+footer h4 { font-family: var(--acnn-serif); color: #fff; font-size: 20px; }
+footer h4:after { background: #fff; }
+footer a, footer p, footer b, footer li { color: #e5eaff; }
+footer a:hover { color: #fff; text-decoration: underline; }
+footer i { color: #fff; }
+.acnn-footer-bottom { border-top: 1px solid rgba(255,255,255,.28); background: transparent; color: #e5eaff; margin: 34px 0 -10px; padding: 16px 0 0; text-align: center; }
+#toTop { background: var(--acnn-teal); color: #fff; border-radius: 999px; }
+
+/* ---- v3b: closer to the Edvi reference ---- */
+.megamenu > li > a, .megamenu > li > a.drop-down, .megamenu > li > a.nodrop-down { text-transform: none; font-size: 15px; letter-spacing: 0; }
+@media (min-width: 981px) {
+    nav .megamenu_container { max-width: 1170px; padding: 4px 22px; }
+    .megamenu > li > a.nodrop-down.active, .megamenu > li > a.drop-down.active { color: var(--acnn-teal); }
+}
+/* slider: royal-blue tint over the photo, like the Edvi hero */
+.fullwidthbanner-container { position: relative; }
+.fullwidthbanner-container::after {
+    content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(180deg, rgba(29,66,217,.18) 0%, rgba(29,66,217,.32) 55%, rgba(18,18,50,.45) 100%);
+}
+.tp-leftarrow, .tp-rightarrow { z-index: 5; }
+.caption.big_white, .caption.very_big_white, .caption.very_small_white {
+    background: rgba(29, 66, 217, .78) !important; border-radius: 14px; font-family: var(--acnn-font);
+    box-shadow: 0 10px 30px rgba(18,18,50,.35); text-shadow: none;
+}
+@media (max-width: 767px) {
+    .fullwidthbanner .caption { white-space: normal !important; width: 88% !important; left: 6% !important; font-size: 12px !important; line-height: 1.4 !important; padding: 8px 10px !important; border-radius: 10px; }
+}
