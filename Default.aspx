@@ -94,7 +94,7 @@
         <div id="popupBox">
             <!-- Close Button -->
             <button id="closeBtn" onclick="closePopup()">
-                ×</button>
+                &#215;</button>
             <!-- Image -->
             <img src="img/banner_snn.jpeg" alt="Admission Banner" />
             <!-- Footer Button -->
@@ -131,7 +131,7 @@
 											 data-y="350"
 											 data-speed="300"
 											 data-start="1200"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">Hon’ble Education Minister Sri Sunil Kumar Ji, Hon’ble Secretary Sri Baidyanath Yadav,<br />Director Higher Education Prof. Rekha Kumari and some other Government officers <br />visited the Center's Lab on 22-08-2024</div>
+											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">Hon&#8217;ble Education Minister Sri Sunil Kumar Ji, Hon&#8217;ble Secretary Sri Baidyanath Yadav,<br />Director Higher Education Prof. Rekha Kumari and some other Government officers <br />visited the Center's Lab on 22-08-2024</div>
 								</li>
 
                          <!-- THE CM-1 SLIDE -->
@@ -347,16 +347,20 @@
         <div class="container">
             <div class="acnn-heading">
                 <span class="eyebrow">Our Team</span>
-                <h2>Teaching &amp; Research Staff</h2>
-                <p>Faculty and scholars driving research and teaching at the Centre.</p>
+                <h2>Faculty &amp; Staff</h2>
+                <p>Faculty, scholars and support staff driving research and teaching at the Centre.</p>
             </div>
-            <div class="acnn-people">
+            <div class="acnn-team">
+                <div class="acnn-team-head">
                 <div class="acnn-person">
                     <img src="img/DrRakeshSirN.jpg" alt="faculty" />
                     <h4>Dr. Rakesh Kr. Singh</h4>
                     <div class="role">Head of the Centre</div>
                     <p>Ph.D.(Nanoscience)<br /><a href="http://drrakeshsingh.com">www.drrakeshsingh.com</a></p>
                 </div>
+                </div>
+                <div class="acnn-marquee" aria-label="Faculty and staff of the Centre">
+                    <div class="acnn-track">
                 <div class="acnn-person">
                     <img src="img/fac6.png" alt="faculty" />
                     <h4>Dr. Vijay Kumar Ravi</h4>
@@ -405,12 +409,6 @@
                     <div class="role">Technical Assistant</div>
                     <p>M.Tech (Nanoscience &amp; Nanotechnology)</p>
                 </div>
-            </div>
-
-            <div class="acnn-heading" style="margin-top:46px">
-                <h2 style="font-size:24px">Support Staff</h2>
-            </div>
-            <div class="acnn-people compact">
                 <div class="acnn-person">
                     <img src="img/TechStaff/dollyghosh.jpg" alt="staff" />
                     <h4>Mrs. Dolly Ghosh</h4>
@@ -435,8 +433,82 @@
                     <h4>Mr. Dilip Kumar Choudhary</h4>
                     <div class="role">Attendant</div>
                 </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/fac6.png" alt="faculty" />
+                    <h4>Dr. Vijay Kumar Ravi</h4>
+                    <div class="role">Teaching Faculty</div>
+                    <p>Ph.D. (Biotechnology)</p>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/fac7.png" alt="faculty" />
+                    <h4>Dr. Abhay Kr Aman</h4>
+                    <div class="role">Teaching Faculty</div>
+                    <p>Ph.D.(Nanoscience and Nanotechnology)</p>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/fac8.jpg" alt="faculty" />
+                    <h4>Dr. Bibhuti Bikramaditya</h4>
+                    <div class="role">Teaching Faculty</div>
+                    <p>Ph.D.(Nanoscience and Nanotechnology)</p>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/Dr_Manisha_Kumari.jpeg" alt="faculty" />
+                    <h4>Dr. Manisha Kumari</h4>
+                    <div class="role">Guest Faculty</div>
+                    <p>Ph.D.(Nanoscience and Nanotechnology)</p>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/NishantKr.jpg" alt="staff" />
+                    <h4>Mr. Nishant Kumar</h4>
+                    <div class="role">Technical Assistant</div>
+                    <p>M.Tech (Nanoscience &amp; Nanotechnology)</p>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/Monalisa.jpg" alt="staff" />
+                    <h4>Miss Monalisa</h4>
+                    <div class="role">Technical Assistant</div>
+                    <p>M.Tech (Nanoscience &amp; Nanotechnology)</p>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/AnuradhaMuskan.jpg" alt="staff" />
+                    <h4>Miss Anuradha Muskan</h4>
+                    <div class="role">Technical Assistant</div>
+                    <p>M.Tech (Nanoscience &amp; Nanotechnology)</p>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/PrinceKumar.jpg" alt="staff" />
+                    <h4>Mr. Prince Kumar</h4>
+                    <div class="role">Technical Assistant</div>
+                    <p>M.Tech (Nanoscience &amp; Nanotechnology)</p>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/dollyghosh.jpg" alt="staff" />
+                    <h4>Mrs. Dolly Ghosh</h4>
+                    <div class="role">Library Assistant</div>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/kryashupal.jpg" alt="staff" />
+                    <h4>Mr. Kumar Yashupal</h4>
+                    <div class="role">Clerk cum Computer Typist</div>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/kumarvijay.jpg" alt="staff" />
+                    <h4>Mr. Kumar Vijay</h4>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/Shashiranjankumar.jpeg" alt="staff" />
+                    <h4>Mr. Shashi Ranjan Kumar</h4>
+                    <div class="role">Assistant</div>
+                </div>
+                <div class="acnn-person" aria-hidden="true">
+                    <img src="img/TechStaff/dilipkr.jpg" alt="staff" />
+                    <h4>Mr. Dilip Kumar Choudhary</h4>
+                    <div class="role">Attendant</div>
+                </div>
+                    </div>
+                </div>
             </div>
-            <p style="text-align:center;margin-top:22px"><a class="acnn-btn acnn-btn-teal" href="Staff_CNN.aspx">Meet the full team</a></p>
+            <p style="text-align:center;margin-top:26px"><a class="acnn-btn acnn-btn-teal" href="Staff_CNN.aspx">View All Staff</a></p>
         </div>
     </section>
 
@@ -589,15 +661,15 @@
         <div class="container">
             <div class="acnn-panel">
                 <h2>Introduction</h2>
-                <p align="justify">Aryabhatta School of Nanoscience & Technology(SNN) is non-traditional, super specialized, frontier areas of subject of 21st century&  first cutting edge Research Centre of university of Bihar, equipped with 20 high-end research instruments such as  Scanning Electron Microscope, Multiferroic system, Vibrating Sample magnetometer, High energy ball mill etc. This is only one such frontiers related academic center in universities of Bihar. The Nanoscience and nanotechnology center of Aryabhatta Knowledge University was Established by the founder Vice Chancellor Prof. S N Guha with whole hearted support and encouragement from Honorable Chief minister Sri Nitish Kumar Ji. The first academic session of M.Tech and Ph.D. started from academic from year 2013. The academic and research activities of this Center visited/appreciated by Hon’ble Governor cum Chancellor Universities of Bihar, Hon’ble Chief minister Sri Nitish Kumar Ji, Education ministers ,various Govt. officers and eminent academicians of national/International repute.</p>
+                <p align="justify">Aryabhatta School of Nanoscience & Technology(SNN) is non-traditional, super specialized, frontier areas of subject of 21st century&  first cutting edge Research Centre of university of Bihar, equipped with 20 high-end research instruments such as  Scanning Electron Microscope, Multiferroic system, Vibrating Sample magnetometer, High energy ball mill etc. This is only one such frontiers related academic center in universities of Bihar. The Nanoscience and nanotechnology center of Aryabhatta Knowledge University was Established by the founder Vice Chancellor Prof. S N Guha with whole hearted support and encouragement from Honorable Chief minister Sri Nitish Kumar Ji. The first academic session of M.Tech and Ph.D. started from academic from year 2013. The academic and research activities of this Center visited/appreciated by Hon&#8217;ble Governor cum Chancellor Universities of Bihar, Hon&#8217;ble Chief minister Sri Nitish Kumar Ji, Education ministers ,various Govt. officers and eminent academicians of national/International repute.</p>
                 <div class="acnn-intro-photos">
                     <img alt="" src="images/Home/1.jpg" />
                     <img alt="" src="images/Home/2.jpg" />
                     <img alt="" src="images/Home/3.jpg" />
                     <img alt="" src="images/Home/4.jpg" />
                 </div>
-                <p align="justify">Different affairs of academic, research &development programme are being carried out under the leadership of Dr. Rakesh Kumar Singh, head of the Nanoscience center(i/c) , who have been also awarded “
-                <strong><b>Best Young Teacher with Contributions in modern field of Nanoscience</b></strong>” by Hon’ble Chancellor of university of Bihar cum Governor for his outstanding performance .  In the last 10 year more than 1000 eminent academicians/Scholars from different parts of world/country/state visited Nanoscience center of Aryabhatta Knowledge University. About more than 200 research papers published/ final progress in SCI/Scopus/WoS/Peer reviewed Journals by Nanotechnology center in multidisciplinary area of Science, Engineering & technology including Engineering Science, Agriculture, Electronics, Medicine, Food, and Ayurveda and Basic Sciences. 2 patents and 2 prototype have been filed/developed in the field of low cost LED, Agriculture and purification of water.
+                <p align="justify">Different affairs of academic, research &development programme are being carried out under the leadership of Dr. Rakesh Kumar Singh, head of the Nanoscience center(i/c) , who have been also awarded &#8220;
+                <strong><b>Best Young Teacher with Contributions in modern field of Nanoscience</b></strong>&#8221; by Hon&#8217;ble Chancellor of university of Bihar cum Governor for his outstanding performance .  In the last 10 year more than 1000 eminent academicians/Scholars from different parts of world/country/state visited Nanoscience center of Aryabhatta Knowledge University. About more than 200 research papers published/ final progress in SCI/Scopus/WoS/Peer reviewed Journals by Nanotechnology center in multidisciplinary area of Science, Engineering & technology including Engineering Science, Agriculture, Electronics, Medicine, Food, and Ayurveda and Basic Sciences. 2 patents and 2 prototype have been filed/developed in the field of low cost LED, Agriculture and purification of water.
                 <b><br />Scientists/Academicians of About More than 100 countries of the world including China, USA, UK, Germany, others cited/appreciated/read the frontiers research activities of the nanoscience center. The International level research activities and world class scientific infrastructure can be seen- http://acnn.akubihar.ac.in. </b></p>
             </div>
         </div>

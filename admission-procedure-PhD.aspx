@@ -61,7 +61,7 @@
                 </div>
               <div class="tab-pane" id="profile">
                     The applicant should possess following to pursue research in the broad fields of nanoscience and nanotechnology(see the Thrust Area of Research):<br><br><strong>Ph. D</strong> <br>
-                    <strong>M.Sc.</strong> (Nanoscience/Nanotechnology/Physics/Chemistry/Biotechnology or <br /><strong>M.Tech./M.E./M.S. </strong> (Electrical/Electronics/Mechanical/Civil) degree with a minimum of 55% marks. – For Nanoscience & Nanotechnology Research<br>
+                    <strong>M.Sc.</strong> (Nanoscience/Nanotechnology/Physics/Chemistry/Biotechnology or <br /><strong>M.Tech./M.E./M.S. </strong> (Electrical/Electronics/Mechanical/Civil) degree with a minimum of 55% marks. &#8211; For Nanoscience & Nanotechnology Research<br>
                     <!--<strong>(b)</strong>	M.Sc.(in Nanoscience/Nanotechnology) or an equivalent degreein any branch of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Physical/Chemical/Biological/Agricultural sciences with a minimum of 55% marks.
 					<br><br><strong>M.Tech</strong> <br>
 					<strong>(a)</strong>	B.Tech. in EE/EEE, ECE, ME, Chemical Engineering, Bioprocess Engineering, Biochemical Engineering or an equivalent degree with a minimum of 55% marks.<br/>

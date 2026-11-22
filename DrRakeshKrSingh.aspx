@@ -88,9 +88,9 @@
             &nbsp;&nbsp;&nbsp; <strong>Dr. Rakesh Kr Singh</strong> research work are being cited by academicians/scientist of more than 50 countries, like Germany, Romania, China, Brazil, Thailand, UK, USA, Japan, Egypt and others. He has also invited by these countries to deliver a talk as resource person. He has also worked on TEQIP-MHRD, Govt. of India project as principal investigator on ceramics magnetic nanomaterial's and their multifunctional applications.</li>
                 <li>&nbsp;</li>
 
-                <li><span class="style3"><strong>3.</strong></span> <span class="style3"><strong>Worked as various administrative positions and Established 6 world class nanotechnology research laboratories, which was appreciated by Hon’ble Sri Nitish Kr Ji, CM, Bihar, India and eminent academicians of national/international repute.</strong></span><br />
+                <li><span class="style3"><strong>3.</strong></span> <span class="style3"><strong>Worked as various administrative positions and Established 6 world class nanotechnology research laboratories, which was appreciated by Hon&#8217;ble Sri Nitish Kr Ji, CM, Bihar, India and eminent academicians of national/international repute.</strong></span><br />
             &nbsp;&nbsp;&nbsp; <strong>Dr. Rakesh Kr Singh</strong> Joined at Center for Nanoscience and Nanotechnology, Aryabhatta Knowledge University, Patna on 2nd September 2013 and from date of joining, he has been carrying the responsibilities of different affairs of Establishment of first center of this university, together with other corporates/Management of the university as nodal officer/ Head of the university center/coordinator of various administrative or academic committee/ Proctors of the university. 
-       <br />&nbsp;&nbsp;&nbsp; Most importantly he Established 07 world class Nanomaterial research laboratory at new campus of Aryabhatta Knowledge University, Patna as a Professor in charge-Establishment/ Head/ Academic-in charge  and Hon’ble CM, Bihar Sri Nitish Kr Ji and authorities of universities and various academicians appreciated him for such  research   establishment.
+       <br />&nbsp;&nbsp;&nbsp; Most importantly he Established 07 world class Nanomaterial research laboratory at new campus of Aryabhatta Knowledge University, Patna as a Professor in charge-Establishment/ Head/ Academic-in charge  and Hon&#8217;ble CM, Bihar Sri Nitish Kr Ji and authorities of universities and various academicians appreciated him for such  research   establishment.
 </li>
                 <li>&nbsp;</li>
 
@@ -105,11 +105,11 @@
                 
             &nbsp;&nbsp;&nbsp; <li>(i) Chancellor( Governor) award for best Young teacher with research contributions in modern field of science nanoscience in year 2021;</li>
             <li>(ii) In   August 2016 at 
-                    <strong>Stockholm, Sweden</strong> in European Advanced Material Congress-2016, Dr. Rakesh research presentation on “Ayurvedic  Bhasma as Nanomedicine- An Ancient Wisdom”  was highly appreciated at European Advanced Material Conference and Executive Chairs felicitated to him; </li> 
+                    <strong>Stockholm, Sweden</strong> in European Advanced Material Congress-2016, Dr. Rakesh research presentation on &#8220;Ayurvedic  Bhasma as Nanomedicine- An Ancient Wisdom&#8221;  was highly appreciated at European Advanced Material Conference and Executive Chairs felicitated to him; </li> 
                     <li>(iii) Senior Resource Person of Utsahi Physics Teachers/ Anveshika Coordinator, coordinated by Padma shree 
                     <strong>Prof. H.C.Verma, Dept. of Physics, IIT Kanpur</strong> in May 2009;</li> 
                     <li>(iv) <strong>Young Scientist Award</strong> in 1st Global Bihar Science Conference held at Patna Science College, Patna University in May 2008; </li>
-                    <li>(v) <strong>Master Resource Person</strong> of International Year of Physics – 2005, International year of Astronomy – 2009 (Trained by DST, Govt. of India and proclaimed by united nations)  and </li> 
+                    <li>(v) <strong>Master Resource Person</strong> of International Year of Physics &#8211; 2005, International year of Astronomy &#8211; 2009 (Trained by DST, Govt. of India and proclaimed by united nations)  and </li> 
                     <li>(vi) invited by DST, Govt. of India to attend the Interactive 
                     <strong>meet of Nobel Laureates and Science Icons of European Union, Germany</strong> held Vigyan Bhawan, New Delhi on 8th February 2007.</li>
 </ol>
@@ -126,7 +126,7 @@
  <li><span class="style3"><strong>7.</strong></span> <span class="style3"><strong>Was a member of various higher bodies of universities/organizations, including- Executive council, Court, PGRC, Proctor of AKU and some international/National Professional/ Scientific society.</strong></span><br />
             &nbsp;&nbsp;&nbsp; He has been member/ Convenor of various academic bodies such Post-Graduate programme & Research, Doctoral Committee,  Post-Graduate Research council(PGRC), Board of studies, Academic council, Coordinator/ Executive council 
      <strong>member of National Anveshika Network of India, coordinated by Prof. H.C.Verma, IIT Kanpur</strong> and Society for Scientific Values, Delhi, Coordinated by 
-     <strong>Eminent academicians of IIT’s/CSIR labs/ JNU/Central universities</strong>.
+     <strong>Eminent academicians of IIT&#8217;s/CSIR labs/ JNU/Central universities</strong>.
 </li>
 <br />
                 <li><span class="style3"><strong>8.</strong></span> <span class="style3"><strong>Worked as Registrar of Aryabhatta Knowledge University and invited as expert committee member/Resource person in Govt. and Non-Govt. organizations.</strong></span><br /></li>

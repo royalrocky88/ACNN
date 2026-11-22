@@ -834,3 +834,25 @@ footer i { color: #fff; }
 @media (max-width: 767px) {
     .fullwidthbanner .caption { white-space: normal !important; width: 88% !important; left: 6% !important; font-size: 12px !important; line-height: 1.4 !important; padding: 8px 10px !important; border-radius: 10px; }
 }
+
+/* ---- home team: head fixed on the left, everyone else glides right-to-left in a slow endless loop ---- */
+.acnn-team { display: flex; align-items: stretch; gap: 22px; }
+.acnn-team-head { flex: 0 0 240px; }
+.acnn-team-head .acnn-person { height: 100%; margin: 0; box-shadow: var(--acnn-shadow); border: 2px solid var(--acnn-line); }
+.acnn-marquee { flex: 1 1 auto; min-width: 0; overflow: hidden; padding: 10px 0 18px;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+.acnn-track { display: flex; width: max-content; animation: acnn-glide 140s linear infinite; will-change: transform; }
+.acnn-marquee:hover .acnn-track, .acnn-marquee:focus-within .acnn-track { animation-play-state: paused; }
+.acnn-track .acnn-person { flex: 0 0 210px; width: 210px; margin: 0 11px; }
+@keyframes acnn-glide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 767px) {
+    .acnn-team { flex-direction: column; align-items: center; }
+    .acnn-team-head { flex-basis: auto; width: 240px; max-width: 100%; }
+    .acnn-marquee { width: 100%; }
+    .acnn-track .acnn-person { flex-basis: 180px; width: 180px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .acnn-marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+    .acnn-track { animation: none; }
+}
