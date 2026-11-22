@@ -29,12 +29,12 @@
 <div class="row">
 <h1 class="span12">
     
-    Academics Activities</h1>
+    e-Contents</h1>
 
 <div class="span12">
     <ul class="breadcrumb">
       <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
-      <li class="active">e-Learning Videos</li>
+      <li class="active">e-Contents</li>
     </ul>
 </div>
 

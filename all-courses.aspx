@@ -6,7 +6,7 @@
 <div class="container">
 
 <div class="row">
-<h1 class="span12">Acedemic Programme </h1>
+<h1 class="span12">Academic Programme</h1>
 	<div class="span12">
         <ul class="breadcrumb">
           <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>

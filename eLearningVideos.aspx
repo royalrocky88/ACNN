@@ -27,7 +27,7 @@
     <div class="container">
 
 <div class="row">
-<h1 class="span12">Academics Activities</h1>
+<h1 class="span12">e-Learning Videos</h1>
 
 <div class="span12">
     <ul class="breadcrumb">

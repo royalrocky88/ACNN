@@ -27,12 +27,12 @@
     <div class="container">
 
 <div class="row">
-<h1 class="span12">Administration</h1>
+<h1 class="span12">Visitors @ Centre</h1>
 
 <div class="span12">
     <ul class="breadcrumb">
       <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
-      <li class="active">Visitors of Center</li>
+      <li class="active">Visitors @ Centre</li>
     </ul>
 </div>
 
