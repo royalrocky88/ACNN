@@ -116,158 +116,91 @@
     </script>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <!--Star slider-->
-    <section class="slider">
-       <div class="fullwidthbanner-container">
-					<div class="fullwidthbanner">
-						<ul>
-
-
-                        <!-- THE Newspaper SLIDE -->
-							<li data-transition="flyin" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb1.jpg" data-delay="4000" >
-										<img src="images/MainFlash/Edu_Minister2024visit.jpg" alt="">
-                                        <div class="caption very_small_white lfl stl"
-											 data-x="center"
-											 data-y="350"
-											 data-speed="300"
-											 data-start="1200"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">Hon&#8217;ble Education Minister Sri Sunil Kumar Ji, Hon&#8217;ble Secretary Sri Baidyanath Yadav,<br />Director Higher Education Prof. Rekha Kumari and some other Government officers <br />visited the Center's Lab on 22-08-2024</div>
-								</li>
-
-                         <!-- THE CM-1 SLIDE -->
-							<li data-transition="flyin" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb1.jpg" data-delay="4000" >
-										<img src="images/MainFlash/001.jpg" alt="">
-                                         <div class="caption big_white lfl stl"
-											 data-x="30"
-											 data-y="300"
-											 data-speed="300"
-											 data-start="800"
-											 data-easing="easeOutExpo" data-end="9100" data-endspeed="300" data-endeasing="easeInSine">An MoU between AKU, Patna, and the National Institute of Ayurveda, Jaipur, <br />aims to merge modern science with traditional Ayurvedic practices in Nanotechnology.</div>
-								</li>
-                                <!-- THE CM-2 SLIDE -->
-							<li data-transition="flyin" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb1.jpg" data-delay="4000" >
-										<img src="images/MainFlash/002.jpg" alt="">
-                                        <div class="caption big_white lfl stl"
-											 data-x="30"
-											 data-y="300"
-											 data-speed="300"
-											 data-start="800"
-											 data-easing="easeOutExpo" data-end="9100" data-endspeed="300" data-endeasing="easeInSine">Professor of Ayurvedic Science Prof Prabhat Kr Dwevedi <br />Awarded Ph.D. In Nanotechnogy in Ayurvedic Science</div>
-								</li>
-
-
-                        <!-- THE CM-1 SLIDE -->
-							<li data-transition="flyin" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb1.jpg" data-delay="4000" >
-										<img src="images/MainFlash/CM-6.jpg" alt="">
-                                         <div class="caption very_small_white lfl stl"
-											 data-x="right"
-											 data-y="350"
-											 data-speed="300"
-											 data-start="1000"
-											  data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">Hon'ble CM of Bihar, Shri Nitish Kumar going through the developments of Centre</div>
-								</li>
-                                <!-- THE CM-2 SLIDE -->
-							<li data-transition="flyin" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb1.jpg" data-delay="4000" >
-										<img src="images/MainFlash/CM-7.jpg" alt="">
-                                        <div class="caption very_small_white lfl stl"
-											 data-x="center"
-											 data-y="350"
-											 data-speed="300"
-											 data-start="1200"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine"  >Hon'ble CM of Bihar, Shri Nitish Kumar with the officials of the Centre</div>
-								</li>
-
-                                <!-- THE Newspaper SLIDE
-							<li data-transition="flyin" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb1.jpg" data-delay="4000" >
-										<img src="images/MainFlash/Newspaper.jpg" alt="">
-                                        <div class="caption very_small_white lfl stl"
-											 data-x="center"
-											 data-y="350"
-											 data-speed="300"
-											 data-start="1200"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">Jobs in Nanoscience & Nanotechnology</div>
-								</li> -->
-							<!-- THE FIRST SLIDE -->
-							<li data-transition="flyin" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb1.jpg" data-delay="4000" >
-										<img src="images/MainFlash/Bihar_Divas-2022.jpg" alt="">
-                                        <div class="caption very_small_white lfl stl"
-											 data-x="center"
-											 data-y="550"
-											 data-speed="300"
-											 data-start="1200"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">Bihar Divas</div>
-								</li>
-                                <!-- THE SECOND SLIDE -->
-                         		<li data-transition="3dcurtain-horizontal" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb2.jpg">
-                                <img src="images/MainFlash/007.png" alt="">    
-                                <div class="caption very_big_white lfl stl"
-											 data-x="left"
-											 data-y="350"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">ADVANCE EQUIPMENTS</div>                
-                                          
-                                </li>
-                                <!-- THE THIRD SLIDE -->
-                                <li data-transition="3dcurtain-horizontal" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb2.jpg">
-                                	<img src="images/MainFlash/PhDstudents.jpg" alt="">
-                                    
-                                     <div class="caption very_big_white lfl stl"
-											 data-x="right"
-											 data-y="350"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">FACULTIES & SCHOLARS</div>
-                                             
-                                   <div class="caption lfb stl"
-											 data-x="right"
-											 data-y="400"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine" ><a href="about-us.aspx" class="button_large">Read more</a></div>
-                                </li>
-                                <!-- THE FOURTH SLIDE -->
-                                <li data-transition="cube" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb2.jpg">
-                                	<img src="images/MainFlash/005.png" alt="">
-                                    
-                                     <div class="caption very_big_white lfl stl"
-											 data-x="right"
-											 data-y="350"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">DIFFERENT COURSES AVAILABLE</div>
-                                             
-                                   <div class="caption lfr stl"
-											 data-x="right"
-											 data-y="400"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine" ><a href="all-courses.aspx" class="button_large">Read more</a></div>
-                                </li>
-                                <!-- THE FIFTH SLIDE 
-                                <li data-transition="slideleft" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb2.jpg">
-                                	<img src="images/MainFlash/006.jpg" alt="">
-                                    <div class="caption very_big_white lfl stl"
-											 data-x="30"
-											 data-y="180"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">IMPROVE YOUR SKILLS</div>
-
-										<div class="caption big_white lfl stl"
-											 data-x="30"
-											 data-y="250"
-											 data-speed="300"
-											 data-start="800"
-											 data-easing="easeOutExpo" data-end="9100" data-endspeed="300" data-endeasing="easeInSine">with expert teachers</div>
-                                </li>-->
-                                
-						</ul>
-
-						<div class="tp-bannertimer tp-bottom"></div>
-					</div>
-				</div>
-</section>
+    <!-- Hero slider (own code: crossfade + slow zoom, uniform captions, dots, arrows, swipe) -->
+    <section class="acnn-hero" aria-roledescription="carousel" aria-label="Highlights of the Centre">
+        <ul class="acnn-slides">
+            <li class="acnn-slide is-active" aria-roledescription="slide" aria-label="1 of 9">
+                <img src="images/MainFlash/Edu_Minister2024visit.jpg" alt="" />
+                <div class="acnn-slide-cap container">
+                    <span class="acnn-slide-eyebrow">Distinguished Visit</span>
+                    <h2 class="acnn-slide-title">Education Minister &amp; Senior Officials Visit the Centre</h2>
+                    <p class="acnn-slide-text">Hon&#8217;ble Education Minister Sri Sunil Kumar Ji, Hon&#8217;ble Secretary Sri Baidyanath Yadav, Director Higher Education Prof. Rekha Kumari and other Government officers visited the Centre&#8217;s Lab on 22-08-2024.</p>
+                </div>
+            </li>
+            <li class="acnn-slide" aria-roledescription="slide" aria-label="2 of 9">
+                <img src="images/MainFlash/001.jpg" alt="" loading="lazy" />
+                <div class="acnn-slide-cap container">
+                    <span class="acnn-slide-eyebrow">Collaboration</span>
+                    <h2 class="acnn-slide-title">AKU &amp; National Institute of Ayurveda Sign MoU</h2>
+                    <p class="acnn-slide-text">An MoU between AKU, Patna, and the National Institute of Ayurveda, Jaipur, aims to merge modern science with traditional Ayurvedic practices in Nanotechnology.</p>
+                </div>
+            </li>
+            <li class="acnn-slide" aria-roledescription="slide" aria-label="3 of 9">
+                <img src="images/MainFlash/002.jpg" alt="" loading="lazy" />
+                <div class="acnn-slide-cap container">
+                    <span class="acnn-slide-eyebrow">Achievement</span>
+                    <h2 class="acnn-slide-title">Ph.D. in Nanotechnology in Ayurvedic Science</h2>
+                    <p class="acnn-slide-text">Professor of Ayurvedic Science Prof. Prabhat Kr. Dwevedi awarded Ph.D. in Nanotechnology in Ayurvedic Science.</p>
+                </div>
+            </li>
+            <li class="acnn-slide" aria-roledescription="slide" aria-label="4 of 9">
+                <img src="images/MainFlash/CM-6.jpg" alt="" loading="lazy" />
+                <div class="acnn-slide-cap container">
+                    <span class="acnn-slide-eyebrow">Chief Minister Visit</span>
+                    <h2 class="acnn-slide-title">Hon&#8217;ble CM Reviews Developments at the Centre</h2>
+                    <p class="acnn-slide-text">Hon&#8217;ble CM of Bihar, Shri Nitish Kumar going through the developments of the Centre.</p>
+                </div>
+            </li>
+            <li class="acnn-slide" aria-roledescription="slide" aria-label="5 of 9">
+                <img src="images/MainFlash/Cm-7.jpg" alt="" loading="lazy" />
+                <div class="acnn-slide-cap container">
+                    <span class="acnn-slide-eyebrow">Chief Minister Visit</span>
+                    <h2 class="acnn-slide-title">Hon&#8217;ble CM with the Officials of the Centre</h2>
+                    <p class="acnn-slide-text">Hon&#8217;ble CM of Bihar, Shri Nitish Kumar with the officials of the Centre.</p>
+                </div>
+            </li>
+            <li class="acnn-slide" aria-roledescription="slide" aria-label="6 of 9">
+                <img src="images/MainFlash/Bihar_Divas-2022.jpg" alt="" loading="lazy" />
+                <div class="acnn-slide-cap container">
+                    <span class="acnn-slide-eyebrow">Celebration</span>
+                    <h2 class="acnn-slide-title">Bihar Divas</h2>
+                    <p class="acnn-slide-text">Celebrating Bihar Divas at the Aryabhatta Centre for Nanoscience &amp; Nanotechnology.</p>
+                </div>
+            </li>
+            <li class="acnn-slide" aria-roledescription="slide" aria-label="7 of 9">
+                <img src="images/MainFlash/007.png" alt="" loading="lazy" />
+                <div class="acnn-slide-cap container">
+                    <span class="acnn-slide-eyebrow">Research Facilities</span>
+                    <h2 class="acnn-slide-title">Advance Equipments</h2>
+                    <p class="acnn-slide-text">Over 20 high-end research instruments for nanoscience and nanotechnology research.</p>
+                    <a class="acnn-btn acnn-btn-white" href="ResearchEquipment.aspx">View Equipment</a>
+                </div>
+            </li>
+            <li class="acnn-slide" aria-roledescription="slide" aria-label="8 of 9">
+                <img src="images/MainFlash/PhDstudents.jpg" alt="" loading="lazy" />
+                <div class="acnn-slide-cap container">
+                    <span class="acnn-slide-eyebrow">Our People</span>
+                    <h2 class="acnn-slide-title">Faculties &amp; Scholars</h2>
+                    <p class="acnn-slide-text">Faculty and Ph.D. scholars driving research and teaching at the Centre.</p>
+                    <a class="acnn-btn acnn-btn-white" href="about-us.aspx">Read More</a>
+                </div>
+            </li>
+            <li class="acnn-slide" aria-roledescription="slide" aria-label="9 of 9">
+                <img src="images/MainFlash/005.png" alt="" loading="lazy" />
+                <div class="acnn-slide-cap container">
+                    <span class="acnn-slide-eyebrow">Academics</span>
+                    <h2 class="acnn-slide-title">Different Courses Available</h2>
+                    <p class="acnn-slide-text">M.Tech., M.Sc. and Ph.D. programmes in Nanoscience &amp; Nanotechnology.</p>
+                    <a class="acnn-btn acnn-btn-white" href="all-courses.aspx">Read More</a>
+                </div>
+            </li>
+        </ul>
+        <button type="button" class="acnn-hero-nav prev" aria-label="Previous slide">&#10094;</button>
+        <button type="button" class="acnn-hero-nav next" aria-label="Next slide">&#10095;</button>
+        <div class="acnn-hero-dots" role="tablist"></div>
+        <div class="acnn-hero-bar"><span></span></div>
+    </section>
+    <script src="js/acnn-hero.js"></script>
     <!--End slider-->
 
     <!-- Info strip -->
