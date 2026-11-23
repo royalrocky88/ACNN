@@ -1128,3 +1128,8 @@ footer .acnn-footer-bottom { margin-top: 56px; padding: 18px 0; }
     .acnn-head-card, .acnn-head-card::after, .acnn-head-card .orb, .acnn-head-photo::before, .acnn-head-photo::after,
     .acnn-prof-hero, .acnn-prof-hero .orb, .acnn-prof-photo::before, .acnn-prof-photo::after { animation: none; }
 }
+
+/* Sticky nav: when scrolled, only the rounded pill floats (no full-width band) */
+nav.is-stuck { background: transparent !important; box-shadow: none !important; pointer-events: none; }
+nav.is-stuck .megamenu_container { pointer-events: auto; box-shadow: 0 10px 30px rgba(18,18,50,.22); }
+@media (max-width: 980px) { nav.is-stuck { padding: 6px 0; } }
