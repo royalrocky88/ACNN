@@ -8,7 +8,8 @@
 <h1 class="span12">Academic Vision and Mission</h1>
 <div class="span12">
     <ul class="breadcrumb">
-      <li><a href="#">Home</a> <span class="divider">/</span></li>
+      <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
+      <li>About <span class="divider">/</span></li>
       <li class="active">Academic Vision & Mission</li>
     </ul>
 </div>

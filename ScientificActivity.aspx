@@ -3,6 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<div class="container"><div class="row">
+<h1 class="span12">Scientific Activities</h1>
+<div class="span12">
+    <ul class="breadcrumb">
+      <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
+      <li>Research <span class="divider">/</span></li>
+      <li class="active">Scientific Activities</li>
+    </ul>
+</div>
+</div></div>
 <!--Star slider-->
     <section class="slider">
        <div class="fullwidthbanner-container2">

@@ -223,6 +223,46 @@
         </div>
     </div>
 
+    <!-- Introduction -->
+    <section class="acnn-intro">
+        <div class="container">
+            <div class="acnn-heading">
+                <span class="eyebrow">About the Centre</span>
+                <h2>Introduction</h2>
+                <span class="acnn-orn"><i></i><b></b><i></i></span>
+            </div>
+
+            <div class="acnn-intro-stats">
+                <div><b>20+</b><span>High-end research instruments</span></div>
+                <div><b>1000+</b><span>Eminent academicians &amp; scholars visited</span></div>
+                <div><b>200+</b><span>Research papers published</span></div>
+                <div><b>100+</b><span>Countries reading our research</span></div>
+            </div>
+
+            <div class="acnn-intro-grid">
+                <article class="acnn-intro-card first">
+                    <p>Aryabhatta School of Nanoscience & Technology(SNN) is non-traditional, super specialized, frontier areas of subject of 21st century&  first cutting edge Research Centre of university of Bihar, equipped with 20 high-end research instruments such as  Scanning Electron Microscope, Multiferroic system, Vibrating Sample magnetometer, High energy ball mill etc. This is only one such frontiers related academic center in universities of Bihar. The Nanoscience and nanotechnology center of Aryabhatta Knowledge University was Established by the founder Vice Chancellor Prof. S N Guha with whole hearted support and encouragement from Honorable Chief minister Sri Nitish Kumar Ji. The first academic session of M.Tech and Ph.D. started from academic from year 2013. The academic and research activities of this Center visited/appreciated by Hon&#8217;ble Governor cum Chancellor Universities of Bihar, Hon&#8217;ble Chief minister Sri Nitish Kumar Ji, Education ministers ,various Govt. officers and eminent academicians of national/International repute.</p>
+                </article>
+                <div class="acnn-intro-photos">
+                    <a href="images/Home/1.jpg"><img alt="Visit to the Centre" src="images/Home/1.jpg" loading="lazy" /></a>
+                    <a href="images/Home/2.jpg"><img alt="Visit to the Centre" src="images/Home/2.jpg" loading="lazy" /></a>
+                    <a href="images/Home/3.jpg"><img alt="Visit to the Centre" src="images/Home/3.jpg" loading="lazy" /></a>
+                    <a href="images/Home/4.jpg"><img alt="Visit to the Centre" src="images/Home/4.jpg" loading="lazy" /></a>
+                </div>
+            </div>
+
+            <article class="acnn-intro-card wide">
+                <p>Different affairs of academic, research &development programme are being carried out under the leadership of Dr. Rakesh Kumar Singh, head of the Nanoscience center(i/c) , who have been also awarded &#8220;
+                <strong><b>Best Young Teacher with Contributions in modern field of Nanoscience</b></strong>&#8221; by Hon&#8217;ble Chancellor of university of Bihar cum Governor for his outstanding performance .  In the last 10 year more than 1000 eminent academicians/Scholars from different parts of world/country/state visited Nanoscience center of Aryabhatta Knowledge University. About more than 200 research papers published/ final progress in SCI/Scopus/WoS/Peer reviewed Journals by Nanotechnology center in multidisciplinary area of Science, Engineering & technology including Engineering Science, Agriculture, Electronics, Medicine, Food, and Ayurveda and Basic Sciences. 2 patents and 2 prototype have been filed/developed in the field of low cost LED, Agriculture and purification of water.</p>
+            </article>
+
+            <blockquote class="acnn-intro-call">
+                <i class="icon-quote-left"></i>
+                <p>Scientists/Academicians of About More than 100 countries of the world including China, USA, UK, Germany, others cited/appreciated/read the frontiers research activities of the nanoscience center. The International level research activities and world class scientific infrastructure can be seen- http://acnn.akubihar.ac.in.</p>
+            </blockquote>
+        </div>
+    </section>
+
     <!-- Programmes / equipment / admission -->
     <section class="acnn-section">
         <div class="container">
@@ -589,22 +629,4 @@
         </div>
     </section>
 
-    <!-- Introduction -->
-    <section class="acnn-section">
-        <div class="container">
-            <div class="acnn-panel">
-                <h2>Introduction</h2>
-                <p align="justify">Aryabhatta School of Nanoscience & Technology(SNN) is non-traditional, super specialized, frontier areas of subject of 21st century&  first cutting edge Research Centre of university of Bihar, equipped with 20 high-end research instruments such as  Scanning Electron Microscope, Multiferroic system, Vibrating Sample magnetometer, High energy ball mill etc. This is only one such frontiers related academic center in universities of Bihar. The Nanoscience and nanotechnology center of Aryabhatta Knowledge University was Established by the founder Vice Chancellor Prof. S N Guha with whole hearted support and encouragement from Honorable Chief minister Sri Nitish Kumar Ji. The first academic session of M.Tech and Ph.D. started from academic from year 2013. The academic and research activities of this Center visited/appreciated by Hon&#8217;ble Governor cum Chancellor Universities of Bihar, Hon&#8217;ble Chief minister Sri Nitish Kumar Ji, Education ministers ,various Govt. officers and eminent academicians of national/International repute.</p>
-                <div class="acnn-intro-photos">
-                    <img alt="" src="images/Home/1.jpg" />
-                    <img alt="" src="images/Home/2.jpg" />
-                    <img alt="" src="images/Home/3.jpg" />
-                    <img alt="" src="images/Home/4.jpg" />
-                </div>
-                <p align="justify">Different affairs of academic, research &development programme are being carried out under the leadership of Dr. Rakesh Kumar Singh, head of the Nanoscience center(i/c) , who have been also awarded &#8220;
-                <strong><b>Best Young Teacher with Contributions in modern field of Nanoscience</b></strong>&#8221; by Hon&#8217;ble Chancellor of university of Bihar cum Governor for his outstanding performance .  In the last 10 year more than 1000 eminent academicians/Scholars from different parts of world/country/state visited Nanoscience center of Aryabhatta Knowledge University. About more than 200 research papers published/ final progress in SCI/Scopus/WoS/Peer reviewed Journals by Nanotechnology center in multidisciplinary area of Science, Engineering & technology including Engineering Science, Agriculture, Electronics, Medicine, Food, and Ayurveda and Basic Sciences. 2 patents and 2 prototype have been filed/developed in the field of low cost LED, Agriculture and purification of water.
-                <b><br />Scientists/Academicians of About More than 100 countries of the world including China, USA, UK, Germany, others cited/appreciated/read the frontiers research activities of the nanoscience center. The International level research activities and world class scientific infrastructure can be seen- http://acnn.akubihar.ac.in. </b></p>
-            </div>
-        </div>
-    </section>
 </asp:Content>

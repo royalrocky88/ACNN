@@ -10,6 +10,7 @@
 	<div class="span12">
 		<ul class="breadcrumb">
 			<li><a href="Default.aspx">Home</a><span class="divider">/</span></li>
+			<li>About <span class="divider">/</span></li>
 			<li class="active">About us</li>
 		</ul>
 	</div>

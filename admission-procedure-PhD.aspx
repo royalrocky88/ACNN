@@ -16,12 +16,13 @@
 <div class="container">
 
 <div class="row">
-<h1 class="span12">Admission Procedure</h1>
+<h1 class="span12">Ph.D. Admission Procedure</h1>
 
 <div class="span12">
     <ul class="breadcrumb">
-      <li><a href="#">Home</a> <span class="divider">/</span></li>
-      <li class="active">Admission Procedure</li>
+      <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
+      <li>Academics <span class="divider">/</span></li>
+      <li class="active">Ph.D. Admission</li>
     </ul>
 </div>
 <!-- =========================Start Col left section ============================= -->

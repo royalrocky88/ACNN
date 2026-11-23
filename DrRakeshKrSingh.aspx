@@ -24,7 +24,15 @@
 
 <div class="row">
 
-<h1 class="span12">Dr. Rakesh Kr. Singh </h1>
+<h1 class="span12">Head @ Centre</h1>
+<div class="span12">
+    <ul class="breadcrumb">
+      <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
+      <li>About <span class="divider">/</span></li>
+      <li class="active">Dr. Rakesh Kr. Singh</li>
+    </ul>
+</div>
+
 
 <!-- =========================Start Col left section ============================= -->
 
