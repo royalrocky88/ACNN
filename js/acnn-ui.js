@@ -254,4 +254,19 @@
         if (t.closest('.megamenu_container a[href="#"]')) { e.preventDefault(); }
         if (!t.closest('.megamenu')) { closeMenus(); }
     });
+    /* ------------------------------------------------------------------
+       4. Sticky navigation: add a shadow once the page has scrolled
+       ------------------------------------------------------------------ */
+    (function () {
+        var nav = document.querySelector('nav');
+        if (!nav) { return; }
+        var on = false;
+        function upd() {
+            var y = window.pageYOffset || document.documentElement.scrollTop;
+            var st = y > nav.offsetTop + 2 || y > 120;
+            if (st !== on) { on = st; nav.className = on ? nav.className + ' is-stuck' : nav.className.replace(/\s*is-stuck/g, ''); }
+        }
+        window.addEventListener('scroll', upd, { passive: true });
+        upd();
+    })();
 })();
