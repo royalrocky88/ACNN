@@ -929,3 +929,16 @@ footer i { color: #fff; }
 .acnn-staff-qual:empty, .acnn-staff-note:empty, .acnn-staff-role:empty { display: none; }
 .acnn-staff-empty { text-align: center; color: #5a6784; margin: 0; }
 @media (max-width: 575px) { .acnn-staff-grid { grid-template-columns: 1fr; } }
+
+/* footer bottom strip: white band, blue text; copyright left, developer credit right */
+footer { padding-bottom: 0 !important; }
+footer .acnn-footer-bottom { background: #fff; color: var(--acnn-teal); border-top: 0; margin: 40px 0 0; padding: 14px 0; display: block; text-align: left; }
+footer .acnn-footer-bottom .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px 24px; }
+footer .acnn-footer-bottom span { color: var(--acnn-teal); font: 500 13.5px/1.5 var(--acnn-font); }
+footer .acnn-footer-bottom .fb-right { text-align: right; font-weight: 600; }
+@media (max-width: 767px) {
+    footer .acnn-footer-bottom { margin-top: 28px; }
+    footer .acnn-footer-bottom .container { flex-direction: column; justify-content: center; text-align: center; gap: 4px; }
+    footer .acnn-footer-bottom .fb-right { text-align: center; }
+}
+footer .acnn-footer-bottom .container::before, footer .acnn-footer-bottom .container::after { display: none; content: none; }

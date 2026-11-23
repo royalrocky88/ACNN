@@ -218,8 +218,12 @@
             </ul>
         </div>
     </div>
-    <div class="acnn-footer-bottom"><span>Aryabhatta Knowledge University</span><span>Developed by Rocky Ranjan (IT Cell)</span></div>
-    <div class="acnn-copyright">Copyright &copy; 2026 Aryabhatta Knowledge University, Patna. All rights reserved.</div>
+  </div>
+  <div class="acnn-footer-bottom">
+    <div class="container">
+      <span class="fb-left">Copyright &copy; 2026 Aryabhatta Knowledge University, Patna. All rights reserved.</span>
+      <span class="fb-right">Developed by Rocky Ranjan (IT Cell)</span>
+    </div>
   </div>
   </footer><!-- End footer-->
   <div id="toTop">Back to Top</div>
