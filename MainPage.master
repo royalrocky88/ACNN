@@ -74,11 +74,7 @@
     <header class="acnn-header">
         <div class="container">
             <div class="acnn-brand">
-                <a href="Default.aspx"><img src="img/logosnn.png" alt="Aryabhatta Centre for Nanoscience and Nanotechnology" /></a>
-                <div class="acnn-tag hidden-phone">
-                    <strong>Aryabhatta Centre for Nanoscience &amp; Nanotechnology</strong>
-                    <span>Aryabhatta Knowledge University, Patna</span>
-                </div>
+                <a href="Default.aspx"><img src="img/snn-logo.gif" alt="School of Nanoscience &amp; Nanotechnology, Aryabhatta Knowledge University, Patna" width="600" height="90" /></a>
             </div>
             <div class="acnn-header-cta">
                 <div class="acnn-call hidden-phone"><small>Call us</small><b>+91 810 292 6986</b></div>

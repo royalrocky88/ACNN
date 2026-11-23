@@ -14,6 +14,26 @@
 		</ul>
 	</div>
 </div>
+<div class="mu-our-teacher-area acnn-head-wrap">
+    <div class="mu-title">
+        <h2>Team Head</h2>
+    </div>
+    <a class="acnn-head-card" href="DrRakeshKrSingh.aspx" title="View the full profile of Dr. Rakesh Kr. Singh">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        <span class="acnn-head-photo"><img src="img/DrRakeshSirN.jpg" alt="Dr. Rakesh Kr. Singh" /></span>
+        <span class="acnn-head-info">
+            <span class="acnn-head-role">Head of the Centre</span>
+            <strong class="acnn-head-name">Dr. Rakesh Kr. Singh</strong>
+            <span class="acnn-head-qual">Ph.D. (Nanoscience) &middot; Aryabhatta Knowledge University, Patna</span>
+            <span class="acnn-head-chips">
+                <span>14 Ph.D. &amp; 46 M.Tech students guided</span>
+                <span>Research cited in 50+ countries</span>
+                <span>200+ conferences organised</span>
+            </span>
+            <span class="acnn-head-go">View Full Profile <i class="icon-arrow-right"></i></span>
+        </span>
+    </a>
+</div>
        <div>
           <div class="mu-our-teacher-area">
             <!-- begain title -->
