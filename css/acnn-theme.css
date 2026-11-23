@@ -1146,3 +1146,11 @@ nav.is-stuck .megamenu_container { pointer-events: auto; box-shadow: 0 10px 30px
     .container > .row > aside.span4, .container > .row > section.span8 { float: none; width: 100%; margin-left: 0; box-sizing: border-box; }
 }
 .container > .row > aside.span4 p, .container > .row > aside.span4 p[align] { text-align: left !important; hyphens: auto; }
+
+/* Header rows spread across the same width as the nav pill / page content */
+@media (min-width: 768px) {
+    .acnn-topbar .container, .acnn-header .container { width: 100%; max-width: 1214px; margin: 0 auto; padding-left: 22px; padding-right: 22px; box-sizing: border-box; display: flex; }
+    .acnn-topbar .container::before, .acnn-topbar .container::after, .acnn-header .container::before, .acnn-header .container::after { display: none; }
+    .acnn-topbar .container { justify-content: space-around; }
+    .acnn-header .container { justify-content: space-between; }
+}
