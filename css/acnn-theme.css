@@ -1134,11 +1134,6 @@ nav.is-stuck { background: transparent !important; box-shadow: none !important; 
 nav.is-stuck .megamenu_container { pointer-events: auto; box-shadow: 0 10px 30px rgba(18,18,50,.22); }
 @media (max-width: 980px) { nav.is-stuck { padding: 6px 0; } }
 
-/* Sidebar pages: aside.span4 + section.span8 sit side by side inside the (margin-less) row */
-@media (min-width: 768px) {
-    .container > .row > aside.span4 { float: left; margin-left: 0; width: 31.6%; box-sizing: border-box; }
-    .container > .row > aside.span4 + section.span8 { float: left; margin-left: 2.6%; width: 65.8%; box-sizing: border-box; }
-}
 @media (min-width: 768px) {
     .container > .row > h1.span12 + aside.span4, .container > .row > h1.span12 + aside.span4 + section.span8 { margin-top: 24px; }
 }
@@ -1153,4 +1148,26 @@ nav.is-stuck .megamenu_container { pointer-events: auto; box-shadow: 0 10px 30px
     .acnn-topbar .container::before, .acnn-topbar .container::after, .acnn-header .container::before, .acnn-header .container::after { display: none; }
     .acnn-topbar .container { justify-content: space-around; }
     .acnn-header .container { justify-content: space-between; }
+}
+
+/* Multi-column rows: Bootstrap 2 widths + margin-less row made columns wrap. Use flex with a 30px gap. */
+@media (min-width: 768px) {
+    .container > .row { display: flex; flex-wrap: wrap; align-items: flex-start; column-gap: 30px; }
+    .container > .row::before, .container > .row::after { display: none; }
+    .container > .row > [class*="span"] { float: none; margin-left: 0; box-sizing: border-box; }
+    .container > .row > .span12 { width: 100%; }
+    .container > .row > .span1 { width: calc((100% - 330px) / 12 * 1 + 0px); }
+    .container > .row > .span2 { width: calc((100% - 330px) / 12 * 2 + 30px); }
+    .container > .row > .span3 { width: calc((100% - 330px) / 12 * 3 + 60px); }
+    .container > .row > .span4 { width: calc((100% - 330px) / 12 * 4 + 90px); }
+    .container > .row > .span5 { width: calc((100% - 330px) / 12 * 5 + 120px); }
+    .container > .row > .span6 { width: calc((100% - 330px) / 12 * 6 + 150px); }
+    .container > .row > .span7 { width: calc((100% - 330px) / 12 * 7 + 180px); }
+    .container > .row > .span8 { width: calc((100% - 330px) / 12 * 8 + 210px); }
+    .container > .row > .span9 { width: calc((100% - 330px) / 12 * 9 + 240px); }
+    .container > .row > .span10 { width: calc((100% - 330px) / 12 * 10 + 270px); }
+    .container > .row > .span11 { width: calc((100% - 330px) / 12 * 11 + 300px); }
+    /* a lone content column (no sidebar) sits in the centre */
+    .container > .row > section.span8 { margin-left: auto; margin-right: auto; }
+    .container > .row > aside.span4 + section.span8 { margin-left: 0; margin-right: 0; }
 }
