@@ -17,10 +17,6 @@
 </div>
 
 <!-- =========================Start Col left section ============================= -->
-<aside  class="span4 ">
-	
-    
-</aside>
 
  <!-- =========================Start Col right section ============================= -->
 <section class="span8  ">

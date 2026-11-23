@@ -176,7 +176,6 @@
 
 <div class="container">
 <div class="row">
-	<aside  class="span4 "></aside>
 
 <section class="span8"></section>
   </div>

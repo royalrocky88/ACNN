@@ -1133,3 +1133,16 @@ footer .acnn-footer-bottom { margin-top: 56px; padding: 18px 0; }
 nav.is-stuck { background: transparent !important; box-shadow: none !important; pointer-events: none; }
 nav.is-stuck .megamenu_container { pointer-events: auto; box-shadow: 0 10px 30px rgba(18,18,50,.22); }
 @media (max-width: 980px) { nav.is-stuck { padding: 6px 0; } }
+
+/* Sidebar pages: aside.span4 + section.span8 sit side by side inside the (margin-less) row */
+@media (min-width: 768px) {
+    .container > .row > aside.span4 { float: left; margin-left: 0; width: 31.6%; box-sizing: border-box; }
+    .container > .row > aside.span4 + section.span8 { float: left; margin-left: 2.6%; width: 65.8%; box-sizing: border-box; }
+}
+@media (min-width: 768px) {
+    .container > .row > h1.span12 + aside.span4, .container > .row > h1.span12 + aside.span4 + section.span8 { margin-top: 24px; }
+}
+@media (max-width: 767px) {
+    .container > .row > aside.span4, .container > .row > section.span8 { float: none; width: 100%; margin-left: 0; box-sizing: border-box; }
+}
+.container > .row > aside.span4 p, .container > .row > aside.span4 p[align] { text-align: left !important; hyphens: auto; }

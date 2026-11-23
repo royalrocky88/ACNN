@@ -14,18 +14,6 @@
 		</ul>
 	</div>
 	<!-- =========================Start Col left section ============================= -->   
-	<aside class="span4 ">
-	<!--<div class="col-left">
-		<h4>Vision</h4>
-		<p align="justify">The challenges posed by nanoscience and nanotechnology cannot be answered solely by principles and techniques derived solely from a single science or a technology discipline. Instead, it requires the contributions of diverse inter-related fields, but is not limited to, physics, chemistry, biology and engineering. Potential applications at the nanoscale may well provide for unprecedented benefits, but will require an even more diverse set of methodologies, especially for applications in medicine, agriculture, environment and electronics. Keeping in view the prodigal potentials of this upcoming area, Aryabhatta Knowledge University, Patna has initiated postgraduate (M.Tech. or M.S./M.Sc.) and research (Ph.D.) programmes in the area of nanoscience and nanotechnology. The rapid development and the exponential possibility of commercialization of the nano-based products warrants appropriate as well as acuminate development of human resource in this field. It is expected that this venture shall have major impact on the educational infrastructure as well as society too in the coming future. 
-		</p>
-		
-        
-		
-	</div>--><!--End col left -->
-    
-	
-	</aside>
 
 <!-- =========================Start Col right section ============================= --> 
 <section class="span12">
