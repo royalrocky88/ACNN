@@ -140,6 +140,7 @@
             </div>
             </li>
 
+            <li><a href="ResearchLab.aspx" class="nodrop-down">Research Lab</a></li>
             <li><a href="Visitors.aspx" class="nodrop-down">Visitors @ Centre</a></li>
             <li><a href="AnnualReport.aspx" class="nodrop-down">Annual Reports</a></li>
 
