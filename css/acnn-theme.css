@@ -908,3 +908,7 @@ footer i { color: #fff; }
     .acnn-slide.is-active > img, .acnn-slide.is-active .acnn-slide-eyebrow, .acnn-slide.is-active .acnn-slide-title,
     .acnn-slide.is-active .acnn-slide-text, .acnn-slide.is-active .acnn-btn { animation: none; }
 }
+
+/* footer credit bar: university left, developer credit right */
+.acnn-footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px 20px; text-align: left; font-size: 14px; }
+@media (max-width: 575px) { .acnn-footer-bottom { flex-direction: column; text-align: center; justify-content: center; } }
