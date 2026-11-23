@@ -912,3 +912,20 @@ footer i { color: #fff; }
 /* footer credit bar: university left, developer credit right */
 .acnn-footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px 20px; text-align: left; font-size: 14px; }
 @media (max-width: 575px) { .acnn-footer-bottom { flex-direction: column; text-align: center; justify-content: center; } }
+
+/* footer copyright line (below the university / developer row) */
+.acnn-footer-bottom { border-top: 1px solid rgba(255,255,255,.28); }
+.acnn-copyright { text-align: center; font-size: 13px; color: #c9d4ff; padding: 10px 0 0; margin-bottom: -10px; }
+
+/* Staff_CNN.aspx: staff as cards */
+.acnn-staff-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 22px; padding: 6px 2px 4px; }
+.acnn-staff-card { background: #fff; border: 1px solid var(--acnn-line); border-radius: var(--acnn-radius); box-shadow: var(--acnn-shadow-sm); padding: 24px 20px 22px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 4px; transition: transform .25s, box-shadow .25s; }
+.acnn-staff-card:hover { transform: translateY(-5px); box-shadow: var(--acnn-shadow); }
+.mu-our-teacher-area img.acnn-staff-photo, .acnn-staff-photo { width: 128px; height: 128px; object-fit: cover; object-position: center top; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 3px var(--acnn-teal); margin: 0 0 12px; background: var(--acnn-soft); }
+.acnn-staff-name { margin: 0; font: 700 18px/1.3 var(--acnn-serif); color: var(--acnn-navy); }
+.acnn-staff-role { display: inline-block; margin-top: 4px; padding: 4px 14px; border-radius: 999px; background: #e9eeff; color: var(--acnn-teal); font: 600 12.5px/1.4 var(--acnn-font); letter-spacing: .03em; }
+.acnn-staff-qual { display: block; margin-top: 10px; font-size: 13.5px; line-height: 1.6; color: #44506b; }
+.acnn-staff-note { display: block; margin-top: 8px; padding-top: 10px; border-top: 1px dashed var(--acnn-line); font-size: 13px; line-height: 1.6; color: #5a6784; text-align: left; align-self: stretch; }
+.acnn-staff-qual:empty, .acnn-staff-note:empty, .acnn-staff-role:empty { display: none; }
+.acnn-staff-empty { text-align: center; color: #5a6784; margin: 0; }
+@media (max-width: 575px) { .acnn-staff-grid { grid-template-columns: 1fr; } }

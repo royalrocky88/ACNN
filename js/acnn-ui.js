@@ -11,7 +11,7 @@
     var IMG_RE = /\.(?:jpe?g|png|gif|webp|bmp|svg)(?:[?#].*)?$/i;
     var PLACEHOLDER = 'img/no-image.svg';
     var GROUPS = ['.acnn-visitors', '.event-images', '.acnn-clip-grid', '.acnn-gallery-grid', '#gallery', 'section'];
-    var FALLBACK_SCOPE = '.gallery, .event-images, .acnn-clip-grid, .acnn-gallery-grid, .acnn-visitors, .acnn-person, .mu-our-teacher-area';
+    var FALLBACK_SCOPE = '.gallery, .event-images, .acnn-clip-grid, .acnn-gallery-grid, .acnn-visitors, .acnn-person, .mu-our-teacher-area, .acnn-staff-grid';
 
     /* ------------------------------------------------------------------
        1. Missing-image fallback

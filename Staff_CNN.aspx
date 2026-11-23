@@ -52,60 +52,24 @@
                 </UpdateParameters>
               </asp:ObjectDataSource>
               <asp:ListView ID="ListView1" runat="server" DataSourceID="ObjectDataSource1" 
-                  EnableModelValidation="True" DataKeyNames="SlNo" GroupItemCount="4">
-               <%--</asp:Repeater>--%>
-                  
-                  
-                  
-                  
-                  <GroupTemplate>
-                      <tr ID="itemPlaceholderContainer" runat="server">
-                          <td ID="itemPlaceholder" runat="server">
-                          </td>
-                      </tr>
-                  </GroupTemplate>
-                  
+                  EnableModelValidation="True" DataKeyNames="SlNo">
+                  <EmptyDataTemplate>
+                      <p class="acnn-staff-empty">Details will be updated soon.</p>
+                  </EmptyDataTemplate>
                   <ItemTemplate>
-                      <td runat="server" style="text-align:center;vertical-align: text-top;">
-                          
-                         <img src='<%# Eval("PhotoPath")%>' alt="Staffs img" class="thumbnail2"> 
-                          <br />
-                          Name:
-                          <asp:Label ID="StaffNameLabel" runat="server" Text='<%# Eval("StaffName") %>' />
-                          <br />
-                          Designation:
-                          <asp:Label ID="DesignationLabel" runat="server" 
-                              Text='<%# Eval("Designation") %>' />
-                          <br />
-                          Qualification:
-                          <asp:Label ID="QualificationLabel" runat="server" 
-                              Text='<%# Eval("Qualification") %>' />
-                          <br />
-                          BriefNote:
-                          <asp:Label ID="BriefNoteLabel" runat="server" Text='<%# Eval("BriefNote") %>' />
-                        
-                      </td>
+                      <div class="acnn-staff-card">
+                          <img src='<%# Eval("PhotoPath")%>' alt='<%# Eval("StaffName") %>' class="acnn-staff-photo" />
+                          <h3 class="acnn-staff-name"><asp:Label ID="StaffNameLabel" runat="server" Text='<%# Eval("StaffName") %>' /></h3>
+                          <asp:Label ID="DesignationLabel" runat="server" CssClass="acnn-staff-role" Text='<%# Eval("Designation") %>' />
+                          <asp:Label ID="QualificationLabel" runat="server" CssClass="acnn-staff-qual" Text='<%# Eval("Qualification") %>' />
+                          <asp:Label ID="BriefNoteLabel" runat="server" CssClass="acnn-staff-note" Text='<%# Eval("BriefNote") %>' />
+                      </div>
                   </ItemTemplate>
                   <LayoutTemplate>
-                  
-                  
-             
-                      <table runat="server" style="height:100%">
-                          <tr runat="server">
-                              <td runat="server">
-                                  <table ID="groupPlaceholderContainer" runat="server" border="0" style="">
-                                      <tr ID="groupPlaceholder" runat="server">
-                                      </tr>
-                                  </table>
-                              </td>
-                          </tr>
-                          <tr runat="server">
-                              <td runat="server" style="">
-                              </td>
-                          </tr>
-                      </table>
+                      <div class="acnn-staff-grid">
+                          <div id="itemPlaceholder" runat="server"></div>
+                      </div>
                   </LayoutTemplate>
-                  
               </asp:ListView>
             <!-- End our teacher content -->    
             
@@ -149,54 +113,22 @@
               </asp:ObjectDataSource>
            
               <asp:ListView ID="ListView2" runat="server" DataSourceID="ObjectDataSource_supportStaff" 
-                  EnableModelValidation="True" DataKeyNames="SlNo" GroupItemCount="4">
-               <%--</asp:Repeater>--%>
-                  
-                  
-                  
-                  
-                  <GroupTemplate>
-                      <tr ID="itemPlaceholderContainer" runat="server">
-                          <td ID="itemPlaceholder" runat="server">
-                          </td>
-                      </tr>
-                  </GroupTemplate>
-                  
+                  EnableModelValidation="True" DataKeyNames="SlNo">
+                  <EmptyDataTemplate>
+                      <p class="acnn-staff-empty">Details will be updated soon.</p>
+                  </EmptyDataTemplate>
                   <ItemTemplate>
-                      <td id="Td1" runat="server" style="text-align:center;vertical-align: text-top;">
-                          
-                         <img src='<%# Eval("PhotoPath")%>' alt="Staffs img" class="thumbnail2"> 
-                          <br />
-                          Name:
-                          <asp:Label ID="StaffNameLabel" runat="server" Text='<%# Eval("StaffName") %>' />
-                          <br />
-                          Designation:
-                          <asp:Label ID="DesignationLabel" runat="server" 
-                              Text='<%# Eval("Designation") %>' />
-                                          
-                          
-                      </td>
+                      <div class="acnn-staff-card">
+                          <img src='<%# Eval("PhotoPath")%>' alt='<%# Eval("StaffName") %>' class="acnn-staff-photo" />
+                          <h3 class="acnn-staff-name"><asp:Label ID="StaffNameLabel" runat="server" Text='<%# Eval("StaffName") %>' /></h3>
+                          <asp:Label ID="DesignationLabel" runat="server" CssClass="acnn-staff-role" Text='<%# Eval("Designation") %>' />
+                      </div>
                   </ItemTemplate>
                   <LayoutTemplate>
-                  
-                  
-             
-                      <table id="Table1" runat="server" style="height:100%">
-                          <tr id="Tr1" runat="server">
-                              <td id="Td2" runat="server">
-                                  <table ID="groupPlaceholderContainer" runat="server" border="0" style="">
-                                      <tr ID="groupPlaceholder" runat="server">
-                                      </tr>
-                                  </table>
-                              </td>
-                          </tr>
-                          <tr id="Tr2" runat="server">
-                              <td id="Td3" runat="server" style="">
-                              </td>
-                          </tr>
-                      </table>
+                      <div class="acnn-staff-grid">
+                          <div id="itemPlaceholder" runat="server"></div>
+                      </div>
                   </LayoutTemplate>
-                  
               </asp:ListView>
 
                   
