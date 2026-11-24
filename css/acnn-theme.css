@@ -1264,3 +1264,31 @@ nav.is-stuck .megamenu_container { pointer-events: auto; box-shadow: 0 10px 30px
 @media (prefers-reduced-motion: reduce) { .acnn-about-vision, .acnn-about-vision .orb { animation: none; } }
 .container > .row > .span12.acnn-aboutpg { display: grid; }
 .acnn-about-hero figcaption { position: static; padding: 18px 26px 20px; background: linear-gradient(125deg, #121232, #1531a8); }
+
+/* ==========================================================================
+   Scientific Activities gallery
+   ========================================================================== */
+.container > .row > .span12.acnn-sapg { display: block; padding-top: 24px; }
+.acnn-sapg .acnn-lab-hero { margin-top: 0; }
+.acnn-sa-filter { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 0 0 30px; }
+.acnn-sa-filter button { cursor: pointer; padding: 10px 22px; border-radius: 999px; border: 1px solid var(--acnn-line); background: #fff; color: #3b4660; font: 600 14px/1 var(--acnn-font); transition: all .25s; }
+.acnn-sa-filter button b { margin-left: 6px; padding: 2px 8px; border-radius: 999px; background: #e6ecff; color: var(--acnn-teal); font-size: 12px; }
+.acnn-sa-filter button:hover { border-color: #b9c8ff; transform: translateY(-2px); }
+.acnn-sa-filter button.on { background: var(--acnn-teal); border-color: var(--acnn-teal); color: #fff; box-shadow: 0 8px 20px rgba(29,66,217,.3); }
+.acnn-sa-filter button.on b { background: rgba(255,255,255,.2); color: #fff; }
+.acnn-sa-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.acnn-sa { position: relative; margin: 0; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--acnn-line); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 28px rgba(18,18,50,.07); transition: transform .3s ease, box-shadow .3s ease, border-color .3s; }
+.acnn-sa:hover { transform: translateY(-7px); border-color: #b9c8ff; box-shadow: 0 20px 44px rgba(29,66,217,.18); }
+.acnn-sa-img { position: relative; display: block; aspect-ratio: 4 / 3; overflow: hidden; background: linear-gradient(135deg, #e6ecff, #f5f8ff); }
+.acnn-sa-img img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .7s ease; }
+.acnn-sa:hover .acnn-sa-img img { transform: scale(1.08); }
+.acnn-sa-zoom { position: absolute; right: 14px; bottom: 14px; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,.95); color: var(--acnn-teal); opacity: 0; transform: scale(.7); transition: all .3s; }
+.acnn-sa:hover .acnn-sa-zoom { opacity: 1; transform: none; }
+.acnn-sa.noimg .acnn-sa-img::after { content: "Photo will appear here"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font: 600 13px/1 var(--acnn-font); color: #7b89ad; }
+.acnn-sa figcaption { position: relative; flex: 1; padding: 22px 22px 22px; }
+.acnn-sa-no { position: absolute; top: -22px; left: 20px; width: 44px; height: 44px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font: 700 17px/1 var(--acnn-serif); color: #fff; background: linear-gradient(135deg, var(--acnn-teal), #5b78ff); box-shadow: 0 8px 18px rgba(29,66,217,.35); }
+.acnn-sa-cat { display: inline-block; margin: 0 0 8px 56px; padding: 4px 12px; border-radius: 999px; background: #fff3dc; color: #8a5a00; font: 700 10.5px/1.3 var(--acnn-font); letter-spacing: .08em; text-transform: uppercase; }
+.acnn-sa h3 { margin: 6px 0 8px; font: 700 18px/1.4 var(--acnn-serif); color: var(--acnn-navy); }
+.acnn-sa p { margin: 0; font-size: 14px; line-height: 1.75; color: #55627f; text-align: left; }
+@media (max-width: 991px) { .acnn-sa-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; } }
+@media (max-width: 600px) { .acnn-sa-grid { grid-template-columns: 1fr; } .acnn-sa-filter button { padding: 9px 16px; font-size: 13px; } }
