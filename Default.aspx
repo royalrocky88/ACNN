@@ -629,4 +629,36 @@
         </div>
     </section>
 
+    <!-- Research Lab -->
+    <section class="acnn-section">
+        <div class="container">
+            <div class="acnn-heading">
+                <span class="eyebrow">Research Lab</span>
+                <h2>Our Research Laboratory Equipment</h2>
+            </div>
+            <div class="acnn-lab-list">
+<article class="acnn-eq">
+            <div class="acnn-eq-no"><small>Sl. No.</small><b>1</b></div>
+            <div class="acnn-eq-gal g2"><a class="acnn-eq-img" href="img/equipment/eq22.jpg" title="Automatic pH and Conductivity meter"><img src="img/equipment/eq22.jpg" alt="Automatic pH and Conductivity meter" /></a><a class="acnn-eq-img" href="img/equipment/eq25.jpg" title="Automatic pH and Conductivity meter"><img src="img/equipment/eq25.jpg" alt="Automatic pH and Conductivity meter" /></a></div>
+            <div class="acnn-eq-info">
+                <h3>Automatic pH and Conductivity meter</h3>
+                <span class="acnn-eq-make"><i class="icon-wrench"></i> Make: <b>Mettler Toledo AG, Switzerland</b></span>
+            </div>
+        </article>
+<article class="acnn-eq">
+            <div class="acnn-eq-no"><small>Sl. No.</small><b>2</b></div>
+            <div class="acnn-eq-gal g1"><a class="acnn-eq-img" href="img/equipment/eq21.jpg" title="Water cooled bench top grinding machine"><img src="img/equipment/eq21.jpg" alt="Water cooled bench top grinding machine" /></a></div>
+            <div class="acnn-eq-info">
+                <h3>Water cooled bench top grinding machine</h3>
+                <p class="acnn-eq-spec">Planetary ball mill type</p>
+                <span class="acnn-eq-make"><i class="icon-wrench"></i> Make: <b>Retsch, Germany</b></span>
+            </div>
+        </article>
+            </div>
+            <div class="acnn-lab-more">
+                <a class="acnn-btn acnn-btn-amber" href="ResearchLab.aspx">Read More <i class="icon-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
 </asp:Content>

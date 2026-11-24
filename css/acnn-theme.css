@@ -1456,3 +1456,9 @@ a:hover > .acnn-zoom { opacity: 1; transform: none; }
 .container > .row > .span12 > .acnn-prof-hero{margin-top:30px}
 .acnn-herowrap + .acnn-prof-hero,.acnn-lab-hero + .acnn-prof-hero{margin-top:30px}
 .acnn-career table{max-width:100% !important;box-sizing:border-box}.acnn-career td,.acnn-career th{box-sizing:border-box}
+
+/* Home: Research Lab teaser */
+.acnn-lab-more { text-align: center; margin-top: 34px; }
+.acnn-lab-more .acnn-btn { padding: 14px 38px; border-radius: 999px; font-weight: 700; }
+.acnn-lab-more .acnn-btn i { margin-left: 6px; transition: transform .25s; }
+.acnn-lab-more .acnn-btn:hover i { transform: translateX(5px); }
