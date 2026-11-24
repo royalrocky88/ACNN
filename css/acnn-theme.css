@@ -1413,3 +1413,46 @@ a:hover > .acnn-zoom { opacity: 1; transform: none; }
     .acnn-adm-proc .tab-content { padding: 18px; }
     .acnn-chips { grid-template-columns: 1fr; }
 }
+
+/* ==========================================================================
+   Remaining pages: PDF viewers, e-Contents, videos, visitors
+   ========================================================================== */
+.container > .row > .span12.acnn-herowrap { margin-top: 24px; margin-bottom: 30px; }
+.acnn-herowrap .acnn-lab-hero { margin: 0; }
+.acnn-herowrap .acnn-lab-hero a { color: #fff; }
+.acnn-widgetless { background: none; border: 0; box-shadow: none; padding: 0; margin: 0; }
+.acnn-widgetless .widget-header { display: none; }
+.acnn-pgsec .col-right { padding: 0; }
+.acnn-pgsec .acnn-pdf { border-radius: 24px; border: 1px solid var(--acnn-line); box-shadow: 0 12px 32px rgba(18,18,50,.09); margin-bottom: 34px; transition: box-shadow .3s, transform .3s; }
+.acnn-pgsec .acnn-pdf:hover { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(29,66,217,.18); }
+.acnn-pgsec .acnn-pdf-bar { background: linear-gradient(110deg, var(--acnn-navy), #1531a8 60%, var(--acnn-teal)); padding: 16px 24px; }
+.acnn-pgsec .acnn-pdf-name { font-family: var(--acnn-serif); }
+
+/* e-Learning videos */
+.acnn-vid-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.acnn-vid { background: #fff; border: 1px solid var(--acnn-line); border-radius: 22px; overflow: hidden; box-shadow: 0 10px 28px rgba(18,18,50,.07); transition: transform .3s, box-shadow .3s, border-color .3s; }
+.acnn-vid:hover { transform: translateY(-7px); border-color: #b9c8ff; box-shadow: 0 20px 44px rgba(29,66,217,.18); }
+.acnn-vid-frame { position: relative; aspect-ratio: 16 / 9; background: #0b0b1e; }
+.acnn-vid-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.acnn-vid-cap { display: flex; align-items: center; gap: 12px; padding: 16px 20px; font: 700 16px/1.3 var(--acnn-serif); color: var(--acnn-navy); border-top: 3px solid var(--acnn-amber); }
+.acnn-vid-cap span { width: 38px; height: 38px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font: 700 15px/1 var(--acnn-serif); color: #fff; background: linear-gradient(135deg, var(--acnn-teal), #5b78ff); }
+@media (max-width: 991px) { .acnn-vid-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .acnn-vid-grid { grid-template-columns: 1fr; } }
+
+/* Visitors cards */
+.acnn-visitors > tbody { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; }
+.acnn-visitors .gallery { border-radius: 20px; border: 1px solid var(--acnn-line); box-shadow: 0 10px 28px rgba(18,18,50,.07); background: #fff; overflow: hidden; transition: transform .3s, box-shadow .3s, border-color .3s; }
+.acnn-visitors .gallery:hover { transform: translateY(-7px); border-color: #b9c8ff; box-shadow: 0 20px 44px rgba(29,66,217,.18); }
+.acnn-visitors .gallery img { transition: transform .7s ease; }
+.acnn-visitors .gallery:hover img { transform: scale(1.08); }
+.acnn-visitors .gallery .desc { padding: 14px 16px 16px; font: 600 14px/1.5 var(--acnn-font); color: var(--acnn-navy); border-top: 3px solid var(--acnn-amber); text-align: left; }
+@media (max-width: 1100px) { .acnn-visitors > tbody { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 767px) { .acnn-visitors > tbody { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
+@media (max-width: 420px) { .acnn-visitors > tbody { grid-template-columns: 1fr; } }
+
+/* eContents / profile fixes */
+#gallery.acnn-career{width:100% !important;max-width:100%;height:auto !important;float:none !important;margin:0 !important;box-sizing:border-box}
+#gallery.acnn-career td:last-child,#gallery.acnn-career th:last-child{text-align:center}
+.container > .row > .span12 > .acnn-prof-hero{margin-top:30px}
+.acnn-herowrap + .acnn-prof-hero,.acnn-lab-hero + .acnn-prof-hero{margin-top:30px}
+.acnn-career table{max-width:100% !important;box-sizing:border-box}.acnn-career td,.acnn-career th{box-sizing:border-box}

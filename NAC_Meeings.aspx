@@ -17,7 +17,13 @@
 	
 
 <!-- =========================Start Col right section ============================= --> 
-<section class="span12">
+<div class="span12 acnn-herowrap"><section class="acnn-lab-hero">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        <span class="acnn-prof-role">About</span>
+        <h2>National Advisory Committee of ACNN</h2>
+        <p>View the committee document below, or download the PDF.</p>
+    </section></div>
+<section class="span12 acnn-pgsec">
 	<div class="col-right">
        
        <div class="acnn-pdf" data-src="downloads/National_Advisiory_Committee_ACNN.pdf" data-title="National Advisory Committee of ACNN">
@@ -39,5 +45,6 @@
         </div>
        
     </div>
+<script src="js/acnn-profile.js"></script>
 </asp:Content>
 

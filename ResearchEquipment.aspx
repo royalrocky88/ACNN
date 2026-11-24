@@ -13,7 +13,13 @@
 			<li class="active">Research Equipment</li>
 		</ul>
 	</div>
-	<section class="span12">
+	<div class="span12 acnn-herowrap"><section class="acnn-lab-hero">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        <span class="acnn-prof-role">Research</span>
+        <h2>Research Equipment</h2>
+        <p>The equipment list of the Centre. See the <a href="ResearchLab.aspx" style="color:#fff;text-decoration:underline">Research Lab</a> page for pictures, serial-wise.</p>
+    </section></div>
+<section class="span12 acnn-pgsec">
 		<div class="col-right">
 			<div class="acnn-pdf" data-src="downloads/Equipment%20list.pdf" data-title="Research Equipment List">
 	<div class="acnn-pdf-bar">
@@ -33,4 +39,5 @@
 	</section>
 </div>
 </div>
+<script src="js/acnn-profile.js"></script>
 </asp:Content>

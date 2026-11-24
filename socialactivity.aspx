@@ -3,135 +3,40 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<!--Star slider-->
-    <section class="slider">
-       <div class="fullwidthbanner-container">
-					<div class="fullwidthbanner">
-						<ul>
-							<!-- THE FIRST SLIDE -->
-							<li data-transition="flyin" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb1.jpg" data-delay="4000" >
-										<img src="images/slides/21.jpg" alt="">
-                                        <div class="caption randomrotate"
-											 data-x="center"
-											 data-y="120"
-											 data-speed="300"
-											 data-start="1200"
-											 data-easing="easeOutExpo"  ></div>
-								</li>
-                                <!-- THE SECOND SLIDE -->
-                         		<li data-transition="3dcurtain-horizontal" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb2.jpg">
-                                <img src="images/slides/20.jpg" alt="">
-                        
-                                           <div class="caption randomrotate"
-											 data-x="center"
-											 data-y="90"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo"  ></div>
-
-										<div class="caption randomrotate"
-											 data-x="150"
-											 data-y="80"
-											 data-speed="300"
-											 data-start="2000"
-											 data-easing="easeOutExpo"  ></div>
-
-										<div class="caption randomrotate"
-											 data-x="180"
-											 data-y="300"
-											 data-speed="300"
-											 data-start="21000"
-											 data-easing="easeOutExpo"  ></div>
-
-										<div class="caption randomrotate"
-											 data-x="620"
-											 data-y="80"
-											 data-speed="300"
-											 data-start="3000"
-											 data-easing="easeOutExpo"  ></div>
-
-										<div class="caption randomrotate"
-											 data-x="605"
-											 data-y="300"
-											 data-speed="300"
-											 data-start="31000"
-											 data-easing="easeOutExpo"  ></div>
-                                </li>
-                                <!-- THE THIRD SLIDE -->
-                                <li data-transition="3dcurtain-horizontal" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb2.jpg">
-                                	<img src="images/slides/21.jpg" alt="">
-                                    
-                                     <div class="caption very_big_white lfl stl"
-											 data-x="right"
-											 data-y="180"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine"></div>
-                                             
-                                   <div class="caption lfb stl"
-											 data-x="right"
-											 data-y="250"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine" ></div>
-                                </li>
-                                <!-- THE FOURTH SLIDE -->
-                                <li data-transition="cube" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb2.jpg">
-                                	<img src="images/slides/22.jpg" alt="">
-                                    
-                                     <div class="caption very_big_white lfl stl"
-											 data-x="right"
-											 data-y="180"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine"></div>
-                                             
-                                   <div class="caption lfr stl"
-											 data-x="right"
-											 data-y="250"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine" ></div>
-                                </li>
-                                <!-- THE FIFTH SLIDE -->
-                                <li data-transition="slideleft" data-slotamount="1" data-masterspeed="300"  data-thumb="images/thumbs/thumb2.jpg">
-                                	<img src="images/slides/22.jpg" alt="">
-                                    <div class="caption very_big_white lfl stl"
-											 data-x="30"
-											 data-y="180"
-											 data-speed="300"
-											 data-start="1000"
-											 data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine"></div>
-
-										<div class="caption big_white lfl stl"
-											 data-x="30"
-											 data-y="250"
-											 data-speed="300"
-											 data-start="800"
-											 data-easing="easeOutExpo" data-end="9100" data-endspeed="300" data-endeasing="easeInSine"></div>
-                                </li>
-                                
-						</ul>
-
-						<div class="tp-bannertimer tp-bottom"></div>
-					</div>
-				</div>
-</section><!--End slider-->
-
-
-<div class="container">
-
-  <div class="row" id="main-boxes"></div>
-</div> <!-- end container-->
-
-
-
-
 <div class="container">
 <div class="row">
+<h1 class="span12">Social Activities</h1>
+<div class="span12">
+    <ul class="breadcrumb">
+      <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
+      <li class="active">Social Activities</li>
+    </ul>
+</div>
+<div class="span12 acnn-herowrap"><section class="acnn-lab-hero">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        <span class="acnn-prof-role">Gallery</span>
+        <h2>Social Activities</h2>
+        <p>Pictures of the social activities of the Centre.</p>
+    </section></div>
 
-<section class="span8"></section>
-  </div>
-   </div><!-- end container-->
+<div class="span12 acnn-pgsec">
+    <div class="acnn-sa-grid">
+        <figure class="acnn-sa reveal" data-cat="all">
+            <a class="acnn-sa-img" href="images/slides/20.jpg" title="Social activity 1"><img src="images/slides/20.jpg" alt="Social activity 1" loading="lazy" /><span class="acnn-sa-zoom"><i class="icon-zoom-in"></i></span></a>
+            <figcaption><span class="acnn-sa-no">01</span><span class="acnn-sa-cat">Social Activity</span><h3>Social Activity 1</h3></figcaption>
+        </figure>
+        <figure class="acnn-sa reveal" data-cat="all">
+            <a class="acnn-sa-img" href="images/slides/21.jpg" title="Social activity 2"><img src="images/slides/21.jpg" alt="Social activity 2" loading="lazy" /><span class="acnn-sa-zoom"><i class="icon-zoom-in"></i></span></a>
+            <figcaption><span class="acnn-sa-no">02</span><span class="acnn-sa-cat">Social Activity</span><h3>Social Activity 2</h3></figcaption>
+        </figure>
+        <figure class="acnn-sa reveal" data-cat="all">
+            <a class="acnn-sa-img" href="images/slides/22.jpg" title="Social activity 3"><img src="images/slides/22.jpg" alt="Social activity 3" loading="lazy" /><span class="acnn-sa-zoom"><i class="icon-zoom-in"></i></span></a>
+            <figcaption><span class="acnn-sa-no">03</span><span class="acnn-sa-cat">Social Activity</span><h3>Social Activity 3</h3></figcaption>
+        </figure>
+    </div>
+</div>
+</div><!-- end row-->
+</div> <!-- end container-->
+<script src="js/acnn-profile.js"></script>
+<script src="js/acnn-gallery.js"></script>
 </asp:Content>
-
