@@ -38,16 +38,15 @@
     </ul>
 </div>
 
-<section class="span12">
-	<div class="col-right">
-        <div class="widget borders widget-table">
-					
-					<div class="widget-header">
-						<h5>In various Newspapers</h5>
-					</div> <!-- .widget-header -->
-					
-					<div class="widget-content">						
-						<div id="gallery" class="gallery acnn-clip-grid">
+<div class="span12 acnn-mediapg">
+    <section class="acnn-lab-hero">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        <span class="acnn-prof-role">Gallery</span>
+        <h2>Media Response</h2>
+        <p>The Centre in various newspapers &mdash; click any clipping to read it full size.</p>
+    </section>
+
+    <div id="gallery" class="gallery acnn-clip-grid acnn-mgrid">
     
     
             <asp:ObjectDataSource ID="ObjectDataSource_Media" runat="server" 
@@ -64,28 +63,15 @@
                             
                             <ul>
                            
-                            <li><a href="<%# "Larger/" +Eval("Pic_L_path") %>" rel="prettyPhoto[gallery1]" title='<%# Eval("Media_title")%>'><img src="<%# "Smaller/" +Eval("Pic_S_path") %>" class="thumbnail" alt='<%# Eval("Media_title")%>' /></a></li>
+                            <li><a href="<%# "Larger/" +Eval("Pic_L_path") %>" rel="prettyPhoto[gallery1]" title='<%# Eval("Media_title")%>'><img src="<%# "Smaller/" +Eval("Pic_S_path") %>" class="thumbnail" alt='<%# Eval("Media_title")%>' /><span class="acnn-zoom"><i class="icon-zoom-in"></i></span></a><span class="acnn-cap"><%# Eval("Media_title")%></span></li>
                             </ul>
  
             
                             </ItemTemplate>
                             </asp:Repeater>
-         
-        
 
+    </div>
 </div>
-					    
-						
-					</div> <!-- .widget-content -->
-					
-		</div> <!-- /widget -->	
-        
-    
-       
-       
-           
-    </div><!-- end col right-->	
-</section>
 </div><!-- end row-->
 </div> <!-- end container-->
 </asp:Content>

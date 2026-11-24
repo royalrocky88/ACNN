@@ -1292,3 +1292,38 @@ nav.is-stuck .megamenu_container { pointer-events: auto; box-shadow: 0 10px 30px
 .acnn-sa p { margin: 0; font-size: 14px; line-height: 1.75; color: #55627f; text-align: left; }
 @media (max-width: 991px) { .acnn-sa-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; } }
 @media (max-width: 600px) { .acnn-sa-grid { grid-template-columns: 1fr; } .acnn-sa-filter button { padding: 9px 16px; font-size: 13px; } }
+
+/* ==========================================================================
+   Media Response + Event Gallery (data-bound pages: markup/CSS only)
+   ========================================================================== */
+.container > .row > .span12.acnn-mediapg, .container > .row > .span12.acnn-eventpg { display: block; padding-top: 24px; }
+.acnn-mediapg .acnn-lab-hero, .acnn-eventpg .acnn-lab-hero { margin-top: 0; }
+.acnn-zoom { position: absolute; right: 14px; bottom: 14px; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,.95); color: var(--acnn-teal); opacity: 0; transform: scale(.7); transition: all .3s; pointer-events: none; }
+a:hover > .acnn-zoom { opacity: 1; transform: none; }
+
+/* Media Response: newspaper clipping cards */
+#gallery.acnn-mgrid { counter-reset: mc; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; }
+#gallery.acnn-mgrid li { counter-increment: mc; display: flex; flex-direction: column; padding: 0; border-radius: 20px; overflow: hidden; border: 1px solid var(--acnn-line); box-shadow: 0 10px 28px rgba(18,18,50,.07); transition: transform .3s ease, box-shadow .3s ease, border-color .3s; }
+#gallery.acnn-mgrid li:hover { transform: translateY(-7px); border-color: #b9c8ff; box-shadow: 0 20px 44px rgba(29,66,217,.18); }
+#gallery.acnn-mgrid li:before { content: counter(mc, decimal-leading-zero); font: 700 15px/1 var(--acnn-serif); font-family: var(--acnn-serif); top: 12px; left: 12px; width: 42px; height: 42px; border-radius: 13px; background: linear-gradient(135deg, var(--acnn-teal), #5b78ff); color: #fff; box-shadow: 0 8px 18px rgba(29,66,217,.35); }
+#gallery.acnn-mgrid li > a { position: relative; border-radius: 0; background: linear-gradient(135deg, #e6ecff, #f5f8ff); }
+#gallery.acnn-mgrid li > a img { height: 230px !important; border-radius: 0; object-position: top; transition: transform .7s ease; }
+#gallery.acnn-mgrid li:hover > a img { transform: scale(1.08); }
+.acnn-cap { display: block; padding: 14px 16px 16px; font: 600 14px/1.5 var(--acnn-font); color: var(--acnn-navy); border-top: 3px solid var(--acnn-amber); text-align: left; }
+@media (max-width: 1100px) { #gallery.acnn-mgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 767px) { #gallery.acnn-mgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } #gallery.acnn-mgrid li > a img { height: 160px !important; } }
+@media (max-width: 420px) { #gallery.acnn-mgrid { grid-template-columns: 1fr; } }
+
+/* Event Gallery: one card per event */
+.acnn-eventpg .event-gallery { counter-reset: ev; display: grid; gap: 34px; }
+.acnn-eventpg .event-group { counter-increment: ev; margin: 0; background: #fff; border: 1px solid var(--acnn-line); border-radius: 24px; overflow: hidden; box-shadow: 0 12px 32px rgba(18,18,50,.08); }
+.acnn-eventpg .event-heading { display: flex; align-items: center; gap: 16px; padding: 18px 26px; font: 700 clamp(18px, 2vw, 24px)/1.35 var(--acnn-serif); color: #fff; background: linear-gradient(110deg, var(--acnn-navy), #1531a8 60%, var(--acnn-teal)); }
+.acnn-eventpg .event-heading::before { content: counter(ev, decimal-leading-zero); flex: 0 0 auto; width: 46px; height: 46px; border-radius: 14px; display: flex; align-items: center; justify-content: center; background: var(--acnn-amber); color: #1b1300; font: 700 18px/1 var(--acnn-serif); box-shadow: 0 8px 18px rgba(0,0,0,.25); }
+.acnn-eventpg .event-images { padding: 24px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.acnn-eventpg .event-images li { margin: 0; list-style: none; }
+.acnn-eventpg .event-images a { position: relative; display: block; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; background: linear-gradient(135deg, #e6ecff, #f5f8ff); box-shadow: 0 6px 16px rgba(18,18,50,.1); transition: transform .3s ease, box-shadow .3s ease; }
+.acnn-eventpg .event-images a:hover { transform: translateY(-5px); box-shadow: 0 16px 34px rgba(29,66,217,.22); }
+.acnn-eventpg .event-images .thumbnail { width: 100% !important; height: 100% !important; object-fit: cover; border: 0; border-radius: 0; padding: 0; box-shadow: none; transition: transform .7s ease; }
+.acnn-eventpg .event-images a:hover .thumbnail { transform: scale(1.1); }
+@media (max-width: 1100px) { .acnn-eventpg .event-images { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 767px) { .acnn-eventpg .event-images { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 14px; } .acnn-eventpg .event-heading { padding: 14px 16px; } }
