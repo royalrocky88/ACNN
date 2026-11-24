@@ -245,6 +245,7 @@
 
 <!-- ACNN UI: image lightbox (close / back / Esc), menu closing, missing-image fallback -->
 <script src="js/acnn-ui.js"></script>
+<script src="js/acnn-credit.js"></script>
 <!-- ACNN PDF viewer: renders embedded PDFs visibly, with a Download button -->
 <script src="js/acnn-pdf.js"></script>
     </form>

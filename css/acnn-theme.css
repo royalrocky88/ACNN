@@ -1462,3 +1462,6 @@ a:hover > .acnn-zoom { opacity: 1; transform: none; }
 .acnn-lab-more .acnn-btn { padding: 14px 38px; border-radius: 999px; font-weight: 700; }
 .acnn-lab-more .acnn-btn i { margin-left: 6px; transition: transform .25s; }
 .acnn-lab-more .acnn-btn:hover i { transform: translateX(5px); }
+
+/* Developer credit must always stay visible */
+footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .fb-right { display: inline-block !important; visibility: visible !important; opacity: 1 !important; position: static !important; height: auto !important; font-size: 14px !important; clip: auto !important; }
