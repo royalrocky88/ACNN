@@ -46,13 +46,9 @@ div.desc {
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
-    
-    <div class="container">
-
+<div class="container">
 <div class="row">
 <h1 class="span12">Careers in Nano</h1>
-
 <div class="span12">
     <ul class="breadcrumb">
       <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
@@ -61,11 +57,16 @@ div.desc {
     </ul>
 </div>
 
-<section class="span12">
-	<div class="col-right">
-        
-        <h3>Career / Job /Atmanirbhar Bharat Plan in the field of Nano science and nanotechnology</h3>
-     <asp:ObjectDataSource ID="ObjectDataSource_Careers" runat="server" OldValuesParameterFormatString="original_{0}" 
+<div class="span12 acnn-pg">
+    <section class="acnn-lab-hero">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        <span class="acnn-prof-role">Careers</span>
+        <h2>Career / Job / Atmanirbhar Bharat Plan</h2>
+        <p>Career / Job /Atmanirbhar Bharat Plan in the field of Nano science and nanotechnology</p>
+    </section>
+
+    <div class="acnn-career reveal">
+        <asp:ObjectDataSource ID="ObjectDataSource_Careers" runat="server" OldValuesParameterFormatString="original_{0}" 
                             SelectMethod="GetDataBySlNo" 
                             
             TypeName="DataSet_ACNN_DBTableAdapters.Table_CareersinNanotechnologyTableAdapter">
@@ -104,12 +105,13 @@ Please Click
             <RowStyle BackColor="#EEEEEE" ForeColor="Black" Height="75px" />
             <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
         </asp:GridView>
-       
-           <p class="acnn-note"><a href="downloads/Nanotechlogy-Prospectus-3May24.pdf" target="_blank">More details ... please click here</a></p>
-    
-</section>
-        
+    </div>
+    <div class="acnn-career-more">
+        <a href="downloads/Nanotechlogy-Prospectus-3May24.pdf" target="_blank"><i class="icon-download-alt"></i> More details ... please click here</a>
+    </div>
+</div>
+
 </div><!-- end row-->
 </div> <!-- end container-->
+<script src="js/acnn-profile.js"></script>
 </asp:Content>
-

@@ -14,10 +14,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="container">
-
 <div class="row">
 <h1 class="span12">Admission Procedure</h1>
-
 <div class="span12">
     <ul class="breadcrumb">
       <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
@@ -25,30 +23,29 @@
       <li class="active">Admission Procedure</li>
     </ul>
 </div>
-<!-- =========================Start Col left section ============================= -->
-<aside  class="span4 ">
-	<div class="col-left">
-    	<h3>Admission Procedures</h3>
-		<p align="justify">Candidates have to choose any one of the following papers for admission to Ph.D. programme depending upon their choice.</p>
-            <ul class="submenu-col">
-                <li><a href="#">Physical sciences</a></li>
-                <li><a href="#">Chemical sciences</a></li>
-                <li><a href="#">Biological sciences</a></li>
-				<li><a href="#">Engineering streams</a></li>
-            </ul>
-            
-    </div>
-</aside>
- 
- <!-- =========================Start Col right section ============================= -->
-<section class="span8  ">
-	<div  class="col-right">
-    
-    <div class="row">
-        <div class="span7">
-            <h3>Procedure</h3>
-            
-            <!--  Tabs -->   
+
+<div class="span12 acnn-pg">
+    <section class="acnn-lab-hero">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        <span class="acnn-prof-role">Admissions</span>
+        <h2>Admission Procedure</h2>
+        <p>Procedure, eligibility, fee and entrance test details.</p>
+    </section>
+
+    <section class="acnn-adm-papers reveal">
+        <span class="acnn-about-tag alt">Admission Procedures</span>
+        <p>Candidates have to choose any one of the following papers for admission to Ph.D. programme depending upon their choice.</p>
+        <ul class="acnn-chips">
+            <li><span>01</span>Physical sciences</li>
+            <li><span>02</span>Chemical sciences</li>
+            <li><span>03</span>Biological sciences</li>
+            <li><span>04</span>Engineering streams</li>
+        </ul>
+    </section>
+
+    <section class="acnn-adm-proc reveal">
+        <h2>Procedure</h2>
+        <!--  Tabs -->   
             <ul class="nav nav-tabs">
                 <li ><a href="#home" data-toggle="tab">No. of Seats</a></li>
                 <li><a href="#profile" data-toggle="tab">Eligibility Criteria</a></li>
@@ -96,17 +93,10 @@
                     <br /> <a href="downloads/Syllabus_Mtech_Entrance_NSNT.pdf" target="_blank">Syllabus for Entrance Test- Subject: M.Tech. (Nano Science & Technology)</a><br /><br />
                    </div>
             </div>
-            
-        </div><!--  End span7 --> 
-    </div> <!--  End row --> 
-   
-          
-      
-     
+    </section>
 </div>
-</section>
 
-  </div><!-- end row-->
-  </div> <!-- end container-->
+</div><!-- end row-->
+</div> <!-- end container-->
+<script src="js/acnn-profile.js"></script>
 </asp:Content>
-

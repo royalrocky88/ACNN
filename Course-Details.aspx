@@ -4,10 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="container">
-
 <div class="row">
 <h1 class="span12">Courses Offered</h1>
-
 <div class="span12">
     <ul class="breadcrumb">
       <li><a href="Default.aspx">Home</a> <span class="divider">/</span></li>
@@ -16,73 +14,26 @@
     </ul>
 </div>
 
-<!-- =========================Start Col left section ============================= -->
+<div class="span12 acnn-pg">
+    <section class="acnn-lab-hero">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        <span class="acnn-prof-role">Course Details</span>
+        <h2>M.Tech. &amp; Ph.D. Programme</h2>
+        <p>The areas of research and study offered at the Centre.</p>
+    </section>
 
- <!-- =========================Start Col right section ============================= -->
-<section class="span8  ">
-	<div class="col-right">
-    	
-        
-        
-        
-        <div class="widget borders widget-table">
-					
-					<div class="widget-header">
-						<h5>Course Details</h5>
-					</div> <!-- .widget-header -->
-					
-					<div class="widget-content">						
-						
-					    <table class="table table-bordered table-striped" >
-                            <thead>
-                            <tr>
-                                <td>
-                                    M.Tech. &amp; Ph.D. Programme</td>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    Trust Area</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Magnetic Nanomaterials</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Nanobiotechnology &amp; Biomedicine</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Ayurvedic Bhasma &amp; Nanomedicine</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Food Nanoparticles</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Ricehusk &amp; Silicon Nanoparticles</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Nanoelectronics</td>
-                            </tr>
-                            </tbody>
-                        </table>
-						
-					</div> <!-- .widget-content -->
-					
-		</div> <!-- /widget -->	
-        
-    
-       
-       
-           
-    </div><!-- end col right-->	
-</section>
+    <div class="acnn-cd-grid">
+        <div class="acnn-cd reveal"><span class="acnn-cd-no">01</span><h3>Trust Area</h3></div>
+        <div class="acnn-cd reveal"><span class="acnn-cd-no">02</span><h3>Magnetic Nanomaterials</h3></div>
+        <div class="acnn-cd reveal"><span class="acnn-cd-no">03</span><h3>Nanobiotechnology &amp; Biomedicine</h3></div>
+        <div class="acnn-cd reveal"><span class="acnn-cd-no">04</span><h3>Ayurvedic Bhasma &amp; Nanomedicine</h3></div>
+        <div class="acnn-cd reveal"><span class="acnn-cd-no">05</span><h3>Food Nanoparticles</h3></div>
+        <div class="acnn-cd reveal"><span class="acnn-cd-no">06</span><h3>Ricehusk &amp; Silicon Nanoparticles</h3></div>
+        <div class="acnn-cd reveal"><span class="acnn-cd-no">07</span><h3>Nanoelectronics</h3></div>
+    </div>
+</div>
+
 </div><!-- end row-->
 </div> <!-- end container-->
+<script src="js/acnn-profile.js"></script>
 </asp:Content>
-
