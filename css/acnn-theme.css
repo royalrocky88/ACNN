@@ -1703,3 +1703,36 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
 @media (max-width: 991px) { .acnn-vgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 480px) { .acnn-vgrid { gap: 14px; } }
 @media (prefers-reduced-motion: reduce) { .acnn-vgrid .gallery, .acnn-vgrid .gallery img, .acnn-vgrid .gallery .desc { transition: none; } .acnn-vgrid .gallery.is-extra.show { animation: none; } }
+
+/* ===== Date tile + black hover caption (home events, Media Response, Event Gallery) ===== */
+.acnn-dt { position: absolute; left: 12px; top: 12px; z-index: 5; width: 56px; text-align: center; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 8px 18px rgba(0,0,0,.3); font-family: var(--acnn-font); pointer-events: none; transition: transform .4s cubic-bezier(.2,.7,.2,1); }
+.acnn-dt b { display: block; font-size: 20px; line-height: 1.1; padding: 6px 0 0; color: var(--acnn-navy); }
+.acnn-dt span { display: block; font-size: 11px; font-weight: 700; color: var(--acnn-teal); letter-spacing: .06em; }
+.acnn-dt em { display: block; background: var(--acnn-amber); color: #231600; font-style: normal; font-size: 10px; font-weight: 700; padding: 2px 0; }
+.acnn-vgrid .gallery:hover .acnn-dt, .acnn-hovercard:hover .acnn-dt { transform: translateY(-3px) scale(1.05); }
+
+/* Media Response cards */
+#gallery.acnn-mgrid li.acnn-hovercard { position: relative; display: block; }
+#gallery.acnn-mgrid li.has-date:before { display: none; }
+#gallery.acnn-mgrid li.acnn-hovercard > a { display: block; }
+#gallery.acnn-mgrid li.acnn-hovercard .acnn-cap {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; margin: 0; padding: 16px 18px 15px; color: #fff; background: #000; border-top: 3px solid var(--acnn-amber);
+    transform: translateY(101%); opacity: 0; transition: transform .45s cubic-bezier(.2,.7,.2,1), opacity .35s ease;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+#gallery.acnn-mgrid li.acnn-hovercard:hover .acnn-cap { transform: translateY(0); opacity: 1; }
+
+/* Event Gallery pictures */
+.acnn-eventpg .event-images li.acnn-hovercard { position: relative; }
+.acnn-hovercap {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; padding: 16px 16px 14px; background: #000; color: #fff; border-top: 3px solid var(--acnn-amber);
+    font: 600 14px/1.5 var(--acnn-font); text-align: left; transform: translateY(101%); opacity: 0; transition: transform .45s cubic-bezier(.2,.7,.2,1), opacity .35s ease;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.acnn-eventpg .event-images a:hover .acnn-hovercap { transform: translateY(0); opacity: 1; }
+.acnn-eventpg .event-images li .acnn-dt { top: 10px; left: 10px; }
+
+@media (hover: none) {
+    #gallery.acnn-mgrid li.acnn-hovercard .acnn-cap, .acnn-hovercap { transform: none; opacity: 1; background: linear-gradient(transparent, rgba(0,0,0,.88) 50%); border-top: 0; padding-top: 30px; -webkit-line-clamp: 2; }
+}
+@media (prefers-reduced-motion: reduce) { .acnn-dt, .acnn-hovercap, #gallery.acnn-mgrid li.acnn-hovercard .acnn-cap { transition: none; } }
