@@ -1736,3 +1736,8 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
     #gallery.acnn-mgrid li.acnn-hovercard .acnn-cap, .acnn-hovercap { transform: none; opacity: 1; background: linear-gradient(transparent, rgba(0,0,0,.88) 50%); border-top: 0; padding-top: 30px; -webkit-line-clamp: 2; }
 }
 @media (prefers-reduced-motion: reduce) { .acnn-dt, .acnn-hovercap, #gallery.acnn-mgrid li.acnn-hovercard .acnn-cap { transition: none; } }
+
+/* Staff cards that link to a full profile */
+a.acnn-staff-link { color: inherit !important; text-decoration: none; display: inline-block; transition: color .2s, transform .25s; }
+a.acnn-staff-link:hover { color: var(--acnn-teal) !important; transform: translateY(-2px); }
+.acnn-staff-name a.acnn-staff-link { font: inherit; }

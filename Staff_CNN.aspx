@@ -43,13 +43,11 @@
                         Meet our distinguished teaching and research faculty</p>
                 </div>
                 <div class="acnn-staff-grid">
-                    <!-- Staff 1 -->
-                    
                     <!-- Staff 2 -->
                     <div class="acnn-staff-card">
-                        <img src="img/fac6.png" alt="Dr. Vijay Kumar Ravi" class="acnn-staff-photo" />
+                        <a href="DrVijayRavi.aspx" title="View profile of Dr. Vijay Kumar Ravi" class="acnn-staff-link"><img src="img/fac6.png" alt="Dr. Vijay Kumar Ravi" class="acnn-staff-photo" /></a>
                         <h3 class="acnn-staff-name">
-                            Dr. Vijay Kumar Ravi</h3>
+                            <a href="DrVijayRavi.aspx" class="acnn-staff-link">Dr. Vijay Kumar Ravi</a></h3>
                         <span class="acnn-staff-qual">Ph.D. (Biotechnology)</span> <span class="acnn-staff-role">
                             Teaching Faculty</span>
                     </div>
