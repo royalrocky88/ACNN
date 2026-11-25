@@ -6,11 +6,11 @@
     if (!('IntersectionObserver' in window) || reduce) { return; }
     document.documentElement.className += ' js-reveal';
     function count(n) {
-        var to = parseInt(n.getAttribute('data-count'), 10), t0 = null, dur = 1400;
+        var to = parseInt(n.getAttribute('data-count'), 10), t0 = null, dur = 1400, sfx = n.getAttribute('data-suffix') || '';
         function step(ts) {
             if (t0 === null) { t0 = ts; }
             var p = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - p, 3);
-            n.textContent = Math.round(to * e);
+            n.textContent = Math.round(to * e) + sfx;
             if (p < 1) { requestAnimationFrame(step); }
         }
         n.textContent = '0';
