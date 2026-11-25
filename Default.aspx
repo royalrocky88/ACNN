@@ -541,55 +541,46 @@
                 <h2>Seminars, Conclaves and Activities</h2>
             </div>
 
-            <div class="widget borders widget-table" style="margin-bottom:26px">
-                <div class="widget-header">
-                    <h5>Activities and Report of International Seminars</h5>
+            <h3 class="acnn-vsub">Activities and Report of International Seminars</h3>
+            <div class="acnn-vgrid" style="margin-bottom:34px">
+                <div class="gallery">
+                    <a href="downloads/Startup Bihar Conference.pdf" target="_blank" title="Startup Bihar Conference"><img src="Event_Pics/Startup Bihar Conference.jpg" alt="Startup Bihar Conference" loading="lazy" /></a>
+                    <div class="desc">Startup Bihar Conference</div>
                 </div>
-                <div class="widget-content">
-                    <div id="gallery" class="gallery acnn-gallery-grid">
-                        <ul>
-                            <li><a href="downloads/Startup Bihar Conference.pdf" rel="prettyPhoto[gallery1]" target="_blank" title='Startup Bihar Conference'><img src="Event_Pics/Startup Bihar Conference.jpg" class="thumbnail" alt="Startup Bihar Conference" /></a></li>
-                            <li><a href="downloads/WorldScientist_RankingUniversity2023.pdf" rel="prettyPhoto[gallery1]" target="_blank" title='World Scientist & University Ranking 2023'><img src="Event_Pics/WorldScientist_RankingUniversity2023.jpg" class="thumbnail" alt="World Scientist and University Ranking 2023" /></a></li>
-                            <li><a href="downloads/International_Seminar_TransMaterialScience.pdf" rel="prettyPhoto[gallery1]" target="_blank" title='International Seminar on Translational Materials Science Research and Emerging Technologies for Self-Reliant Society'><img src="Event_Pics/ISMT-211224.jpg" class="thumbnail" alt="International Seminar on Translational Materials Science" /></a></li>
-                        </ul>
-                    </div>
+                <div class="gallery">
+                    <a href="downloads/WorldScientist_RankingUniversity2023.pdf" target="_blank" title="World Scientist &amp; University Ranking 2023"><img src="Event_Pics/WorldScientist_RankingUniversity2023.jpg" alt="World Scientist &amp; University Ranking 2023" loading="lazy" /></a>
+                    <div class="desc">World Scientist &amp; University Ranking 2023</div>
+                </div>
+                <div class="gallery">
+                    <a href="downloads/International_Seminar_TransMaterialScience.pdf" target="_blank" title="International Seminar on Translational Materials Science Research and Emerging Technologies for Self-Reliant Society"><img src="Event_Pics/ISMT-211224.jpg" alt="International Seminar on Translational Materials Science Research and Emerging Technologies for Self-Reliant Society" loading="lazy" /></a>
+                    <div class="desc">International Seminar on Translational Materials Science Research and Emerging Technologies for Self-Reliant Society</div>
                 </div>
             </div>
 
-            <div class="widget borders widget-table">
-                <div class="widget-header">
-                    <h5>Academia-Industry Conclave Hydroelectric Cell - Nanotechnology Revelutionizing Engergy Generation</h5>
+            <h3 class="acnn-vsub">Academia-Industry Conclave Hydroelectric Cell - Nanotechnology Revelutionizing Engergy Generation</h3>
+            <div class="acnn-vgrid">
+                <asp:ObjectDataSource ID="ObjectDataSource_Events" runat="server"
+                    OldValuesParameterFormatString="original_{0}" SelectMethod="GetData"
+                    TypeName="DataSet_ACNN_DBTableAdapters.Table_Event_ResponseTableAdapter"
+                        InsertMethod="Insert">
+                    <InsertParameters>
+                        <asp:Parameter Name="SlNo" Type="Double" />
+                        <asp:Parameter Name="Pic_L_path" Type="String" />
+                        <asp:Parameter Name="Pic_S_Path" Type="String" />
+                        <asp:Parameter Name="Media_title" Type="String" />
+                        <asp:Parameter Name="Active" Type="Boolean" />
+                    </InsertParameters>
+                </asp:ObjectDataSource>
+
+                <asp:Repeater ID="Repeater2" runat="server"
+                    DataSourceID="ObjectDataSource_Events">
+                    <ItemTemplate>
+                <div class="gallery">
+                    <a href="<%# "Event_Pics/" +Eval("Pic_L_path") %>" title='<%# Eval("Media_title")%>'><img src="<%# "Event_Pics/" +Eval("Pic_S_path") %>" alt='<%# Eval("Media_title")%>' loading="lazy" /></a>
+                    <div class="desc"><%# Eval("Media_title")%></div>
                 </div>
-                <div class="widget-content">
-                    <div id="gallery" class="gallery acnn-gallery-grid">
-
-                        <asp:ObjectDataSource ID="ObjectDataSource_Events" runat="server"
-                            OldValuesParameterFormatString="original_{0}" SelectMethod="GetData"
-                            TypeName="DataSet_ACNN_DBTableAdapters.Table_Event_ResponseTableAdapter"
-                                InsertMethod="Insert">
-                            <InsertParameters>
-                                <asp:Parameter Name="SlNo" Type="Double" />
-                                <asp:Parameter Name="Pic_L_path" Type="String" />
-                                <asp:Parameter Name="Pic_S_Path" Type="String" />
-                                <asp:Parameter Name="Media_title" Type="String" />
-                                <asp:Parameter Name="Active" Type="Boolean" />
-                            </InsertParameters>
-                        </asp:ObjectDataSource>
-
-                        <asp:Repeater ID="Repeater2" runat="server"
-                            DataSourceID="ObjectDataSource_Events">
-                            <ItemTemplate>
-
-                            <ul>
-
-                            <li><a href="<%# "Event_Pics/" +Eval("Pic_L_path") %>" rel="prettyPhoto[gallery1]" title='<%# Eval("Media_title")%>'><img src="<%# "Event_Pics/" +Eval("Pic_S_path") %>" class="thumbnail" alt="" /></a></li>
-                            </ul>
-
-                            </ItemTemplate>
-                        </asp:Repeater>
-
-                    </div>
-                </div>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
         </div>
     </section>

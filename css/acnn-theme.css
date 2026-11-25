@@ -1465,3 +1465,20 @@ a:hover > .acnn-zoom { opacity: 1; transform: none; }
 
 /* Developer credit must always stay visible */
 footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .fb-right { display: inline-block !important; visibility: visible !important; opacity: 1 !important; position: static !important; height: auto !important; font-size: 14px !important; clip: auto !important; }
+
+/* Home: seminars & conclaves as named cards (same look as Visitors @ Centre) */
+.acnn-vsub { font-family: var(--acnn-serif); font-size: 20px; color: var(--acnn-navy); margin: 0 0 18px; padding-left: 14px; border-left: 4px solid var(--acnn-amber); line-height: 1.4; }
+.acnn-vgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; }
+.acnn-vgrid .gallery {
+    float: none; width: auto; height: 100%; margin: 0; display: flex; flex-direction: column;
+    background: #fff; border: 1px solid var(--acnn-line); border-radius: var(--acnn-radius); overflow: hidden;
+    box-shadow: var(--acnn-shadow-sm); transition: transform .2s ease, box-shadow .2s ease;
+}
+.acnn-vgrid .gallery:hover { transform: translateY(-4px); box-shadow: var(--acnn-shadow); border-color: var(--acnn-aqua); }
+.acnn-vgrid .gallery > a { display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #e8f3f6; flex: 0 0 auto; }
+.acnn-vgrid .gallery img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+.acnn-vgrid .gallery:hover img { transform: scale(1.04); }
+.acnn-vgrid .gallery .desc {
+    padding: 12px 14px 0; margin-bottom: 14px; text-align: left; font-weight: 600; font-size: 14px; line-height: 1.5; color: var(--acnn-ink);
+    display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+}
