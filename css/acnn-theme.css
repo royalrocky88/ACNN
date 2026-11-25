@@ -1629,3 +1629,21 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
 .acnn-rdp-card ul { list-style: disc; }
 .acnn-rdp-hec-list span { display: block; }
 .acnn-rdp-ph.fit img { object-fit: contain; background: #fff; }
+
+/* Header: AKU logo + divider + School of Nanoscience logo */
+.acnn-brand-dual { gap: 18px; }
+.acnn-brand-dual > a { background: none !important; padding: 0 !important; box-shadow: none !important; border-radius: 0 !important; }
+.acnn-brand-dual .acnn-brand-aku img { height: 68px; width: auto; max-width: none; border-radius: 0; }
+.acnn-brand-dual > a:not(.acnn-brand-aku) img { height: 56px; width: auto; max-width: none; }
+.acnn-brand-div { flex: 0 0 2px; width: 2px; height: 54px; border-radius: 2px; background: linear-gradient(#f5a524, #1d42d9); }
+@media (max-width: 767px) {
+    .acnn-brand-dual { flex-direction: row; flex-wrap: nowrap; justify-content: center; gap: 10px; text-align: left; }
+    .acnn-brand-dual .acnn-brand-aku img { height: 46px; }
+    .acnn-brand-dual > a:not(.acnn-brand-aku) img { height: 38px; width: auto; max-width: none; }
+    .acnn-brand-div { height: 38px; }
+}
+@media (max-width: 380px) {
+    .acnn-brand-dual { gap: 7px; }
+    .acnn-brand-dual .acnn-brand-aku img { height: 40px; }
+    .acnn-brand-dual > a:not(.acnn-brand-aku) img { height: 32px; }
+}

@@ -73,7 +73,9 @@
     <!-- Header -->
     <header class="acnn-header">
         <div class="container">
-            <div class="acnn-brand">
+            <div class="acnn-brand acnn-brand-dual">
+                <a class="acnn-brand-aku" href="Default.aspx"><img src="img/aku-logo.png" alt="Aryabhatta Knowledge University" width="76" height="68" /></a>
+                <span class="acnn-brand-div" aria-hidden="true"></span>
                 <a href="Default.aspx"><img src="img/snn-logo.gif" alt="School of Nanoscience &amp; Nanotechnology, Aryabhatta Knowledge University, Patna" width="600" height="90" /></a>
             </div>
             <div class="acnn-header-cta">
