@@ -15,12 +15,6 @@
 
 <div class="span12 acnn-sapg">
 
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Photo Gallery</span>
-        <h2>Scientific Activities at the Centre</h2>
-        <p>Lectures, visits, research, celebrations, awards and collaborations &mdash; click any picture to view it full size.</p>
-    </section>
 
     <div class="acnn-sa-filter" role="tablist">
         <button type="button" class="on" data-f="all">All <b>24</b></button>

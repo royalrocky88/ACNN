@@ -65,12 +65,6 @@
 
 
             <div class="span12 acnn-eventpg">
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Gallery</span>
-        <h2>Event Gallery</h2>
-        <p>Moments from the events, visits and celebrations of the Centre &mdash; click any picture to view it full size.</p>
-    </section>
 
             <div class="event-gallery">
 

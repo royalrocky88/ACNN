@@ -16,12 +16,6 @@
 	<!-- =========================Start Col left section ============================= -->   
 
 <!-- =========================Start Col right section ============================= --> 
-<div class="span12 acnn-herowrap"><section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Reports</span>
-        <h2>Annual Reports</h2>
-        <p>Yearly reports of the School &mdash; read online or download the PDF.</p>
-    </section></div>
 <section class="span12 acnn-pgsec">
 	<div class="col-right">
        <div class="acnn-pdf" data-src="downloads/Annual%20Report-SNN-25-26.pdf" data-title="Annual Report- 2025-26">

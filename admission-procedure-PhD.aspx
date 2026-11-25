@@ -25,12 +25,6 @@
 </div>
 
 <div class="span12 acnn-pg">
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Admissions</span>
-        <h2>Ph.D. Admission Procedure</h2>
-        <p>Procedure, eligibility, fee and entrance test details.</p>
-    </section>
 
     <section class="acnn-adm-papers reveal">
         <span class="acnn-about-tag alt">Admission Procedures</span>

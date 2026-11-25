@@ -1482,3 +1482,26 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
     padding: 12px 14px 0; margin-bottom: 14px; text-align: left; font-weight: 600; font-size: 14px; line-height: 1.5; color: var(--acnn-ink);
     display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
 }
+
+/* Research & Development Infrastructure (slide cards) + shared PDF bar */
+.acnn-lab-bar { text-align: center; margin: 4px 0 28px; }
+.acnn-lab-bar .acnn-lab-pdf {
+    display: inline-flex; align-items: center; gap: 10px; padding: 13px 30px; border-radius: 999px; font-weight: 700; font-size: 15px;
+    color: #fff !important; background: linear-gradient(135deg, var(--acnn-teal), #3b5cf0); box-shadow: 0 10px 26px rgba(29,66,217,.28); text-decoration: none; transition: transform .2s, box-shadow .2s;
+}
+.acnn-lab-bar .acnn-lab-pdf:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(29,66,217,.38); }
+.acnn-rd .acnn-vsub { margin-top: 10px; }
+.acnn-rd-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; margin-bottom: 40px; }
+.acnn-rd-card { background: #fff; border: 1px solid var(--acnn-line); border-radius: 22px; overflow: hidden; box-shadow: var(--acnn-shadow-sm); display: flex; flex-direction: column; transition: transform .25s, box-shadow .25s, border-color .25s; }
+.acnn-rd-card:hover { transform: translateY(-5px); box-shadow: var(--acnn-shadow); border-color: var(--acnn-aqua); }
+.acnn-rd-img { display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #f1f5fb; border-bottom: 1px solid var(--acnn-line); }
+.acnn-rd-img img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform .35s; }
+.acnn-rd-card:hover .acnn-rd-img img { transform: scale(1.03); }
+.acnn-rd-body { position: relative; padding: 18px 22px 22px 78px; min-height: 110px; }
+.acnn-rd-no { position: absolute; left: 20px; top: 18px; width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 16px; background: linear-gradient(135deg, var(--acnn-teal), #3b5cf0); box-shadow: 0 8px 18px rgba(29,66,217,.3); }
+.acnn-rd-body h4 { margin: 0 0 6px; font-family: var(--acnn-serif); font-size: 19px; line-height: 1.35; color: var(--acnn-navy); }
+.acnn-rd-body p { margin: 0; font-size: 14px; line-height: 1.65; color: #475069; }
+@media (max-width: 767px) { .acnn-rd-grid { grid-template-columns: 1fr; gap: 20px; } .acnn-rd-body { padding-left: 74px; } }
+
+/* spacing under the page title banner now that the second hero card is gone */
+.container > .row > section.span12.acnn-pgsec { margin-top: 28px; }

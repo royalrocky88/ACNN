@@ -32,12 +32,6 @@
       <li class="active">e-Learning Videos</li>
     </ul>
 </div>
-<div class="span12 acnn-herowrap"><section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Academics</span>
-        <h2>e-Learning Videos</h2>
-        <p>Watch the lecture videos of the Centre.</p>
-    </section></div>
 
 <div class="span12 acnn-pgsec">
     <div class="acnn-vid-grid">

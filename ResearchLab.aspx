@@ -17,13 +17,7 @@
 
 <div class="span12 acnn-lab">
 
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Scientific Research Equipment</span>
-        <h2>Aryabhatta Centre for Nanoscience and Nanotechnology</h2>
-        <p>School of Engineering and Technology &mdash; the instruments available in our research laboratory, listed serial-wise with their make.</p>
-        <a class="acnn-lab-pdf" href="downloads/Equipment%20list.pdf" target="_blank" rel="noopener"><i class="icon-download-alt"></i> Download full equipment list (PDF)</a>
-    </section>
+    <div class="acnn-lab-bar"><a class="acnn-lab-pdf" href="downloads/Equipment%20list.pdf" target="_blank" rel="noopener"><i class="icon-download-alt"></i> Download full equipment list (PDF)</a></div>
 
     <div class="acnn-lab-list">
         <article class="acnn-eq reveal">

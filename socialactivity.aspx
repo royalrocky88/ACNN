@@ -12,12 +12,6 @@
       <li class="active">Social Activities</li>
     </ul>
 </div>
-<div class="span12 acnn-herowrap"><section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Gallery</span>
-        <h2>Social Activities</h2>
-        <p>Pictures of the social activities of the Centre.</p>
-    </section></div>
 
 <div class="span12 acnn-pgsec">
     <div class="acnn-sa-grid">

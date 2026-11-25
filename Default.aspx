@@ -173,7 +173,7 @@
                     <span class="acnn-slide-eyebrow">Research Facilities</span>
                     <h2 class="acnn-slide-title">Advance Equipments</h2>
                     <p class="acnn-slide-text">Over 20 high-end research instruments for nanoscience and nanotechnology research.</p>
-                    <a class="acnn-btn acnn-btn-white" href="ResearchEquipment.aspx">View Equipment</a>
+                    <a class="acnn-btn acnn-btn-white" href="ResearchLab.aspx">View Equipment</a>
                 </div>
             </li>
             <li class="acnn-slide" aria-roledescription="slide" aria-label="8 of 9">
@@ -289,7 +289,7 @@
                         <li>Nanoscience</li>
                         <li>Nanotechnology</li>
                     </ul>
-                    <a class="more" href="ResearchEquipment.aspx" title="Research Equipment">Explore instruments &rarr;</a>
+                    <a class="more" href="ResearchLab.aspx" title="Research Equipment">Explore instruments &rarr;</a>
                 </div>
                 <div class="acnn-card amber">
                     <span class="ico"><i class="icon-edit"></i></span>

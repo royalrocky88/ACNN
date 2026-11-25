@@ -14,12 +14,6 @@
 </div>
 
 <div class="span12 acnn-pg">
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Programmes</span>
-        <h2>All Programmes</h2>
-        <p>M.Sc., M.Tech. and Ph.D. programmes in Nano Science &amp; Technology.</p>
-    </section>
 
     <div class="acnn-prog-grid">
         <article class="acnn-prog reveal">

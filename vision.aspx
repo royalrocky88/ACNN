@@ -14,12 +14,6 @@
 </div>
 
 <div class="span12 acnn-pg">
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Academic Vision</span>
-        <h2>Nanoscience for society</h2>
-        <p>Academic vision of the Aryabhatta Centre for Nanoscience &amp; Nanotechnology.</p>
-    </section>
 
     <div class="acnn-vis-imgs reveal">
         <a href="img/about.jpg" title="Aryabhatta Centre for Nanoscience &amp; Nanotechnology"><img src="img/about.jpg" alt="Aryabhatta Centre for Nanoscience and Nanotechnology" /></a>

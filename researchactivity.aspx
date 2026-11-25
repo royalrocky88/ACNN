@@ -29,12 +29,6 @@
 	</aside>--%>
 
 <!-- =========================Start Col right section ============================= --> 
-<div class="span12 acnn-herowrap"><section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Research</span>
-        <h2>Research Activities</h2>
-        <p>Research activity reports of the Centre &mdash; read online or download the PDF.</p>
-    </section></div>
 <section class="span12 acnn-pgsec">
 	<div class="col-right">
        <div class="acnn-pdf" data-src="downloads/research_act_acnn_2022_2.pdf" data-title="Research Activities -4">

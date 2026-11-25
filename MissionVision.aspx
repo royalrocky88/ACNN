@@ -15,12 +15,6 @@
 </div>
 
 <div class="span12 acnn-pg">
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Mission &amp; Vision</span>
-        <h2>Academic Vision and Mission</h2>
-        <p>Mission, goals, objectives and the current scenario of the Centre.</p>
-    </section>
 
     <div class="acnn-sa-filter acnn-anchor">
         <a href="#section1">Mission and Vision</a><a href="#section2">Goals</a><a href="#section3">Objectives</a><a href="#section4">Current scenario</a>

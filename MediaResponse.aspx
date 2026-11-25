@@ -39,12 +39,6 @@
 </div>
 
 <div class="span12 acnn-mediapg">
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Gallery</span>
-        <h2>Media Response</h2>
-        <p>The Centre in various newspapers &mdash; click any clipping to read it full size.</p>
-    </section>
 
     <div id="gallery" class="gallery acnn-clip-grid acnn-mgrid">
     

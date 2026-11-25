@@ -58,12 +58,6 @@ div.desc {
 </div>
 
 <div class="span12 acnn-pg">
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Careers</span>
-        <h2>Career / Job / Atmanirbhar Bharat Plan</h2>
-        <p>Career / Job /Atmanirbhar Bharat Plan in the field of Nano science and nanotechnology</p>
-    </section>
 
     <div class="acnn-career reveal">
         <asp:ObjectDataSource ID="ObjectDataSource_Careers" runat="server" OldValuesParameterFormatString="original_{0}" 

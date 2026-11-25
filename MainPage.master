@@ -132,15 +132,14 @@
                         <ul class="list-menu">
                             <li><a href="researchactivity.aspx"><i class="icon-beaker"></i>Research Activities</a></li>
                             <li><a href="ScientificActivity.aspx"><i class="icon-lightbulb"></i>Scientific Activities</a></li>
-                            <li><a href="ResearchEquipment.aspx"><i class="icon-cogs"></i>Research Equipment</a></li>
-                            <li><a href="downloads/Scientific Infrastructure.pdf" target="_blank"><i class="icon-building"></i>Research &amp; Development Infrastructure</a></li>
+                            <li><a href="ResearchLab.aspx"><i class="icon-cogs"></i>Research Equipment</a></li>
+                            <li><a href="ResearchDev.aspx"><i class="icon-building"></i>Research &amp; Development Infrastructure</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             </li>
 
-            <li><a href="ResearchLab.aspx" class="nodrop-down">Research Lab</a></li>
             <li><a href="Visitors.aspx" class="nodrop-down">Visitors @ Centre</a></li>
             <li><a href="AnnualReport.aspx" class="nodrop-down">Annual Reports</a></li>
 
@@ -209,7 +208,7 @@
                 <li><a href="admission-procedure.aspx" >Admissions</a></li>
                 <li><a href="all-courses.aspx" >Courses</a></li>
                 <li><a href="researchactivity.aspx" >Research Activities</a></li>
-                <li><a href="ResearchEquipment.aspx" >Research Equipments</a></li>
+                <li><a href="ResearchLab.aspx" >Research Equipments</a></li>
                 <li><a href="EventGallery.aspx" >Event Gallery</a></li>
                 <li><a href="MediaResponse.aspx" >Media Response</a></li>
             </ul>

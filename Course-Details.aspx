@@ -15,12 +15,6 @@
 </div>
 
 <div class="span12 acnn-pg">
-    <section class="acnn-lab-hero">
-        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
-        <span class="acnn-prof-role">Course Details</span>
-        <h2>M.Tech. &amp; Ph.D. Programme</h2>
-        <p>The areas of research and study offered at the Centre.</p>
-    </section>
 
     <div class="acnn-cd-grid">
         <div class="acnn-cd reveal"><span class="acnn-cd-no">01</span><h3>Trust Area</h3></div>
