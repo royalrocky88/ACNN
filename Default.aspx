@@ -600,6 +600,10 @@
                                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
+<h4>Bihar Diwas Exhibition Highlights: Innovation & Disaster Management </h4>
+                                <p> <b>On Bihar Diwas (March 22)</b> , Special Exhibition Stalls at Gandhi Maidan, Patna showcased Cutting-Edge</p>                               
+                                 <p> Scientific Research And Disaster-Management Initiatives Aimed At Public Safety And Sustainable Development.</p>
+                                 <p><b>Automated Weather Monitoring Systems</b>: Automatic Tipping-bucket Rain Gauges</p>
                     </div>
                 </div>
                 <div class="span6">
@@ -611,7 +615,7 @@
                                 allowfullscreen></iframe>
                         </div>
                         <h4>Dr. Rakesh Kr. Singh</h4>
-                        <p>Chancellor award for best Young teacher with research contributions in modern field of science Nano science. <a href="Larger/030_L.jpg" target="_blank">Read more...</a></p>
+                        <p>Chancellor award for best Young teacher with research contributions in modern field of science Nano science. <br /> <a href="Larger/030_L.jpg" target="_blank">Read more...</a></p>
                         <p><b>Chancellor (Governor) Award for Best Young Teacher with contributions in modern field of Nanoscience</b></p>
                         <p>Nanotechnology faculty awarded Chancellor award for best Young teacher with contributions in modern field of nanoscience</p>
                     </div>
