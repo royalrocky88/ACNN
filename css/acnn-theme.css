@@ -1647,3 +1647,25 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
     .acnn-brand-dual .acnn-brand-aku img { height: 40px; }
     .acnn-brand-dual > a:not(.acnn-brand-aku) img { height: 32px; }
 }
+
+/* Header variant: AKU logo on a hanging ribbon tab, School logo beside it */
+.acnn-brand-rib { gap: 20px; }
+.acnn-brand-rib .acnn-brand-aku {
+    background: #fff !important; padding: 6px 18px !important; border-radius: 0 0 18px 18px !important;
+    border-top: 5px solid var(--acnn-amber); box-shadow: 0 10px 22px rgba(18,18,50,.18) !important;
+    margin-top: -10px; position: relative; z-index: 3;
+}
+.acnn-brand-rib .acnn-brand-aku img { height: 70px; }
+.acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 54px; }
+@media (max-width: 767px) {
+    .acnn-brand-rib { gap: 12px; }
+    .acnn-brand-rib .acnn-brand-aku { padding: 5px 12px !important; margin-top: -8px; border-radius: 0 0 14px 14px !important; }
+    .acnn-brand-rib .acnn-brand-aku img { height: 50px; }
+    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 36px; }
+}
+@media (max-width: 380px) {
+    .acnn-brand-rib { gap: 8px; }
+    .acnn-brand-rib .acnn-brand-aku { padding: 4px 9px !important; }
+    .acnn-brand-rib .acnn-brand-aku img { height: 42px; }
+    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 31px; }
+}
