@@ -1656,18 +1656,18 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
     margin-top: -10px; position: relative; z-index: 3;
 }
 .acnn-brand-rib .acnn-brand-aku img { height: 70px; }
-.acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 70px; }
-@media (max-width: 767px) {
-    .acnn-brand-rib { gap: 12px; }
-    .acnn-brand-rib .acnn-brand-aku { padding: 5px 12px !important; margin-top: -8px; border-radius: 0 0 14px 14px !important; }
-    .acnn-brand-rib .acnn-brand-aku img { height: 40px; }
-    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 40px; }
+/* the SNN artwork has white margins, so it is drawn taller to look the same height as the AKU tile */
+.acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 100px; width: auto; max-width: none; }
+@media (min-width: 768px) and (max-width: 1199px) {
+    .acnn-brand-rib .acnn-brand-aku img { height: 56px; }
+    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 78px; }
 }
-@media (max-width: 380px) {
-    .acnn-brand-rib { gap: 8px; }
-    .acnn-brand-rib .acnn-brand-aku { padding: 4px 9px !important; }
-    .acnn-brand-rib .acnn-brand-aku img { height: 34px; }
-    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 34px; }
+@media (max-width: 767px) {
+    .acnn-brand-rib { flex-direction: column; align-items: center; gap: 8px; }
+    .acnn-brand-rib .acnn-brand-aku { padding: 5px 12px !important; margin-top: -8px; border-radius: 0 0 14px 14px !important; }
+    .acnn-brand-rib .acnn-brand-aku img { height: 52px; }
+    .acnn-brand-rib > a:not(.acnn-brand-aku) { max-width: 100%; }
+    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: auto; width: 340px; max-width: 100%; }
 }
 
 /* Home events: picture cards, caption slides up on hover as a black card */
