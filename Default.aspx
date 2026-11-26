@@ -536,9 +536,9 @@
     <!-- Events and galleries -->
     <section class="acnn-section">
         <div class="container">
-            <div class="acnn-gh">
-                <h2>Events</h2>
-                <p>Seminars, conclaves and activities</p>
+            <div class="acnn-heading">
+                <span class="eyebrow">Events</span>
+                <h2>Seminars, Conclaves and Activities</h2>
             </div>
 
             <h3 class="acnn-vsub">Activities and Report of International Seminars</h3>
@@ -588,9 +588,9 @@
     <!-- Awards and video -->
     <section class="acnn-section alt">
         <div class="container">
-            <div class="acnn-gh">
-                <h2>Videos</h2>
-                <p>Nanoscience faculty awarded &amp; in events</p>
+            <div class="acnn-heading">
+                <span class="eyebrow">Recognition</span>
+                <h2>Nanoscience Faculty Awarded &amp; in Events</h2>
             </div>
             <div class="acnn-vfeat">
               <div class="acnn-vmain">
