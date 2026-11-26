@@ -198,7 +198,7 @@
                     var empty = err && err.status === 204;
                     var why = (err && (err.name || '')) + (err && err.status ? ' HTTP ' + err.status : '') + (err && err.message ? ' - ' + err.message : '');
                     fail(missing ? 'This document is not available on the server yet.' :
-                         empty ? 'This document is empty or missing on the server. Please upload the PDF again.' :
+                         empty ? 'This preview was blocked (HTTP 204). A download manager extension such as IDM may be intercepting the PDF, or the file is empty or missing on the server. Please use Open or Download PDF.' :
                          'This document could not be displayed here.', libErr || why);
                 }
                 // 1st try: normal (range / streaming). Some servers (VS dev server, some IIS setups) answer range requests badly,
