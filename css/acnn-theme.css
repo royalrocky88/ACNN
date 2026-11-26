@@ -1659,8 +1659,14 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
 /* the SNN artwork has white margins, so it is drawn taller to look the same height as the AKU tile */
 .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 100px; width: auto; max-width: none; }
 @media (min-width: 768px) and (max-width: 1199px) {
-    .acnn-brand-rib .acnn-brand-aku img { height: 56px; }
-    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 78px; }
+    /* tablet: same centred, stacked layout as mobile */
+    .acnn-topbar .container, .acnn-header .container { justify-content: center; text-align: center; }
+    .acnn-header .container { flex-direction: column; align-items: center; gap: 12px; }
+    .acnn-brand-rib { flex-direction: column; align-items: center; gap: 8px; }
+    .acnn-brand-rib .acnn-brand-aku img { height: 60px; }
+    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: auto; width: 440px; max-width: 100%; }
+    .acnn-header-cta { width: 100%; justify-content: center; }
+    .acnn-call { text-align: center; }
 }
 @media (max-width: 767px) {
     .acnn-brand-rib { flex-direction: column; align-items: center; gap: 8px; }
