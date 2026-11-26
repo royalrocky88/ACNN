@@ -1656,18 +1656,18 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
     margin-top: -10px; position: relative; z-index: 3;
 }
 .acnn-brand-rib .acnn-brand-aku img { height: 70px; }
-.acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 54px; }
+.acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 70px; }
 @media (max-width: 767px) {
     .acnn-brand-rib { gap: 12px; }
     .acnn-brand-rib .acnn-brand-aku { padding: 5px 12px !important; margin-top: -8px; border-radius: 0 0 14px 14px !important; }
-    .acnn-brand-rib .acnn-brand-aku img { height: 50px; }
-    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 36px; }
+    .acnn-brand-rib .acnn-brand-aku img { height: 40px; }
+    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 40px; }
 }
 @media (max-width: 380px) {
     .acnn-brand-rib { gap: 8px; }
     .acnn-brand-rib .acnn-brand-aku { padding: 4px 9px !important; }
-    .acnn-brand-rib .acnn-brand-aku img { height: 42px; }
-    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 31px; }
+    .acnn-brand-rib .acnn-brand-aku img { height: 34px; }
+    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 34px; }
 }
 
 /* Home events: picture cards, caption slides up on hover as a black card */
