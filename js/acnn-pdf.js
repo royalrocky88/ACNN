@@ -187,14 +187,24 @@
             box.className += ' is-loading';
             if (status) { status.textContent = 'Loading document…'; }
             loadLib(function () {
-                window.pdfjsLib.getDocument({ url: encodeURI(decodeURI(src)) }).promise.then(function (doc) {
+                var url = encodeURI(decodeURI(src));
+                function ok(doc) {
                     pdf = doc;
                     box.className = box.className.replace(/\s*is-loading/, '') + ' is-ready';
                     layout();
-                }, function (err) {
+                }
+                function bad(err) {
                     var missing = err && (err.name === 'MissingPDFException' || err.status === 404);
+                    var empty = err && err.status === 204;
                     var why = (err && (err.name || '')) + (err && err.status ? ' HTTP ' + err.status : '') + (err && err.message ? ' - ' + err.message : '');
-                    fail(missing ? 'This document is not available on the server yet.' : 'This document could not be displayed here.', libErr || why);
+                    fail(missing ? 'This document is not available on the server yet.' :
+                         empty ? 'This document is empty or missing on the server. Please upload the PDF again.' :
+                         'This document could not be displayed here.', libErr || why);
+                }
+                // 1st try: normal (range / streaming). Some servers (VS dev server, some IIS setups) answer range requests badly,
+                // so on any error try once more with one plain full download.
+                window.pdfjsLib.getDocument({ url: url }).promise.then(ok, function () {
+                    window.pdfjsLib.getDocument({ url: url, disableRange: true, disableStream: true, disableAutoFetch: true }).promise.then(ok, bad);
                 });
             }, function () { fail('The PDF viewer could not be loaded.', libErr); });
         }
