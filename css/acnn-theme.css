@@ -1741,3 +1741,18 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
 a.acnn-staff-link { color: inherit !important; text-decoration: none; display: inline-block; transition: color .2s, transform .25s; }
 a.acnn-staff-link:hover { color: var(--acnn-teal) !important; transform: translateY(-2px); }
 .acnn-staff-name a.acnn-staff-link { font: inherit; }
+
+/* Courses page: Courses + Thrust Area sections */
+.acnn-cd-sec { margin-bottom: 54px; }
+.acnn-course-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.acnn-course { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 30px 26px 26px; background: #fff; border: 1px solid var(--acnn-line); border-radius: 26px; box-shadow: var(--acnn-shadow-sm); text-decoration: none !important; overflow: hidden; transition: transform .3s, box-shadow .3s, border-color .3s; }
+.acnn-course::before { content: ""; position: absolute; left: 0; top: 0; right: 0; height: 5px; background: linear-gradient(90deg, var(--acnn-teal), var(--acnn-amber)); }
+.acnn-course::after { content: ""; position: absolute; right: -40px; bottom: -40px; width: 140px; height: 140px; border-radius: 50%; background: radial-gradient(circle, rgba(29,66,217,.10), transparent 70%); }
+.acnn-course:hover { transform: translateY(-8px); box-shadow: 0 22px 46px rgba(29,66,217,.18); border-color: #b9c8ff; }
+.acnn-course-ic { width: 58px; height: 58px; border-radius: 18px; display: grid; place-items: center; color: #fff; font-size: 24px; background: linear-gradient(135deg, var(--acnn-teal), #3b5cf0); box-shadow: 0 10px 22px rgba(29,66,217,.32); margin-bottom: 10px; }
+.acnn-course small { color: var(--acnn-amber); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 12px; }
+.acnn-course h3 { margin: 0 0 10px; font-family: var(--acnn-serif); font-size: 22px; line-height: 1.35; color: var(--acnn-navy); }
+.acnn-course-go { margin-top: auto; font-weight: 700; font-size: 14px; color: var(--acnn-teal); }
+.acnn-course-go i { margin-left: 6px; transition: transform .25s; }
+.acnn-course:hover .acnn-course-go i { transform: translateX(5px); }
+@media (max-width: 991px) { .acnn-course-grid { grid-template-columns: 1fr; } }

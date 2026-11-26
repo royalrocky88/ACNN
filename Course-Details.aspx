@@ -16,15 +16,27 @@
 
 <div class="span12 acnn-pg">
 
-    <div class="acnn-cd-grid">
-        <div class="acnn-cd reveal"><span class="acnn-cd-no">01</span><h3>Trust Area</h3></div>
-        <div class="acnn-cd reveal"><span class="acnn-cd-no">02</span><h3>Magnetic Nanomaterials</h3></div>
-        <div class="acnn-cd reveal"><span class="acnn-cd-no">03</span><h3>Nanobiotechnology &amp; Biomedicine</h3></div>
-        <div class="acnn-cd reveal"><span class="acnn-cd-no">04</span><h3>Ayurvedic Bhasma &amp; Nanomedicine</h3></div>
-        <div class="acnn-cd reveal"><span class="acnn-cd-no">05</span><h3>Food Nanoparticles</h3></div>
-        <div class="acnn-cd reveal"><span class="acnn-cd-no">06</span><h3>Ricehusk &amp; Silicon Nanoparticles</h3></div>
-        <div class="acnn-cd reveal"><span class="acnn-cd-no">07</span><h3>Nanoelectronics</h3></div>
-    </div>
+    <section class="acnn-cd-sec">
+        <div class="acnn-rdp-head reveal"><span class="acnn-about-tag">Academics</span><h2>Courses</h2></div>
+        <div class="acnn-course-grid">
+            <a class="acnn-course reveal" href="admission-procedure.aspx"><span class="acnn-course-ic"><i class="icon-cogs"></i></span><small>M.Tech.</small><h3>M.Tech. in Nano Science &amp; Technology</h3><span class="acnn-course-go">Admission details <i class="icon-arrow-right"></i></span></a>
+            <a class="acnn-course reveal" href="admission-procedure.aspx"><span class="acnn-course-ic"><i class="icon-beaker"></i></span><small>M.Sc.</small><h3>M.Sc. in Nanosciences</h3><span class="acnn-course-go">Admission details <i class="icon-arrow-right"></i></span></a>
+            <a class="acnn-course reveal" href="admission-procedure-PhD.aspx"><span class="acnn-course-ic"><i class="icon-certificate"></i></span><small>Ph.D.</small><h3>Ph.D. in Nano Science &amp; Technology</h3><span class="acnn-course-go">Admission details <i class="icon-arrow-right"></i></span></a>
+        </div>
+    </section>
+
+    <section class="acnn-cd-sec">
+        <div class="acnn-rdp-head reveal"><span class="acnn-about-tag alt">Research Focus</span><h2>Thrust Area</h2></div>
+        <div class="acnn-cd-grid">
+            <div class="acnn-cd reveal"><span class="acnn-cd-no">01</span><h3>Magnetic Nanomaterials</h3></div>
+            <div class="acnn-cd reveal"><span class="acnn-cd-no">02</span><h3>Nanobiotechnology &amp; Biomedicine</h3></div>
+            <div class="acnn-cd reveal"><span class="acnn-cd-no">03</span><h3>Ayurvedic Bhasma &amp; Nanomedicine</h3></div>
+            <div class="acnn-cd reveal"><span class="acnn-cd-no">04</span><h3>Food Nanoparticles</h3></div>
+            <div class="acnn-cd reveal"><span class="acnn-cd-no">05</span><h3>Ricehusk &amp; Silicon Nanoparticles</h3></div>
+            <div class="acnn-cd reveal"><span class="acnn-cd-no">06</span><h3>Nanoelectronics</h3></div>
+            <div class="acnn-cd reveal"><span class="acnn-cd-no">07</span><h3>Nanoceramics &amp; Nanocomposites</h3></div>
+        </div>
+    </section>
 </div>
 
 </div><!-- end row-->
