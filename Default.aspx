@@ -536,9 +536,9 @@
     <!-- Events and galleries -->
     <section class="acnn-section">
         <div class="container">
-            <div class="acnn-heading">
-                <span class="eyebrow">Events</span>
-                <h2>Seminars, Conclaves and Activities</h2>
+            <div class="acnn-gh">
+                <h2>Events</h2>
+                <p>Seminars, conclaves and activities</p>
             </div>
 
             <h3 class="acnn-vsub">Activities and Report of International Seminars</h3>
@@ -588,12 +588,13 @@
     <!-- Awards and video -->
     <section class="acnn-section alt">
         <div class="container">
-            <div class="acnn-heading">
-                <span class="eyebrow">Recognition</span>
-                <h2>Nanoscience Faculty Awarded &amp; in Events</h2>
+            <div class="acnn-gh">
+                <h2>Videos</h2>
+                <p>Nanoscience faculty awarded &amp; in events</p>
             </div>
-            <div class="row">
-                <div class="span6">
+            <div class="acnn-vfeat">
+              <div class="acnn-vmain">
+                <div class="acnn-vitem on" id="acnn-v1">
                     <div class="acnn-panel">
                         <div class="acnn-video">
                             <iframe loading="lazy" src="https://www.youtube.com/embed/ELUBCLkVlIc?si=EQig2bDj3T2NX5JR"
@@ -606,7 +607,7 @@
                                  <p><b>Automated Weather Monitoring Systems</b>: Automatic Tipping-bucket Rain Gauges</p>
                     </div>
                 </div>
-                <div class="span6">
+                <div class="acnn-vitem" id="acnn-v2">
                     <div class="acnn-panel">
                         <div class="acnn-video">
                             <iframe loading="lazy" src="https://www.youtube.com/embed/lTmga6Ikt7o"
@@ -620,7 +621,29 @@
                         <p>Nanotechnology faculty awarded Chancellor award for best Young teacher with contributions in modern field of nanoscience</p>
                     </div>
                 </div>
+              </div>
+              <div class="acnn-vlist">
+                <button type="button" class="acnn-vli on" data-target="acnn-v1">
+                    <span class="th"><img src="https://img.youtube.com/vi/ELUBCLkVlIc/mqdefault.jpg" alt="" loading="lazy" /></span>
+                    <span class="tx"><b>Bihar Diwas Exhibition Highlights</b><small class="np">Now playing</small></span>
+                </button>
+                <button type="button" class="acnn-vli" data-target="acnn-v2">
+                    <span class="th"><img src="https://img.youtube.com/vi/lTmga6Ikt7o/mqdefault.jpg" alt="" loading="lazy" /></span>
+                    <span class="tx"><b>Dr. Rakesh Kr. Singh</b><small class="np">Chancellor award</small></span>
+                </button>
+              </div>
             </div>
+            <script>
+            (function(){
+              var b=document.querySelectorAll('.acnn-vli');
+              for(var i=0;i<b.length;i++)b[i].onclick=function(){
+                var t=this.getAttribute('data-target');
+                for(var j=0;j<b.length;j++){b[j].classList.toggle('on',b[j]===this);var el=document.getElementById(b[j].getAttribute('data-target'));el.classList.toggle('on',b[j]===this);}
+                var o=document.querySelectorAll('.acnn-vli small.np');
+                for(var k=0;k<b.length;k++){b[k].querySelector('small').textContent=b[k]===this?'Now playing':(b[k].getAttribute('data-target')=='acnn-v1'?'Bihar Diwas':'Chancellor award');}
+              };
+            })();
+            </script>
         </div>
     </section>
 
