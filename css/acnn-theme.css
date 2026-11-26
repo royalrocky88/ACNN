@@ -1777,3 +1777,38 @@ a.acnn-staff-link:hover { color: var(--acnn-teal) !important; transform: transla
 .acnn-vli,.acnn-vli:hover,.acnn-vli:focus,.acnn-vli:active{background:#fff!important;color:var(--acnn-navy)!important;outline:0}
 
 .acnn-vgrid + .acnn-more-wrap{margin-bottom:34px}
+
+/* Contact Us page */
+.acnn-ct-quick { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 30px; }
+.acnn-ct-q { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; padding: 22px 14px; background: #fff; border: 1px solid var(--acnn-line); border-radius: 20px; box-shadow: var(--acnn-shadow-sm); color: var(--acnn-navy); text-decoration: none; transition: transform .25s, box-shadow .25s; }
+.acnn-ct-q:hover { transform: translateY(-5px); box-shadow: var(--acnn-shadow); color: var(--acnn-navy); text-decoration: none; }
+.acnn-ct-q i { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; background: linear-gradient(135deg, var(--acnn-teal), #3b5cf0); color: #fff; font-size: 22px; margin-bottom: 8px; }
+.acnn-ct-q:nth-child(2) i { background: linear-gradient(135deg, var(--acnn-amber), #e0870a); }
+.acnn-ct-q:nth-child(3) i { background: linear-gradient(135deg, #0f7a4a, #16a362); }
+.acnn-ct-q:nth-child(4) i { background: linear-gradient(135deg, var(--acnn-navy), #2a2a6e); }
+.acnn-ct-q b { font-size: 16px; }
+.acnn-ct-q span { font-size: 13px; color: var(--acnn-muted); word-break: break-word; }
+.acnn-ct-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 28px; align-items: start; margin-bottom: 34px; }
+.acnn-ct-photo { border-radius: 26px; overflow: hidden; box-shadow: var(--acnn-shadow); background: #0b0b1e; display: flex; }
+.acnn-ct-photo img { width: 100%; height: auto; display: block; }
+.acnn-ct-card { background: #fff; border: 1px solid var(--acnn-line); border-radius: 26px; padding: 32px; box-shadow: var(--acnn-shadow-sm); }
+.acnn-ct-tag { display: inline-block; padding: 5px 14px; border-radius: 999px; background: #e8eeff; color: var(--acnn-teal); font: 700 12px/1.2 var(--acnn-font); letter-spacing: .1em; text-transform: uppercase; }
+.acnn-ct-card h2, .acnn-ct-maphead h2 { font-family: var(--acnn-serif); font-size: 28px; font-weight: 600; color: var(--acnn-navy); margin: 12px 0 6px; line-height: 1.25; }
+.acnn-ct-sub { color: var(--acnn-muted); margin: 0 0 20px; }
+.acnn-ct-list { list-style: none; margin: 0 0 22px; padding: 0; display: grid; gap: 14px; }
+.acnn-ct-list li { display: flex; gap: 14px; align-items: flex-start; padding-bottom: 14px; border-bottom: 1px dashed var(--acnn-line); margin: 0; }
+.acnn-ct-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+.acnn-ct-list li > i { flex: 0 0 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; background: #eef2ff; color: var(--acnn-teal); font-size: 18px; margin-top: 2px; }
+.acnn-ct-list b { display: block; color: var(--acnn-navy); font-size: 14px; }
+.acnn-ct-list span { color: #3a4560; line-height: 1.6; font-size: 15px; }
+.acnn-ct-list a { color: var(--acnn-teal); font-weight: 600; }
+.acnn-ct-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.acnn-ct-ghost { display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px; border-radius: 999px; border: 1.5px solid var(--acnn-teal); color: var(--acnn-teal); font-weight: 600; font-size: 14px; text-decoration: none; background: #fff; transition: .2s; }
+.acnn-ct-ghost:hover { background: var(--acnn-teal); color: #fff; text-decoration: none; }
+.acnn-ct-btns .acnn-btn { display: inline-flex; align-items: center; gap: 8px; }
+.acnn-ct-maphead { display: flex; justify-content: space-between; align-items: flex-end; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; }
+.acnn-ct-maphead h2 { margin-bottom: 0; }
+.acnn-ct-frame { border-radius: 26px; overflow: hidden; box-shadow: var(--acnn-shadow); border: 1px solid var(--acnn-line); background: #e9edf7; }
+.acnn-ct-frame iframe { display: block; width: 100%; height: 440px; border: 0; }
+@media (max-width: 991px) { .acnn-ct-quick { grid-template-columns: repeat(2, minmax(0, 1fr)); } .acnn-ct-grid { grid-template-columns: 1fr; } .acnn-ct-photo { max-width: 520px; margin: 0 auto; } }
+@media (max-width: 480px) { .acnn-ct-quick { grid-template-columns: 1fr; } .acnn-ct-card { padding: 24px 18px; } .acnn-ct-frame iframe { height: 320px; } .acnn-ct-card h2 { font-size: 22px; } }
