@@ -575,7 +575,7 @@
                 <asp:Repeater ID="Repeater2" runat="server"
                     DataSourceID="ObjectDataSource_Events">
                     <ItemTemplate>
-                <div class="gallery">
+                <div class="gallery" data-group="<%# EventField(Container.DataItem, "Event_Group") %>" data-date="<%# EventField(Container.DataItem, "Event_Date") %>">
                     <a href="<%# "Event_Pics/" +Eval("Pic_L_path") %>" title='<%# Eval("Media_title")%>'><img src="<%# "Event_Pics/" +Eval("Pic_S_path") %>" alt='<%# Eval("Media_title")%>' loading="lazy" /></a>
                     <div class="desc"><%# Eval("Media_title")%></div>
                 </div>
@@ -679,6 +679,7 @@
         </div>
     </section>
 
+<script src="js/acnn-group.js"></script>
 <script src="js/acnn-more.js"></script>
 <script src="js/acnn-date.js"></script>
 </asp:Content>

@@ -444,6 +444,8 @@ FROM            Table_Event_Response</CommandText>
               <Mapping SourceColumn="Pic_L_path" DataSetColumn="Pic_L_path" />
               <Mapping SourceColumn="Pic_S_Path" DataSetColumn="Pic_S_Path" />
               <Mapping SourceColumn="Media_title" DataSetColumn="Media_title" />
+              <Mapping SourceColumn="Event_Group" DataSetColumn="Event_Group" />
+              <Mapping SourceColumn="Event_Date" DataSetColumn="Event_Date" />
               <Mapping SourceColumn="Active" DataSetColumn="Active" />
             </Mappings>
             <Sources />
@@ -811,6 +813,14 @@ ORDER BY ID DESC</CommandText>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" msprop:Generator_UserColumnName="Active" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Event_Group" msprop:Generator_ColumnVarNameInTable="columnEvent_Group" msprop:Generator_ColumnPropNameInRow="Event_Group" msprop:Generator_ColumnPropNameInTable="Event_GroupColumn" msprop:Generator_UserColumnName="Event_Group" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Event_Date" msprop:Generator_ColumnVarNameInTable="columnEvent_Date" msprop:Generator_ColumnPropNameInRow="Event_Date" msprop:Generator_ColumnPropNameInTable="Event_DateColumn" msprop:Generator_UserColumnName="Event_Date" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
