@@ -194,6 +194,7 @@ FROM            Table_Visitors</CommandText>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        SlNo, Title, Description, Path_Larger, Path_Smaller, Active
 FROM            Table_Visitors
+WHERE        (Active = True)
 ORDER BY SlNo DESC</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -355,6 +356,7 @@ FROM            Table_Media_Response</CommandText>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        SlNo, Pic_L_path, Pic_S_Path, Media_title, Active
 FROM            Table_Media_Response
+WHERE        (Active = True)
 ORDER BY SlNo DESC</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -433,7 +435,8 @@ WHERE        (Active = true)</CommandText>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        Table_Event_Response.*
-FROM            Table_Event_Response</CommandText>
+FROM            Table_Event_Response
+WHERE        (Active = True)</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
