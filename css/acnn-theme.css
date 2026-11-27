@@ -1812,3 +1812,6 @@ a.acnn-staff-link:hover { color: var(--acnn-teal) !important; transform: transla
 .acnn-ct-frame iframe { display: block; width: 100%; height: 440px; border: 0; }
 @media (max-width: 991px) { .acnn-ct-quick { grid-template-columns: repeat(2, minmax(0, 1fr)); } .acnn-ct-grid { grid-template-columns: 1fr; } .acnn-ct-photo { max-width: 520px; margin: 0 auto; } }
 @media (max-width: 480px) { .acnn-ct-quick { grid-template-columns: 1fr; } .acnn-ct-card { padding: 24px 18px; } .acnn-ct-frame iframe { height: 320px; } .acnn-ct-card h2 { font-size: 22px; } }
+
+/* no 01/02 number badges on Media Response and Event Gallery */
+#gallery.acnn-mgrid li:before, .acnn-eventpg .event-heading::before { display: none !important; content: none !important; }

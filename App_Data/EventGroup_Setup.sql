@@ -14,3 +14,11 @@ UPDATE Table_Event_Response SET Event_Date = #9/14/2024#;
 -- From now on, for each new picture just fill Event_Group (any heading text) and Event_Date in the table.
 -- Same Event_Group text => same section on the home page. Date is shown as a calendar tile on the picture.
 -- Rows with an empty Event_Group stay under the old fixed heading, so nothing breaks if you skip it.
+
+-- ===== Media Response + Event Gallery : date column (run ONCE, one statement at a time) =====
+ALTER TABLE Table_Media_Response ADD COLUMN Event_Date DATETIME;
+
+ALTER TABLE Table_Event_Gallery ADD COLUMN Event_Date DATETIME;
+
+-- Then fill Event_Date for the pictures (empty = no date tile, or a date written in Media_title is used):
+-- UPDATE Table_Event_Gallery SET Event_Date = #9/14/2024# WHERE Media_title = '...';

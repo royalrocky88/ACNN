@@ -102,7 +102,7 @@
 
                         <ItemTemplate>
 
-                            <li>
+                            <li data-date="<%# EventField(Container.DataItem, "Event_Date") %>">
 
                                 <a href='<%# "Larger/" + Eval("Pic_L_path") %>'
                                    rel='<%# "prettyPhoto[eventgallery_" + Eval("Media_title") + "]" %>'

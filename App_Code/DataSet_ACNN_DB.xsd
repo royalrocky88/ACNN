@@ -349,6 +349,7 @@ FROM            Table_Media_Response</CommandText>
               <Mapping SourceColumn="Pic_S_Path" DataSetColumn="Pic_S_Path" />
               <Mapping SourceColumn="Media_title" DataSetColumn="Media_title" />
               <Mapping SourceColumn="Active" DataSetColumn="Active" />
+              <Mapping SourceColumn="Event_Date" DataSetColumn="Event_Date" />
             </Mappings>
             <Sources>
               <DbSource ConnectionRef="ACNN_DBConnectionString (Web.config)" DbObjectName="Table_Media_Response" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByLatest" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByLatest" GeneratorSourceName="FillByLatest" GetMethodModifier="Public" GetMethodName="GetDataByLatest" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByLatest" UserSourceName="FillByLatest">
@@ -502,6 +503,7 @@ FROM            Table_Event_Gallery</CommandText>
               <Mapping SourceColumn="Pic_S_Path" DataSetColumn="Pic_S_Path" />
               <Mapping SourceColumn="Media_title" DataSetColumn="Media_title" />
               <Mapping SourceColumn="Active" DataSetColumn="Active" />
+              <Mapping SourceColumn="Event_Date" DataSetColumn="Event_Date" />
             </Mappings>
             <Sources>
               <DbSource ConnectionRef="ACNN_DBConnectionString (Web.config)" DbObjectName="Table_Event_Gallery" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByLatest" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataByLatest" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByLatest" UserSourceName="FillBy">
@@ -758,6 +760,7 @@ ORDER BY ID DESC</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Event_Date" msprop:Generator_ColumnVarNameInTable="columnEvent_Date" msprop:Generator_ColumnPropNameInRow="Event_Date" msprop:Generator_ColumnPropNameInTable="Event_DateColumn" msprop:Generator_UserColumnName="Event_Date" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -859,6 +862,7 @@ ORDER BY ID DESC</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Event_Date" msprop:Generator_ColumnVarNameInTable="columnEvent_Date" msprop:Generator_ColumnPropNameInRow="Event_Date" msprop:Generator_ColumnPropNameInTable="Event_DateColumn" msprop:Generator_UserColumnName="Event_Date" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

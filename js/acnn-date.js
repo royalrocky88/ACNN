@@ -35,6 +35,10 @@
         host.appendChild(c);
         return c;
     }
+    function fromAttr(el, rest) {   /* Event_Date column -> data-date="yyyy-MM-dd" */
+        var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(el.getAttribute('data-date') || '');
+        return m && +m[2] >= 1 && +m[2] <= 12 ? { d: m[3], m: MON[+m[2] - 1], y: m[1], rest: rest } : null;
+    }
     var i, all;
     /* home events + any .acnn-vgrid */
     all = document.querySelectorAll('.acnn-vgrid .gallery');
@@ -50,7 +54,7 @@
     for (i = 0; i < all.length; i++) {
         var c2 = all[i].querySelector('.acnn-cap'); if (!c2) { continue; }
         all[i].classList.add('acnn-hovercard');
-        var p2 = parse(c2.textContent);
+        var p2 = fromAttr(all[i], c2.textContent) || parse(c2.textContent);
         if (p2) { all[i].insertBefore(tile(p2), all[i].firstChild); all[i].classList.add('has-date'); c2.textContent = p2.rest; }
     }
     /* event gallery: the group title lives in the link title */
@@ -59,7 +63,7 @@
         var a = all[i].querySelector('a'); if (!a) { continue; }
         var txt = (a.getAttribute('title') || '').trim(); if (!txt) { continue; }
         all[i].classList.add('acnn-hovercard');
-        var p3 = parse(txt);
+        var p3 = fromAttr(all[i], txt) || parse(txt);
         if (p3) { all[i].insertBefore(tile(p3), all[i].firstChild); all[i].classList.add('has-date'); txt = p3.rest; }
         hoverCap(a, txt);
     }
