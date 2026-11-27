@@ -1,6 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainPage.master"
-    AutoEventWireup="true" CodeFile="EventGallery.aspx.cs"
-    Inherits="EventGallery" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/MainPage.master" AutoEventWireup="true" CodeFile="EventGallery.aspx.cs" Inherits="EventGallery" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
