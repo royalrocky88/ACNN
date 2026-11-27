@@ -1832,3 +1832,14 @@ a.acnn-staff-link:hover { color: var(--acnn-teal) !important; transform: transla
 .megamenu > li.acnn-nav-apply:hover > a.nodrop-down, .megamenu > li.acnn-nav-apply > a.nodrop-down:hover { background: var(--acnn-amber); color: #2a1a00; transform: translateY(-1px); }
 @media (min-width: 981px) { .megamenu > li.acnn-nav-apply { float: right; } }
 @media (max-width: 980px) { .megamenu > li.acnn-nav-apply > a.nodrop-down { margin: 8px 12px; text-align: center; } }
+
+/* SNN logo on the same hanging ribbon tab as the AKU logo (amber top edge + soft hanging shadow) */
+.acnn-header .acnn-brand-rib > a:not(.acnn-brand-aku) {
+    background: #fff !important; border-top: 5px solid var(--acnn-amber); border-radius: 0 0 18px 18px !important;
+    padding: 6px 20px !important; margin-top: -10px; box-shadow: 0 10px 22px rgba(18,18,50,.18) !important;
+    position: relative; z-index: 3;
+}
+@media (max-width: 767px) {
+    .acnn-header .acnn-brand-rib > a:not(.acnn-brand-aku) { margin-top: 0; padding: 6px 12px !important; border-radius: 14px !important; max-width: 100%; }
+}
+@media (min-width: 768px) { .acnn-header .acnn-brand-rib { align-items: flex-start; } }
