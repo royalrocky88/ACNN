@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainPage.master" AutoEventWireup="true" CodeFile="MediaResponse.aspx.cs" Inherits="MediaResponse" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/MainPage.master" AutoEventWireup="true" CodeFile="MediaResponse.aspx.cs" Inherits="MediaResponse" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <!-- Gallery Specific Elements -->
