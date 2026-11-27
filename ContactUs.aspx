@@ -23,8 +23,19 @@
         </div>
 
         <div class="acnn-ct-grid">
-            <div class="acnn-ct-photo">
-                <img src="img/acnn-contact.jpg" alt="School of Nanoscience &amp; Nanotechnology, Aryabhatta Centre for Nanoscience &amp; Nanotechnology" loading="lazy" />
+            <div class="acnn-ct-left">
+                <div class="acnn-ct-photo">
+                    <img src="img/acnn-contact.jpg" alt="School of Nanoscience &amp; Nanotechnology, Aryabhatta Centre for Nanoscience &amp; Nanotechnology" loading="lazy" />
+                </div>
+                <div class="acnn-ct-apply">
+                    <span class="acnn-ct-tag">Admissions</span>
+                    <h3>Interested in joining ACNN?</h3>
+                    <p>M.Tech, M.Sc. and Ph.D. in Nano Science &amp; Technology. Apply online or read the admission procedure first.</p>
+                    <div class="acnn-ct-btns">
+                        <a class="acnn-btn acnn-btn-amber" href="http://adms.akubihar.ac.in" target="_blank" rel="noopener">Apply Now</a>
+                        <a class="acnn-ct-ghost light" href="admission-procedure.aspx">Admission Procedure</a>
+                    </div>
+                </div>
             </div>
             <div class="acnn-ct-card">
                 <span class="acnn-ct-tag">Get in touch</span>

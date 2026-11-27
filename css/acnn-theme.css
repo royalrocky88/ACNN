@@ -1815,3 +1815,18 @@ a.acnn-staff-link:hover { color: var(--acnn-teal) !important; transform: transla
 
 /* no 01/02 number badges on Media Response and Event Gallery */
 #gallery.acnn-mgrid li:before, .acnn-eventpg .event-heading::before { display: none !important; content: none !important; }
+
+/* Contact Us: left column = poster + admissions card, fills the height of the details card */
+.acnn-ct-grid { align-items: stretch !important; }
+.acnn-ct-left { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.acnn-ct-apply { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 26px 28px; border-radius: 26px; color: #fff; background: linear-gradient(135deg, var(--acnn-navy), #1531a8 60%, var(--acnn-teal)); box-shadow: var(--acnn-shadow); position: relative; overflow: hidden; }
+.acnn-ct-apply::after { content: ""; position: absolute; right: -60px; top: -60px; width: 200px; height: 200px; border-radius: 50%; background: rgba(255,255,255,.08); }
+.acnn-ct-apply .acnn-ct-tag { align-self: flex-start; background: rgba(255,255,255,.16); color: #fff; }
+.acnn-ct-apply h3 { margin: 4px 0 0; font-family: var(--acnn-serif); font-size: 24px; font-weight: 600; color: #fff; line-height: 1.3; }
+.acnn-ct-apply p { margin: 0 0 8px; color: rgba(255,255,255,.88); line-height: 1.6; }
+.acnn-ct-ghost.light { border-color: rgba(255,255,255,.7); color: #fff; background: transparent; }
+.acnn-ct-ghost.light:hover { background: #fff; color: var(--acnn-navy); }
+.acnn-ct-apply .acnn-ct-btns { position: relative; z-index: 1; }
+.acnn-ct-card { display: flex; flex-direction: column; }
+.acnn-ct-card .acnn-ct-list { flex: 1 1 auto; align-content: space-between; }
+.acnn-ct-card .acnn-ct-tag { align-self: flex-start; }
