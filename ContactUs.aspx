@@ -44,7 +44,7 @@
                 <ul class="acnn-ct-list">
                     <li><i class="icon-map-marker"></i><div><b>Address</b><span>1st Floor, Academic Block, Aryabhatta Knowledge University,<br />Mithapur, Patna &ndash; 800 001, Bihar</span></div></li>
                     <li><i class="icon-phone"></i><div><b>Telephone</b><span><a href="tel:+916122362270">0612 236 2270</a></span></div></li>
-                    <li><i class="icon-print"></i><div><b>Fax</b><span>0612 236 2270</span></div></li>
+                    <li><i class="icon-phone"></i><div><b>Mobile No: </b><span><b>+91 810 292 6986</b></span></div></li>
                     <li><i class="icon-envelope"></i><div><b>Email</b><span><a href="mailto:info@acnn.akubihar.ac.in">info@acnn.akubihar.ac.in</a><br /><a href="mailto:akuacnn@gmail.com">akuacnn@gmail.com</a></span></div></li>
                     <li><i class="icon-inbox"></i><div><b>Web Mail</b><span><a href="http://mail.acnn.akubihar.ac.in" target="_blank" rel="noopener">mail.acnn.akubihar.ac.in</a></span></div></li>
                     <li><i class="icon-globe"></i><div><b>Website</b><span><a href="http://acnn.akubihar.ac.in">acnn.akubihar.ac.in</a></span></div></li>
