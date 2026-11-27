@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>AKU : Nano Technology</title>
 
@@ -64,6 +64,7 @@
                 <li><i class="icon-envelope"></i><a href="mailto:info@acnn.akubihar.ac.in">info@acnn.akubihar.ac.in</a></li>
             </ul>
             <ul>
+                <li><i class="icon-phone"></i>+91 810 292 6986</li>
                 <li><i class="icon-phone"></i>0612 236 2270</li>
                 <li><a href="http://mail.acnn.akubihar.ac.in" title="Web Mail"><i class="icon-inbox"></i>Web Mail</a></li>
             </ul>
@@ -215,8 +216,8 @@
                 <li><a href="EventGallery.aspx" >Event Gallery</a></li>
                 <li><a href="MediaResponse.aspx" >Media Response</a></li>
                 <li><a href="ContactUs.aspx" >Contact Us</a></li>
-                <li><a href="http://mail.acnn.akubihar.ac.in" target="_blank" rel="noopener">Web Mail</a></li>
-                <li><a href="tel:+916122362270" >Call: 0612 236 2270</a></li>
+<%--                <li><a href="http://mail.acnn.akubihar.ac.in" target="_blank" rel="noopener">Web Mail</a></li>
+                <li><a href="tel:+916122362270" >Call: 0612 236 2270</a></li>--%>
             </ul>
         </div>
     </div>
