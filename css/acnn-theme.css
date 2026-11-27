@@ -515,7 +515,7 @@ nav .megamenu_container { max-width: 1170px; margin: 0 auto; }
     border-top: 3px solid var(--acnn-aqua); border-radius: 0 0 var(--acnn-radius) var(--acnn-radius);
     box-shadow: var(--acnn-shadow);
 }
-.megamenu > li:nth-last-child(-n+2) .drop-down-container { left: auto; right: 0; }
+.megamenu > li:nth-last-child(-n+3) .drop-down-container { left: auto; right: 0; }
 .megamenu .drop-down-container .row { margin: 0; }
 .megamenu .drop-down-container [class*="span"] { float: none; display: block; width: auto; margin: 0; }
 .megamenu > li .drop-down-container ul.list-menu li { background: none; padding: 0; margin: 0; border: 0; }
@@ -1659,18 +1659,12 @@ footer .acnn-footer-bottom .fb-right[data-credit], footer .acnn-footer-bottom .f
 /* the SNN artwork has white margins, so it is drawn taller to look the same height as the AKU tile */
 .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 80px; width: auto; max-width: none; }
 @media (min-width: 768px) and (max-width: 1199px) {
-    /* tablet: same centred, stacked layout as mobile */
-    .acnn-topbar .container, .acnn-header .container { justify-content: center; text-align: center; }
-    .acnn-header .container { flex-direction: column; align-items: center; gap: 12px; }
-    .acnn-brand-rib { flex-direction: column; align-items: center; gap: 8px; }
-    .acnn-brand-rib .acnn-brand-aku img { height: 60px; }
-    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: auto; width: 440px; max-width: 100%; }
-    .acnn-header-cta { width: 100%; justify-content: center; }
-    .acnn-call { text-align: center; }
+    .acnn-brand-rib .acnn-brand-aku img { height: 56px; }
+    .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: 66px; }
 }
 @media (max-width: 767px) {
     .acnn-brand-rib { flex-direction: column; align-items: center; gap: 8px; }
-    .acnn-brand-rib .acnn-brand-aku { padding: 5px 12px !important; margin-top: -8px; border-radius: 0 0 14px 14px !important; }
+    .acnn-brand-rib .acnn-brand-aku { order: -1; padding: 5px 12px !important; margin-top: -8px; border-radius: 0 0 14px 14px !important; }
     .acnn-brand-rib .acnn-brand-aku img { height: 52px; }
     .acnn-brand-rib > a:not(.acnn-brand-aku) { max-width: 100%; }
     .acnn-brand-rib > a:not(.acnn-brand-aku) img { height: auto; width: 340px; max-width: 100%; }
@@ -1830,3 +1824,11 @@ a.acnn-staff-link:hover { color: var(--acnn-teal) !important; transform: transla
 .acnn-ct-card { display: flex; flex-direction: column; }
 .acnn-ct-card .acnn-ct-list { flex: 1 1 auto; align-content: space-between; }
 .acnn-ct-card .acnn-ct-tag { align-self: flex-start; }
+
+/* header: School logo left, AKU logo right (no call-us text); Apply Now lives in the navbar */
+.acnn-header .container { justify-content: center; }
+.acnn-brand-rib { width: 100%; justify-content: space-between; }
+.megamenu > li.acnn-nav-apply > a.nodrop-down { background: var(--acnn-teal); color: #fff; font-weight: 600; border-radius: 999px; line-height: 38px; padding: 0 24px; margin: 3px 6px; box-shadow: 0 6px 16px rgba(29,66,217,.28); transition: background .2s, transform .2s; }
+.megamenu > li.acnn-nav-apply:hover > a.nodrop-down, .megamenu > li.acnn-nav-apply > a.nodrop-down:hover { background: var(--acnn-amber); color: #2a1a00; transform: translateY(-1px); }
+@media (min-width: 981px) { .megamenu > li.acnn-nav-apply { float: right; } }
+@media (max-width: 980px) { .megamenu > li.acnn-nav-apply > a.nodrop-down { margin: 8px 12px; text-align: center; } }
