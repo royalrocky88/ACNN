@@ -35,8 +35,12 @@
         host.appendChild(c);
         return c;
     }
-    function fromAttr(el, rest) {   /* Event_Date column -> data-date="yyyy-MM-dd" */
-        var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(el.getAttribute('data-date') || '');
+    function dateOf(el) {   /* Event_Date column -> hidden <span class="acnn-dd">yyyy-MM-dd</span> (or data-date) */
+        var s = el.querySelector('.acnn-dd');
+        return ((s ? s.textContent : '') || el.getAttribute('data-date') || '').replace(/^\s+|\s+$/g, '');
+    }
+    function fromAttr(el, rest) {
+        var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateOf(el));
         return m && +m[2] >= 1 && +m[2] <= 12 ? { d: m[3], m: MON[+m[2] - 1], y: m[1], rest: rest } : null;
     }
     var i, all;
@@ -44,7 +48,7 @@
     all = document.querySelectorAll('.acnn-vgrid .gallery');
     for (i = 0; i < all.length; i++) {
         var d1 = all[i].querySelector('.desc'); if (!d1) { continue; }
-        var iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(all[i].getAttribute('data-date') || ''), p1 = null;
+        var iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateOf(all[i])), p1 = null;
         if (iso && +iso[2] >= 1 && +iso[2] <= 12) { p1 = { d: iso[3], m: MON[+iso[2] - 1], y: iso[1], rest: d1.textContent }; }   /* Event_Date column */
         else { p1 = parse(d1.textContent); }
         if (p1) { all[i].insertBefore(tile(p1), all[i].firstChild); d1.textContent = p1.rest; }

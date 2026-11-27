@@ -57,7 +57,7 @@
                             
                             <ul>
                            
-                            <li data-date="<%# EventField(Container.DataItem, "Event_Date") %>"><a href="<%# "Larger/" +Eval("Pic_L_path") %>" rel="prettyPhoto[gallery1]" title='<%# Eval("Media_title")%>'><img src="<%# "Smaller/" +Eval("Pic_S_path") %>" class="thumbnail" alt='<%# Eval("Media_title")%>' /><span class="acnn-zoom"><i class="icon-zoom-in"></i></span></a><span class="acnn-cap"><%# Eval("Media_title")%></span></li>
+                            <li><span class="acnn-dd" style="display:none"><%# EventField(Container.DataItem, "Event_Date") %></span><a href="<%# "Larger/" +Eval("Pic_L_path") %>" rel="prettyPhoto[gallery1]" title='<%# Eval("Media_title")%>'><img src="<%# "Smaller/" +Eval("Pic_S_path") %>" class="thumbnail" alt='<%# Eval("Media_title")%>' /><span class="acnn-zoom"><i class="icon-zoom-in"></i></span></a><span class="acnn-cap"><%# Eval("Media_title")%></span></li>
                             </ul>
  
             

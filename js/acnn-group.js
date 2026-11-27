@@ -3,21 +3,25 @@
    in the original grid under its original heading. Without JS (or without the column) nothing changes. */
 (function () {
     'use strict';
-    var items = document.querySelectorAll('.acnn-vgrid .gallery[data-group]');
+    var items = document.querySelectorAll('.acnn-vgrid .gallery');
+    function txt(el, cls, attr) { var s = el.querySelector(cls); return ((s ? s.textContent : '') || el.getAttribute(attr) || '').replace(/^\s+|\s+$/g, ''); }
+    var hasCol = false; for (var q = 0; q < items.length; q++) { if (items[q].querySelector('.acnn-dg')) { hasCol = true; break; } }
+    if (!hasCol) { return; }
     if (!items.length) { return; }
-    var src = items[0].parentNode;                 /* the Repeater grid */
+    var first = null; for (q = 0; q < items.length; q++) { if (items[q].querySelector('.acnn-dg')) { first = items[q]; break; } }
+    var src = first.parentNode;                 /* the Repeater grid */
     var anchor = src.previousElementSibling;       /* its original heading */
     if (anchor && !/(^|\s)acnn-vsub(\s|$)/.test(anchor.className)) { anchor = null; }
     var order = [], map = {}, i, g, k;
     for (i = 0; i < items.length; i++) {
-        g = (items[i].getAttribute('data-group') || '').replace(/^\s+|\s+$/g, '');
+        g = txt(items[i], '.acnn-dg', 'data-group');
         if (!g) { continue; }
         k = g.toLowerCase();
         if (!map[k]) { map[k] = { name: g, list: [] }; order.push(k); }
         map[k].list.push(items[i]);
     }
     if (!order.length) { return; }
-    function when(el) { var d = el.getAttribute('data-date') || ''; return /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : ''; }
+    function when(el) { var d = txt(el, '.acnn-dd', 'data-date'); return /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : ''; }
     for (i = 0; i < order.length; i++) {
         var grp = map[order[i]], list = grp.list.slice(0), j;
         list = list.map(function (el, n) { return { el: el, n: n, d: when(el) }; });
